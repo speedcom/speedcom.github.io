@@ -4,12 +4,15 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Hello there! How are you?
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
+I'm Mateusz and welcome on my homepage. So as you can probably deduct from this blog I'm a Software Enginner having a real passition to it.
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+Heare are the bunch of links you can get to know better my person:
+
+[Github](https://github.com/speedcom)
+[Twitter](https://twitter.com/mcmaciaszek)
+[Keybase](https://keybase.io/mmaciaszek)
+[LinkedIn](https://www.linkedin.com/in/mateuszmaciaszek/)
+
+I encourage you to start following me on any of these. Thank you! <3
