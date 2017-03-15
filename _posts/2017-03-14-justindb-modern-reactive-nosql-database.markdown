@@ -40,7 +40,7 @@ there are the cases when client wants to update its data; in distributed system 
 whole architecture is built on top of Actor Model - it greatly simplify modeling of concurrent operations
 
 * [CAP theorem][cap-theorem]:
-From perspective of this theorem JustinDB was designed to be AP system - highy available (A) nad partition tolerant (P) and the same time. This was achived by bringing relaxed model of data (so called Eventually Consistent).
+From perspective of this theorem JustinDB was designed to be AP system - highy available (A) and partition tolerant (P) and the same time. This was achived by bringing relaxed model of data (so called Eventually Consistent).
 
 * stack:
 database is entirely written in Scala using Akka library (e.g. its Cluster module); Admin UI is written using Elm language (still in progress though)
