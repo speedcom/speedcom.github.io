@@ -8,7 +8,7 @@ Hello there! How are you?
 
 I'm Mateusz and welcome on my homepage. So as you can probably deduct from this blog I'm a Software Enginner having a real passition to it.
 
-Heare are the bunch of links you can get to know better my person:
+Here are the bunch of links you can get to know better my person:
 
 * [Github](https://github.com/speedcom)
 * [Twitter](https://twitter.com/mcmaciaszek)
