@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "JustinDB - Database Model"
-date:   2017-03-17 19:09:17 +0100
+date:   2017-03-16 19:09:17 +0100
 categories: DSP2017
 ---
 
@@ -23,7 +23,7 @@ One of the most popular actively used database here is `Apache Cassandra`.
 **3. Document:**
 These kind of datbases does not enforce a document schema. They owe their name because of storing hierarchical values called documents. Examples: `MongoDB`, `CouchDB`.
 
-**4. Graph:**
+
 They are very good for modeling complex relationship between nodes e.g. friends (lets think about social media sites like Facebook or LinkedIn).
 Examples: `Neo4j, OrientDB`
 
