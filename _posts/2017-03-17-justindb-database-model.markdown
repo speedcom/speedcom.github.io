@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "JustinDB - Database Model"
-date:   2017-03-16 19:09:17 +0100
+date:   2017-03-17 17:09:17 +0100
 categories: DSP2017
 ---
 
@@ -25,6 +25,7 @@ These kind of datbases does not enforce a document schema. They owe their name b
 
 
 They are very good for modeling complex relationship between nodes e.g. friends (lets think about social media sites like Facebook or LinkedIn).
+
 Examples: `Neo4j, OrientDB`
 
 
