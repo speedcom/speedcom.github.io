@@ -20,6 +20,7 @@ I was used to spend a lot of time to find appropriate catalog in terminal. To ma
 How `z.sh` help here? To make it easier to visualize, as an example, lets take `Dropbox` catalog into account. Its placed under `/Users/new/Dropbox` path on my computer.
 Now, when `z.sh` has already registered Dropbox catalog's path I am not forced to think about it anymore (you need to cd there at least once because z.sh does not scan your disk). I'm typing simple `z dropbox` command and... I'm getting moved there correctly. I can even use shorter version like `z drop` and it still works (`z.sh` script uses regexp for finding matches). If `z.sh` didn't find any matches it simply leave you in current directory. While typing your command you can use tabulator which will unfold your regexp into path that script is thinking you want to move.
 
+![][zscript-gif]
 
 #### How to install it
 
@@ -39,3 +40,4 @@ Cheers and don't thank me :+1:
 
 [oh-my-zsh]: https://github.com/robbyrussell/oh-my-zsh
 [z.sh]: https://github.com/rupa/z
+[zscript-gif]: ../../../../../zscript.gif "Z.sh exemplary usage"
