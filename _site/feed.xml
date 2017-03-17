@@ -1,28 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-03-16T19:57:36+01:00</updated><id>http://localhost:4000/</id><title type="html">Mateusz Maciaszek</title><subtitle>This blog covers topics about many different computer science fields, mainly distributed and concurrent systems. Some day it will help me to escape from the simulation we live in (not sure how yet).
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-03-17T07:52:03+01:00</updated><id>http://localhost:4000/</id><title type="html">Mateusz Maciaszek</title><subtitle>This blog covers topics about many different computer science fields, mainly distributed and concurrent systems. Some day it will help me to escape from the simulation we live in (not sure how yet).
 </subtitle><entry><title type="html">JustinDB - Database Model</title><link href="http://localhost:4000/dsp2017/2017/03/16/justindb-database-model.html" rel="alternate" type="text/html" title="JustinDB - Database Model" /><published>2017-03-16T19:09:17+01:00</published><updated>2017-03-16T19:09:17+01:00</updated><id>http://localhost:4000/dsp2017/2017/03/16/justindb-database-model</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/03/16/justindb-database-model.html">&lt;h3 id=&quot;database-models&quot;&gt;Database models&lt;/h3&gt;
-&lt;p&gt;We can easly distinguish different groups of NoSQL databases the ways they represent data.
-These characteristic is the answer that arose to specific problems not originally envisioned by the relational counterparts.&lt;/p&gt;
+&lt;p&gt;Althought there are &lt;a href=&quot;http://nosql-database.org/&quot;&gt;numerous&lt;/a&gt; differents NoSQL databases we can group them the ways they represent logical data. This characteristic is the answer that arose to specific problems not originally envisioned by the relational counterparts.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;1. Key/Value:&lt;/strong&gt;
-They are conceptually like hashtables where values are stored and accessed by immutable key. This is a relatively easy to grasp model.
+They are conceptually like hashtables where values are stored and accessed by immutable key. Such products usually offer relatively simple interface we work against with; more complex queries are often deprecated.
 &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; along with e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;Riak&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;Redis&lt;/code&gt; are exemplary products of such.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;2. Columnar:&lt;/strong&gt;
 Its goal is to group similiar data into column families. They often characterizes itself with very good write throughput.
 One of the most popular actively used database here is &lt;code class=&quot;highlighter-rouge&quot;&gt;Apache Cassandra&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;3. Document&lt;/strong&gt;
+&lt;p&gt;&lt;strong&gt;3. Document:&lt;/strong&gt;
 These kind of datbases does not enforce a document schema. They owe their name because of storing hierarchical values called documents. Examples: &lt;code class=&quot;highlighter-rouge&quot;&gt;MongoDB&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;CouchDB&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;4. Graph&lt;/strong&gt;
+&lt;p&gt;&lt;strong&gt;4. Graph:&lt;/strong&gt;
 They are very good for modeling complex relationship between nodes e.g. friends (lets think about social media sites like Facebook or LinkedIn).
 Examples: &lt;code class=&quot;highlighter-rouge&quot;&gt;Neo4j, OrientDB&lt;/code&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Be mind that some of them can be mixed together (e.g. key-value model on top of relational DB)
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Be mind that some of them can be mixed together (e.g. key-value model built on top of relational DB)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;h3 id=&quot;justindb-database-model&quot;&gt;JustinDB database model&lt;/h3&gt;</content><author><name></name></author><summary type="html">Database models We can easly distinguish different groups of NoSQL databases the ways they represent data. These characteristic is the answer that arose to specific problems not originally envisioned by the relational counterparts.</summary></entry><entry><title type="html">JustinDB - Modern REACTIVE NoSQL database</title><link href="http://localhost:4000/dsp2017/2017/03/14/justindb-modern-reactive-nosql-database.html" rel="alternate" type="text/html" title="JustinDB - Modern REACTIVE NoSQL database" /><published>2017-03-14T07:29:17+01:00</published><updated>2017-03-14T07:29:17+01:00</updated><id>http://localhost:4000/dsp2017/2017/03/14/justindb-modern-reactive-nosql-database</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/03/14/justindb-modern-reactive-nosql-database.html">&lt;h3 id=&quot;what-is-this-all-about&quot;&gt;What is this all about&lt;/h3&gt;
+&lt;h4 id=&quot;justindb-database-model&quot;&gt;JustinDB database model&lt;/h4&gt;
+&lt;p&gt;Choosing logical model is a very important part at a time of architecture modeling.&lt;/p&gt;
+
+&lt;p&gt;I’ve decided to make JustinDB key-value oriented database. Reasoning was simple - it’s easy to grasp concept and I am not forced to write my own queries planner which was not something I wanted to do at the moment of making this decision. Thanks to that I was able to implement more interesting parts of distributed databases to me. Whats more important its pretty broadly used model so there are many available docs we can read (and get the appropriate knowledge in the end).&lt;/p&gt;
+
+&lt;p&gt;Making such a decision has an important tradeoffs:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;how we queries complex set of data?&lt;/li&gt;
+  &lt;li&gt;how we replicate data and spread them (do partitioning actually) across the cluster?&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Database models Althought there are numerous differents NoSQL databases we can group them the ways they represent logical data. This characteristic is the answer that arose to specific problems not originally envisioned by the relational counterparts.</summary></entry><entry><title type="html">JustinDB - Modern REACTIVE NoSQL database</title><link href="http://localhost:4000/dsp2017/2017/03/14/justindb-modern-reactive-nosql-database.html" rel="alternate" type="text/html" title="JustinDB - Modern REACTIVE NoSQL database" /><published>2017-03-14T07:29:17+01:00</published><updated>2017-03-14T07:29:17+01:00</updated><id>http://localhost:4000/dsp2017/2017/03/14/justindb-modern-reactive-nosql-database</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/03/14/justindb-modern-reactive-nosql-database.html">&lt;h3 id=&quot;what-is-this-all-about&quot;&gt;What is this all about&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.wikiwand.com/en/NoSQL&quot;&gt;NoSQL&lt;/a&gt; term was coined a decade ago. We have on market at least a dozen of different NoSQL databases with specific data model. They are so popular that many of engineers are not afraid to take them as a tool of first choice while bootsraping a new project.&lt;/p&gt;
 
 &lt;p&gt;Its tend to think that they are “scalable out of the box product” - lets assume thats true. But…&lt;/p&gt;
