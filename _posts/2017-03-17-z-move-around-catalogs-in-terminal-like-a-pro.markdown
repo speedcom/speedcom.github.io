@@ -36,7 +36,7 @@ Installation:
 ```
 Now try to cd around for a while to build up the db. You will be amazed by simplicity and usability of it.
 
-Cheers and don't thank me :+1:
+Cheers and don't thank me 👍
 
 [oh-my-zsh]: https://github.com/robbyrussell/oh-my-zsh
 [z.sh]: https://github.com/rupa/z
