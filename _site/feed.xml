@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-03-17T19:24:13+01:00</updated><id>http://localhost:4000/</id><title type="html">Mateusz Maciaszek</title><subtitle>This blog covers topics about many different computer science fields, mainly distributed and concurrent systems. Some day it will help me to escape from the simulation we live in (not sure how yet).
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-03-18T18:23:37+01:00</updated><id>http://localhost:4000/</id><title type="html">Mateusz Maciaszek</title><subtitle>This blog covers topics about many different computer science fields, mainly distributed and concurrent systems. Some day it will help me to escape from the simulation we live in (not sure how yet).
 </subtitle><entry><title type="html">Z.sh - move around catalogs in terminal like a PRO</title><link href="http://localhost:4000/dsp2017/hacks/2017/03/17/z-move-around-catalogs-in-terminal-like-a-pro.html" rel="alternate" type="text/html" title="Z.sh - move around catalogs in terminal like a PRO" /><published>2017-03-17T17:09:17+01:00</published><updated>2017-03-17T17:09:17+01:00</updated><id>http://localhost:4000/dsp2017/hacks/2017/03/17/z-move-around-catalogs-in-terminal-like-a-pro</id><content type="html" xml:base="http://localhost:4000/dsp2017/hacks/2017/03/17/z-move-around-catalogs-in-terminal-like-a-pro.html">&lt;h3 id=&quot;eureka&quot;&gt;Eureka&lt;/h3&gt;
 &lt;p&gt;Have you ever get to known something that is simply brilliant and you feel that you were living without it way too long?&lt;/p&gt;
 
@@ -53,9 +53,7 @@ One of the most popular actively used database here is &lt;code class=&quot;high
 &lt;p&gt;&lt;strong&gt;3. Document:&lt;/strong&gt;
 These kind of datbases does not enforce a document schema. They owe their name because of storing hierarchical values called documents. Examples: &lt;code class=&quot;highlighter-rouge&quot;&gt;MongoDB&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;CouchDB&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;They are very good for modeling complex relationship between nodes e.g. friends (lets think about social media sites like Facebook or LinkedIn).&lt;/p&gt;
-
-&lt;p&gt;Examples: &lt;code class=&quot;highlighter-rouge&quot;&gt;Neo4j, OrientDB&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;They are very good for modeling complex relationship between nodes e.g. friends (lets think about social media sites like Facebook or LinkedIn). Examples: &lt;code class=&quot;highlighter-rouge&quot;&gt;Neo4j, OrientDB&lt;/code&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;justindb-database-model&quot;&gt;JustinDB database model&lt;/h4&gt;
 &lt;p&gt;Choosing logical model is a very important part at a time of architecture modeling.&lt;/p&gt;
@@ -74,7 +72,7 @@ These kind of datbases does not enforce a document schema. They owe their name b
   &lt;li&gt;how do we replicate data and spread them (do partitioning actually) across the cluster?&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Trying to get answers is the real challenge and whole fun is starting exactly here.&lt;/p&gt;
+&lt;p&gt;Trying to get answers is the real challenge and whole fun is starting exactly here. 👍&lt;/p&gt;
 
 &lt;h4 id=&quot;when-using-keyvalue-store-make-sense&quot;&gt;When using key/value store make sense&lt;/h4&gt;
 &lt;p&gt;Databases such as JustinDB almost always performs best when you build your application around basic CRUD application (create, read, update, and delete) on objects.&lt;/p&gt;
@@ -97,7 +95,7 @@ These kind of datbases does not enforce a document schema. They owe their name b
   &lt;li&gt;What makes that they are so-said scalable?&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;These are the questions we are going to answer through a couple of next posts.&lt;/p&gt;
+&lt;p&gt;These are the questions we are going to answer through a couple of next posts. 🤔&lt;/p&gt;
 
 &lt;h3 id=&quot;why-yet-another-database&quot;&gt;Why yet another database&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; is an attempt to write my own distributed database. Its mainly educational goal. This project is far from being production ready in mind (such non-travial things are built over several years). Since its a complete writing from scratch I was happy to make it the way I would like - I was the one who decided what  algorithms, data structures and architecture will be. Being frankly, at current point JustinDB is a pretty faithfull implementation of &lt;a href=&quot;http://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf&quot;&gt;whitepaper&lt;/a&gt; written by Amazon research team describing architecture of DynamoDB database (they prominent product used actively over decade in AWS).&lt;/p&gt;
@@ -150,8 +148,8 @@ What does it mean? Is this sth that other databases don’t have? From official 
 
 &lt;p&gt;You can find an official JustinDB respository &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;In next post we are going to cover one of the above point more extensively looking closer how exactly NoSQL databases work and how JustinDB solely solves it.&lt;/p&gt;</content><author><name></name></author><summary type="html">What is this all about NoSQL term was coined a decade ago. We have on market at least a dozen of different NoSQL databases with specific data model. They are so popular that many of engineers are not afraid to take them as a tool of first choice while bootsraping a new project.</summary></entry><entry><title type="html">Get noticed!</title><link href="http://localhost:4000/dsp2017/2017/03/12/get-noticed.html" rel="alternate" type="text/html" title="Get noticed!" /><published>2017-03-12T16:55:17+01:00</published><updated>2017-03-12T16:55:17+01:00</updated><id>http://localhost:4000/dsp2017/2017/03/12/get-noticed</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/03/12/get-noticed.html">&lt;p&gt;Hello there! How are you?&lt;/p&gt;
+&lt;p&gt;In next post we are going to cover one of the above point more extensively looking closer how exactly NoSQL databases work and how JustinDB solely solves it. 👍&lt;/p&gt;</content><author><name></name></author><summary type="html">What is this all about NoSQL term was coined a decade ago. We have on market at least a dozen of different NoSQL databases with specific data model. They are so popular that many of engineers are not afraid to take them as a tool of first choice while bootsraping a new project.</summary></entry><entry><title type="html">Get noticed!</title><link href="http://localhost:4000/dsp2017/2017/03/12/get-noticed.html" rel="alternate" type="text/html" title="Get noticed!" /><published>2017-03-12T16:55:17+01:00</published><updated>2017-03-12T16:55:17+01:00</updated><id>http://localhost:4000/dsp2017/2017/03/12/get-noticed</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/03/12/get-noticed.html">&lt;p&gt;Hello there! How are you?&lt;/p&gt;
 
-&lt;p&gt;I’m Mateusz and welcome on my homepage. This whole blog is a result of polish initiative called &lt;a href=&quot;http://devstyle.pl/daj-sie-poznac/&quot;&gt;Get noticed!&lt;/a&gt; in which you write a bunch of posts every single week and create OSS project till end of May 2017. Its goal is to motivate every person who want to actively blog but never really started do that.&lt;/p&gt;
+&lt;p&gt;I’m Mateusz and welcome on my homepage. This whole blog is a result of polish initiative called &lt;a href=&quot;http://devstyle.pl/daj-sie-poznac/&quot;&gt;Get noticed!&lt;/a&gt; in which you write a bunch of posts every single week and create OSS project till end of May 2017. Its goal is to motivate every person who want to actively blog but never really started do that. 👍&lt;/p&gt;
 
 &lt;p&gt;In the couple of next weeks I’m going to cover how exactly I’ve built (still building btw) &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; which is actually a faiful implementation of Amazon DynamoDB specification (the one that was inspiration for modern NoSQL databases) with some exceptions.&lt;/p&gt;</content><author><name></name></author><summary type="html">Hello there! How are you?</summary></entry></feed>

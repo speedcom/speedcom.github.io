@@ -15,7 +15,7 @@ Its tend to think that they are "scalable out of the box product" - lets assume 
 * What trade-off database engineers are need to deal with?
 * What makes that they are so-said scalable?
 
-These are the questions we are going to answer through a couple of next posts.
+These are the questions we are going to answer through a couple of next posts. 🤔
 
 ### Why yet another database
 [JustinDB][justindb] is an attempt to write my own distributed database. Its mainly educational goal. This project is far from being production ready in mind (such non-travial things are built over several years). Since its a complete writing from scratch I was happy to make it the way I would like - I was the one who decided what  algorithms, data structures and architecture will be. Being frankly, at current point JustinDB is a pretty faithfull implementation of [whitepaper][dynamodb-whitepaper] written by Amazon research team describing architecture of DynamoDB database (they prominent product used actively over decade in AWS).
@@ -55,7 +55,7 @@ JustinDB is realatively young project which still lack of many welcome features 
 
 You can find an official JustinDB respository [here][justindb].
 
-In next post we are going to cover one of the above point more extensively looking closer how exactly NoSQL databases work and how JustinDB solely solves it.
+In next post we are going to cover one of the above point more extensively looking closer how exactly NoSQL databases work and how JustinDB solely solves it. 👍
 
 [no-sql]: https://www.wikiwand.com/en/NoSQL
 [justindb]: https://github.com/speedcom/JustinDB
