@@ -8,7 +8,7 @@ categories: [DSP2017, hacks]
 ### Eureka
 Have you ever get to known something that is simply brilliant and you feel that you were living without it way too long?
 
-Yes, I've got. I've found `z.sh` script ([link][z.sh]. Its magic. Its simple. Its fantastic! 💖
+Yes, I've got. I've found `z.sh` script [link][z.sh]. Its magic. Its simple. Its fantastic! 💖
 
 #### Whats it is
 Its the script that tracks your most used directories, based on 'frecency'. From README we can read that
