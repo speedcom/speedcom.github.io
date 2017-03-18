@@ -53,7 +53,7 @@ What does it mean? Is this sth that other databases don't have? From official si
 ### Summary
 JustinDB is realatively young project which still lack of many welcome features (some of them are in progress, some not even started). Its OOS so its really welcome to have contributors - I think that this topic can be very interesting to many of you.
 
-You can find an official JustinDB respository [here][justindb].
+You can find an official JustinDB respository [here][justindb]. 💪
 
 In next post we are going to cover one of the above point more extensively looking closer how exactly NoSQL databases work and how JustinDB solely solves it. 👍
 
