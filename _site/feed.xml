@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-03-17T17:30:08+01:00</updated><id>http://localhost:4000/</id><title type="html">Mateusz Maciaszek</title><subtitle>This blog covers topics about many different computer science fields, mainly distributed and concurrent systems. Some day it will help me to escape from the simulation we live in (not sure how yet).
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-03-18T18:24:17+01:00</updated><id>http://localhost:4000/</id><title type="html">Mateusz Maciaszek</title><subtitle>This blog covers topics about many different computer science fields, mainly distributed and concurrent systems. Some day it will help me to escape from the simulation we live in (not sure how yet).
 </subtitle><entry><title type="html">JustinDB - Database Model</title><link href="http://localhost:4000/dsp2017/2017/03/17/justindb-database-model.html" rel="alternate" type="text/html" title="JustinDB - Database Model" /><published>2017-03-17T17:09:17+01:00</published><updated>2017-03-17T17:09:17+01:00</updated><id>http://localhost:4000/dsp2017/2017/03/17/justindb-database-model</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/03/17/justindb-database-model.html">&lt;h3 id=&quot;database-models&quot;&gt;Database models&lt;/h3&gt;
 &lt;p&gt;Althought there are &lt;a href=&quot;http://nosql-database.org/&quot;&gt;numerous&lt;/a&gt; differents NoSQL databases we can group them the ways they represent logical data. This characteristic is the answer that arose to specific problems not originally envisioned by the relational counterparts.&lt;/p&gt;
 
@@ -17,7 +17,8 @@ One of the most popular actively used database here is &lt;code class=&quot;high
 &lt;p&gt;&lt;strong&gt;3. Document:&lt;/strong&gt;
 These kind of datbases does not enforce a document schema. They owe their name because of storing hierarchical values called documents. Examples: &lt;code class=&quot;highlighter-rouge&quot;&gt;MongoDB&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;CouchDB&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;They are very good for modeling complex relationship between nodes e.g. friends (lets think about social media sites like Facebook or LinkedIn).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4. Graph:&lt;/strong&gt;
+They are very good for modeling complex relationship between nodes e.g. friends (lets think about social media sites like Facebook or LinkedIn).&lt;/p&gt;
 
 &lt;p&gt;Examples: &lt;code class=&quot;highlighter-rouge&quot;&gt;Neo4j, OrientDB&lt;/code&gt;&lt;/p&gt;
 
