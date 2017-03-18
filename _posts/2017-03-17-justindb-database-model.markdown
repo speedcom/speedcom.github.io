@@ -40,7 +40,7 @@ Making such a decision has an important tradeoffs and impact how we design the r
 - how do we query complex set of data?
 - how do we replicate data and spread them (do partitioning actually) across the cluster?
 
-Trying to get answers is the real challenge and whole fun is starting exactly here.
+Trying to get answers is the real challenge and whole fun is starting exactly here. 👍
 
 #### When using key/value store make sense
 Databases such as JustinDB almost always performs best when you build your application around basic CRUD application (create, read, update, and delete) on objects.
