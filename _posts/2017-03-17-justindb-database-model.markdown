@@ -9,7 +9,7 @@ categories: DSP2017
 Althought there are [numerous][nosql-database] differents NoSQL databases we can group them the ways they represent logical data. This characteristic is the answer that arose to specific problems not originally envisioned by the relational counterparts.
 
 ```
-Be mind that the following models can be mixed together (e.g. key-value model built on top of relational DB)
+Note: Be mind that the following models can be mixed together (e.g. key-value model built on top of relational DB)
 ```
 
 **1. Key/Value:**
@@ -40,7 +40,7 @@ Making such a decision has an important tradeoffs and impact how we design the r
 - how do we query complex set of data?
 - how do we replicate data and spread them (do partitioning actually) across the cluster?
 
-Trying to get answers is the real challenge and whole fun is starting exactly here.
+Trying to get answers is the real challenge and whole fun is starting exactly here. 👍
 
 #### When using key/value store make sense
 Databases such as JustinDB almost always performs best when you build your application around basic CRUD application (create, read, update, and delete) on objects.
@@ -51,7 +51,7 @@ JustinDB's key/value architecture enables it to be more performant than relation
 If you application demands a high query load by any means other than key/value lookup e.g. SQL-style `SELECT * FROM table` operations - JustinDB will not be as efficient as other databases. Other thing, so to speak, JustinDB's simple data model means that your data must be denormalized if your system is to be reasonably performant.
 
 ### Summary
-Making decision about chosing key/value logical model was one of the most important part while architecting my own NoSQL database. Since its relatively easy concept to wrap head around it could help me to move faster to other fancy "distributed" stuff.
+Making decision about chosing key/value logical model was one of the most important part while architecting my own NoSQL database. Since its relatively easy concept to wrap head around it could help me to move faster to other fancy "distributed" stuff. 💎
 
 
 [justindb]: https://github.com/speedcom/JustinDB
