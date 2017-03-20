@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Z.sh - move around catalogs in terminal like a PRO"
-date:   2017-03-17 17:09:17 +0100
+date:   2017-03-20 14:15:17 +0100
 categories: [DSP2017, hacks]
 ---
 
