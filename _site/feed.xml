@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-03-24T13:51:29+01:00</updated><id>http://localhost:4000/</id><title type="html">Mateusz Maciaszek</title><subtitle>This blog covers topics about many different computer science fields, mainly distributed and concurrent systems. Some day it will help me to escape from the simulation we live in (not sure how yet).
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-03-24T14:10:19+01:00</updated><id>http://localhost:4000/</id><title type="html">Mateusz Maciaszek</title><subtitle>This blog covers topics about many different computer science fields, mainly distributed and concurrent systems. Some day it will help me to escape from the simulation we live in (not sure how yet).
 </subtitle><entry><title type="html">JustinDB - Pluggable persistent and in-memory storage engines</title><link href="http://localhost:4000/dsp2017/2017/03/22/justindb-support-for-pluggable-persistent-and-in-memory-storage-engines.html" rel="alternate" type="text/html" title="JustinDB - Pluggable persistent and in-memory storage engines" /><published>2017-03-22T14:40:17+01:00</published><updated>2017-03-22T14:40:17+01:00</updated><id>http://localhost:4000/dsp2017/2017/03/22/justindb-support-for-pluggable-persistent-and-in-memory-storage-engines</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/03/22/justindb-support-for-pluggable-persistent-and-in-memory-storage-engines.html">&lt;h3 id=&quot;preface&quot;&gt;Preface&lt;/h3&gt;
 &lt;p&gt;JustinDB was built with a mind of a modular architecture that supports pluggable backends. It simply means that you can still use all its features along with different backends to support a variety of use cases.&lt;/p&gt;
 
@@ -24,7 +24,7 @@
 Alternatively, you can setup another cluster that combines JustinDB with &lt;strong&gt;Persistent module&lt;/strong&gt; as a &lt;strong&gt;big data database&lt;/strong&gt;.
 Last but not least we are even able to define storage module per cluster node so that some of them can act as a cache and others like typical database.&lt;/p&gt;
 
-&lt;p&gt;// IMAGE WITH DATABASE AND CACHE&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../../../../../justin-cache-persistent.png&quot; alt=&quot;&quot; title=&quot;Cluster with different loaded backends&quot; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;how-engine-is-loaded&quot;&gt;How engine is loaded&lt;/h4&gt;
 

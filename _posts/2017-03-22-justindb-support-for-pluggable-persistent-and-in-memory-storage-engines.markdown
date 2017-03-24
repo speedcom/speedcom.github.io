@@ -26,7 +26,7 @@ For example, you can combine JustinDB with **In-Memory module** to use it as a *
 Alternatively, you can setup another cluster that combines JustinDB with **Persistent module** as a **big data database**.
 Last but not least we are even able to define storage module per cluster node so that some of them can act as a cache and others like typical database.
 
-// IMAGE WITH DATABASE AND CACHE
+![][justin-cache-persistent-image]
 
 #### How engine is loaded
 
@@ -51,3 +51,4 @@ It just reads path to implementation of `PluggableStorageProtocol` interface fro
 [in-memory-storage]: https://github.com/justin-db/JustinDB/tree/master/justin-storage-in-mem
 [persistent-storage]: https://github.com/justin-db/JustinDB/tree/master/justin-storage-persistent
 [justindb-driver-usage]: https://github.com/justin-db/JustinDB/blob/master/justin-http-api/src/main/scala/justin/http_api/Main.scala#L35
+[justin-cache-persistent-image]: ../../../../../justin-cache-persistent.png "Cluster with different loaded backends"
