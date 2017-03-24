@@ -15,7 +15,7 @@ There is only on requirement that needs to be considered into account while impl
 
 One for fetching data, another one for putting them into. Since they may cross the boundaries of our system in order make IO operations both adress asynchronicity.
 
-### Benefits
+### Benefits ✴️
 The main reason for designing a pluggable persistence component is to choose the storage engine best suited for an application’s access patterns.
 
 Currently there are two implementations of the interface that JustinDB can work with:
@@ -28,7 +28,7 @@ Last but not least we are even able to define storage module per cluster node so
 
 ![][justin-cache-persistent-image]
 
-#### How engine is loaded
+#### How engine is loaded 🔥
 
 It uses reflection:
 ```
