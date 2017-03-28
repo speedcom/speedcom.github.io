@@ -6,10 +6,12 @@ categories: [DSP2017, hacks]
 ---
 
 ### iTermocil
-Last week I've introduced to your very neat script called [`Z.sh`][z.sh-post]. 💖 I personally consider [`iTermocil`][itermocil] as a next part of your heavily used dev toolbox. 🔧
+Last week I've introduced to your very neat script called [`Z.sh`][z.sh-post]. 💖 Next to it I consider [`iTermocil`][itermocil] as a perfect complement of your heavily used dev toolbox. 🔧
 
 #### What is it?
-As [official documentation][itermocil] stands out it allows us to setup pre-configured layouts of windows and panes in iTerm2, having each open in a specified directory and execute specified commands. Correct.
+As [official documentation][itermocil] stands out it allows us to setup pre-configured layouts of windows and panes in iTerm2, having each open in a specified directory and execute specified commands.
+
+Correct. 👌
 
 As a developer we can relatively often deal with situations in which we open the same set of tools in terminal in order to run specific project we work on actively. Its a good occasion to automate such thing and this is what `iTermocil` is perfect for. 👊
 
@@ -20,9 +22,9 @@ I've preconfigured bunch of different iTermocil's configs. Depends on how big I 
 
 I'm running:
 
-```itermocil justin-cluster-5```
+```itermocil justin-cluster-5``` or ```itermocil jsutin-cluster-3```
 
-Puff, magic happens here 💭. This is what I see after a while - working [`JustinDB`][justindb] cluster I can test against it.
+Puff, magic happens here 💭. This is what I see after a while - working [`JustinDB`][justindb] cluster I can run tests against it.
 
 ![][itermocil-image]
 
