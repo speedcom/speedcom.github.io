@@ -27,8 +27,8 @@ github_username:  speedcom
 google_analytics: UA-96521424-1
 
 # Disque (Comments)
-disqus:
-  shortname: speedcom-github-com
+# disqus:
+#   shortname: speedcom-blog
 
 # Build settings
 markdown: kramdown
