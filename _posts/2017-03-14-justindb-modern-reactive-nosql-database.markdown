@@ -51,7 +51,7 @@ aaand last part...
 What does it mean? Is this sth that other databases don't have? From official site of [manifesto][reactive-manifesto] we can read that characteristic of such systems are: responsivness, resiliency, elasticity, message driven approach. JustinDB has (or try to have) all of it. Its very broad topic we will cover in one of the next post.
 
 ### Summary
-JustinDB is realatively young project which still lack of many welcome features (some of them are in progress, some not even started). Its OOS so its really welcome to have contributors - I think that this topic can be very interesting to many of you.
+JustinDB is relatively young project which still lack of many welcome features (some of them are in progress, some not even started). Its OOS so its really welcome to have contributors - I think that this topic can be very interesting to many of you.
 
 You can find an official JustinDB respository [here][justindb]. 💪
 
