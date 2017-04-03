@@ -42,6 +42,8 @@ If you still hadn't a chance to get familiarize with JustinDB you can read my pr
 
 * dockerizing/service discovery -
 
+### Goals
+
 [justindb]: https://github.com/speedcom/JustinDB
 [justindb-reactive-database]: http://speedcom.github.io/dsp2017/2017/03/14/justindb-modern-reactive-nosql-database.html
 [justindb-pluggable-backends]: http://speedcom.github.io/dsp2017/2017/03/24/justindb-support-for-pluggable-persistent-and-in-memory-storage-engines.html
