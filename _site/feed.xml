@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-04-03T07:04:57+02:00</updated><id>http://localhost:4000/</id><title type="html">Mateusz Maciaszek</title><subtitle>This blog covers topics about many different computer science fields, mainly distributed and concurrent systems. Some day it will help me to escape from the simulation we live in (not sure how yet).
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-04-03T07:14:25+02:00</updated><id>http://localhost:4000/</id><title type="html">Mateusz Maciaszek</title><subtitle>This blog covers topics about many different computer science fields, mainly distributed and concurrent systems. Some day it will help me to escape from the simulation we live in (not sure how yet).
 </subtitle><entry><title type="html">JustinDB - has got more than 700 commits!</title><link href="http://localhost:4000/dsp2017/2017/04/03/justindb-more-than-seven-hundred-commits.html" rel="alternate" type="text/html" title="JustinDB - has got more than 700 commits!" /><published>2017-04-03T05:10:17+02:00</published><updated>2017-04-03T05:10:17+02:00</updated><id>http://localhost:4000/dsp2017/2017/04/03/justindb-more-than-seven-hundred-commits</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/04/03/justindb-more-than-seven-hundred-commits.html">&lt;h3 id=&quot;next-goal-achieved-&quot;&gt;Next goal achieved 🎉&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; is a project of mine which helps me to explore broad world of architectures of a databases system. With day of 23.04.2017 it passed &lt;strong&gt;5 months of continous work&lt;/strong&gt; during which I achieved many set goals. Project has now more than &lt;strong&gt;700 commits&lt;/strong&gt;, &lt;strong&gt;6 watches&lt;/strong&gt;, &lt;strong&gt;18 stars&lt;/strong&gt; and &lt;strong&gt;4 forks&lt;/strong&gt; - these numbers mean very much to me (somebody may think that what I do in my sparse time is interesting).&lt;/p&gt;
 
@@ -16,37 +16,37 @@ If you still hadn’t a chance to get familiarize with JustinDB you can read my 
     &lt;p&gt;clustering - &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; is able to horizontally scale; we can add up and remove nodes from cluster configuration during runtime (depens on the user traffics this allows better utilization of server power consumption)&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;replica records - data is copied to N of nodes in the cluster (in order to achieve high availability); we are able to tune how many of replicas we want to read/write before we return result to client (N/R/W terminology).&lt;/p&gt;
+    &lt;p&gt;replica records - data is copied to N of nodes in the cluster (in order to achieve high availability); we are able to tune how many of replicas we want to read/write (R/W) before we return result to client (N/R/W terminology).&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;records versioning - &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; uses concept of Vector Clocks here&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;entropy replica solving&lt;/p&gt;
+    &lt;p&gt;entropy replica solving - existing of copies of same data and highly distributed systems brings the possibility of having not coverged replicas; this part is not finished fully yet though (Read-Repair and Active-Anti-Entropy are concepts I decided to use to figh against entropy)&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;protocol&lt;/p&gt;
+    &lt;p&gt;protocol - currently we can talk with &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; via http protocol&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;pluggable backends&lt;/p&gt;
+    &lt;p&gt;pluggable backends - this is what I’ve described &lt;a href=&quot;http://speedcom.github.io/dsp2017/2017/03/24/justindb-support-for-pluggable-persistent-and-in-memory-storage-engines.html&quot;&gt;here&lt;/a&gt; recently&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;serialization&lt;/p&gt;
+    &lt;p&gt;serialization - during last week I was working on integration with &lt;a href=&quot;https://github.com/romix/akka-kryo-serialization&quot;&gt;Akka-Kryo&lt;/a&gt; serialization plugin; I will describe this part more intensively in one of the next posts&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;performance tests&lt;/p&gt;
+    &lt;p&gt;performance tests - &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; can be tested againts performance tests (not many of them though, heh) using this &lt;a href=&quot;https://github.com/justin-db/JustinDB-load-testing&quot;&gt;repository&lt;/a&gt;; tests are written with usage of &lt;a href=&quot;http://gatling.io/&quot;&gt;Gatling&lt;/a&gt; toolkit&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;CI/code coverage&lt;/p&gt;
+    &lt;p&gt;CI/code coverage -&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;modularized project&lt;/p&gt;
+    &lt;p&gt;modularized project -&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;logo&lt;/p&gt;
+    &lt;p&gt;logo - yup, it has! 💖&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;dockerizing/service discovery&lt;/p&gt;
+    &lt;p&gt;dockerizing/service discovery -&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;</content><author><name></name></author><summary type="html">Next goal achieved 🎉 JustinDB is a project of mine which helps me to explore broad world of architectures of a databases system. With day of 23.04.2017 it passed 5 months of continous work during which I achieved many set goals. Project has now more than 700 commits, 6 watches, 18 stars and 4 forks - these numbers mean very much to me (somebody may think that what I do in my sparse time is interesting).</summary></entry><entry><title type="html">iTermocil - divide and conquer your terminal like a PRO</title><link href="http://localhost:4000/dsp2017/hacks/2017/03/28/iTermocil-divide-and-conquer-your-terminal.html" rel="alternate" type="text/html" title="iTermocil - divide and conquer your terminal like a PRO" /><published>2017-03-28T16:20:17+02:00</published><updated>2017-03-28T16:20:17+02:00</updated><id>http://localhost:4000/dsp2017/hacks/2017/03/28/iTermocil%20-%20divide%20and%20conquer%20your%20terminal</id><content type="html" xml:base="http://localhost:4000/dsp2017/hacks/2017/03/28/iTermocil-divide-and-conquer-your-terminal.html">&lt;h3 id=&quot;itermocil&quot;&gt;iTermocil&lt;/h3&gt;
 &lt;p&gt;Last week I’ve introduced to your very neat script called &lt;a href=&quot;http://speedcom.github.io/dsp2017/hacks/2017/03/20/z-move-around-catalogs-in-terminal-like-a-pro.html&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Z.sh&lt;/code&gt;&lt;/a&gt;. 💖 Next to it I consider &lt;a href=&quot;https://github.com/TomAnthony/itermocil&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;iTermocil&lt;/code&gt;&lt;/a&gt; as a perfect complement of your heavily used dev toolbox. 🔧&lt;/p&gt;

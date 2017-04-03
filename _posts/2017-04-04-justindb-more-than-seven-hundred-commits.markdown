@@ -20,27 +20,31 @@ If you still hadn't a chance to get familiarize with JustinDB you can read my pr
 
 * clustering - [JustinDB][justindb] is able to horizontally scale; we can add up and remove nodes from cluster configuration during runtime (depens on the user traffics this allows better utilization of server power consumption)
 
-* replica records - data is copied to N of nodes in the cluster (in order to achieve high availability); we are able to tune how many of replicas we want to read/write before we return result to client (N/R/W terminology).
+* replica records - data is copied to N of nodes in the cluster (in order to achieve high availability); we are able to tune how many of replicas we want to read/write (R/W) before we return result to client (N/R/W terminology).
 
 * records versioning - [JustinDB][justindb] uses concept of Vector Clocks here
 
-* entropy replica solving
+* entropy replica solving - existing of copies of same data and highly distributed systems brings the possibility of having not coverged replicas; this part is not finished fully yet though (Read-Repair and Active-Anti-Entropy are concepts I decided to use to figh against entropy)
 
-* protocol
+* protocol - currently we can talk with [JustinDB][justindb] via http protocol
 
-* pluggable backends
+* pluggable backends - this is what I've described [here][justindb-pluggable-backends] recently
 
-* serialization
+* serialization - during last week I was working on integration with [Akka-Kryo][akka-kryo] serialization plugin; I will describe this part more intensively in one of the next posts
 
-* performance tests
+* performance tests - [JustinDB][justindb] can be tested againts performance tests (not many of them though, heh) using this [repository][justindb-performance-tests]; tests are written with usage of [Gatling][gatling] toolkit
 
-* CI/code coverage
+* CI/code coverage -
 
-* modularized project
+* modularized project -
 
-* logo
+* logo - yup, it has! 💖
 
-* dockerizing/service discovery
+* dockerizing/service discovery -
 
 [justindb]: https://github.com/speedcom/JustinDB
 [justindb-reactive-database]: http://speedcom.github.io/dsp2017/2017/03/14/justindb-modern-reactive-nosql-database.html
+[justindb-pluggable-backends]: http://speedcom.github.io/dsp2017/2017/03/24/justindb-support-for-pluggable-persistent-and-in-memory-storage-engines.html
+[akka-kryo]: https://github.com/romix/akka-kryo-serialization
+[gatling]: http://gatling.io/
+[justindb-performance-tests]: https://github.com/justin-db/JustinDB-load-testing
