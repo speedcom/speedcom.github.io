@@ -113,4 +113,3 @@ Currently I'm doing some heavy test loading against cluster of [JustinDB][justin
 [justindb-payload-serializers]: https://github.com/justin-db/JustinDB/tree/master/justin-core/src/main/scala/justin/db/kryo
 [justindb-application-conf]: https://github.com/justin-db/JustinDB/blob/master/src/main/resources/application.conf
 [justindb-load-tests]: https://github.com/justin-db/JustinDB-load-testing
-[gatling]: http://gatling.io
