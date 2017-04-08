@@ -1,5 +1,70 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-04-03T19:58:15+02:00</updated><id>http://localhost:4000/</id><title type="html">Mateusz Maciaszek</title><subtitle>This blog covers topics about many different computer science fields, mainly distributed and concurrent systems. Some day it will help me to escape from the simulation we live in (not sure how yet).
-</subtitle><entry><title type="html">iTermocil - divide and conquer your terminal like a PRO</title><link href="http://localhost:4000/dsp2017/hacks/2017/03/28/iTermocil-divide-and-conquer-your-terminal.html" rel="alternate" type="text/html" title="iTermocil - divide and conquer your terminal like a PRO" /><published>2017-03-28T16:20:17+02:00</published><updated>2017-03-28T16:20:17+02:00</updated><id>http://localhost:4000/dsp2017/hacks/2017/03/28/iTermocil%20-%20divide%20and%20conquer%20your%20terminal</id><content type="html" xml:base="http://localhost:4000/dsp2017/hacks/2017/03/28/iTermocil-divide-and-conquer-your-terminal.html">&lt;h3 id=&quot;itermocil&quot;&gt;iTermocil&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-04-08T20:57:21+02:00</updated><id>http://localhost:4000/</id><title type="html">Mateusz Maciaszek</title><subtitle>This blog covers topics about many different computer science fields, mainly distributed and concurrent systems. Some day it will help me to escape from the simulation we live in (not sure how yet).
+</subtitle><entry><title type="html">JustinDB - has got more than 700 commits!</title><link href="http://localhost:4000/dsp2017/2017/04/03/justindb-more-than-seven-hundred-commits.html" rel="alternate" type="text/html" title="JustinDB - has got more than 700 commits!" /><published>2017-04-03T19:59:00+02:00</published><updated>2017-04-03T19:59:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/04/03/justindb-more-than-seven-hundred-commits</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/04/03/justindb-more-than-seven-hundred-commits.html">&lt;h3 id=&quot;next-goal-achieved-&quot;&gt;Next goal achieved 🎉&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; is a project of mine which helps me to explore broad world of architecture of a database systems. With day of 23.04.2017 it passed &lt;strong&gt;5 months of continous work&lt;/strong&gt; during which I achieved many set goals. Project has now more than &lt;strong&gt;700 commits&lt;/strong&gt;, &lt;strong&gt;6 watches&lt;/strong&gt;, &lt;strong&gt;18 stars&lt;/strong&gt; and &lt;strong&gt;4 forks&lt;/strong&gt; - these numbers mean very much to me (makes me very motivated to continue working on it).&lt;/p&gt;
+
+&lt;p&gt;The more I work on this project the more I realize how broad this topic actually is. DBMSs (Database Management Systems) are a critical components of modern computing and the result of decades of research in both industry and academia. Since they were among the earliest multi-user server systems to be developed thus pioneered many systems design techniques for scalability and relability (these days are concerns in many other contexts).&lt;/p&gt;
+
+&lt;p&gt;Builiding by own such advanced conceptually product is very demanding. There has been relatively sparse coverage in the literature of the systems design issues that make a DBMS work. Sometimes official docs of arleady created databases are a source of thruth and used as points of reference, particulary when multiple alternative designs have been adopted by different groups. Just think about all the concepts: process models, storage system design, parallel architecture, transaction system, querry processor and optimizer (plus some utilities and typical shared components). Very, very deep subject.&lt;/p&gt;
+
+&lt;h3 id=&quot;summary-of-current-implementation-&quot;&gt;Summary of current implementation 👷&lt;/h3&gt;
+
+&lt;p&gt;I will let myself to point out what I’ve achieved/what topics were touched during mentioned 5 months of active development.
+If you still hadn’t a chance to get familiarize with JustinDB you can read my previous &lt;a href=&quot;http://speedcom.github.io/dsp2017/2017/03/14/justindb-modern-reactive-nosql-database.html&quot;&gt;post&lt;/a&gt; (it covers many concepts).&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;clustering - &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; is able to horizontally scale; we can add up and remove nodes from cluster configuration during runtime (depens on the user traffics this allows better utilization of server power consumption)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;replication - data is copied to N of nodes in the cluster (in order to achieve high availability); we are able to tune how many of replicas we want to read/write (R/W) before we return result to client (the main advantage of &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; is that its client applications can tune the values of N, R and W to achieve their desired levels of performance, availability and durability).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;records versioning - &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; uses concept of Vector Clocks here&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;entropy replica solving - existing of copies of same data and highly distributed systems brings  high possibility of having not coverged replicas; this part is not finished fully yet though (Read-Repair and Active-Anti entropy algorithms)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;communication protocol - currently we can talk with &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; via http protocol&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;pluggable backends - this is what I’ve described &lt;a href=&quot;http://speedcom.github.io/dsp2017/2017/03/24/justindb-support-for-pluggable-persistent-and-in-memory-storage-engines.html&quot;&gt;here&lt;/a&gt; recently&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;serialization - during last week I was working on integration with &lt;a href=&quot;https://github.com/romix/akka-kryo-serialization&quot;&gt;Akka-Kryo&lt;/a&gt; serialization plugin; I will describe this part more intensively in one of the next posts&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;performance tests - &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; can be tested againts performance tests (not many of them though, heh) using this &lt;a href=&quot;https://github.com/justin-db/JustinDB-load-testing&quot;&gt;repository&lt;/a&gt;; tests are written with usage of &lt;a href=&quot;http://gatling.io/&quot;&gt;Gatling&lt;/a&gt; toolkit&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;CI/code coverage - every single time new commit is pushed to master branch Travis fires off new task running tests and countng code coverage; we can see relevant badges in README file&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;modularized project - I’ve done many small/bigger refactoring into this; project is splitted into many sub-projects (its still monorepo though) which allows for better separation of concerns&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;logo - yup, it has! 💖&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;dockerizing/service discovery - I would like to start full &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; cluster under container with single command; I’ve dont first attemp in integration with &lt;a href=&quot;https://www.consul.io/&quot;&gt;Consul&lt;/a&gt; and &lt;a href=&quot;https://docker.com/&quot;&gt;Docker&lt;/a&gt; but its still big WIP&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;set-goals-&quot;&gt;Set goals 🏆&lt;/h3&gt;
+&lt;p&gt;I am pretty happy with what I’ve actually achieved during this time. 💯 I’m aware of that I’m nowhere close to current existing solutions but it doesn’t matter - the most important part for me is constant learning, having fun and getting familiarize with really great topic (who knows what this project can bring to me in the future).&lt;/p&gt;
+
+&lt;p&gt;Nevertheless, its not the end. Its beggining.&lt;/p&gt;
+
+&lt;p&gt;The most intriguing part to me about database now is cooperation of engine with storage - how to store and get effectively data to/from it. I know that this going to be really challenging (simply can’t wait to implement own B+ tree data structure or sth similiar which will be a basic building block).&lt;/p&gt;
+
+&lt;p&gt;When not talking about technical specification I wish some day &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;will have &lt;strong&gt;100 stars&lt;/strong&gt; on GitHub&lt;/li&gt;
+  &lt;li&gt;will have more than &lt;strong&gt;1000 commits&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;will be a point reference for people who would like to get familiarize with concepts that stand behind databases&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Wish me luck! 🤞&lt;/p&gt;</content><author><name></name></author><summary type="html">Next goal achieved 🎉 JustinDB is a project of mine which helps me to explore broad world of architecture of a database systems. With day of 23.04.2017 it passed 5 months of continous work during which I achieved many set goals. Project has now more than 700 commits, 6 watches, 18 stars and 4 forks - these numbers mean very much to me (makes me very motivated to continue working on it).</summary></entry><entry><title type="html">iTermocil - divide and conquer your terminal like a PRO</title><link href="http://localhost:4000/dsp2017/hacks/2017/03/28/iTermocil-divide-and-conquer-your-terminal.html" rel="alternate" type="text/html" title="iTermocil - divide and conquer your terminal like a PRO" /><published>2017-03-28T16:20:17+02:00</published><updated>2017-03-28T16:20:17+02:00</updated><id>http://localhost:4000/dsp2017/hacks/2017/03/28/iTermocil%20-%20divide%20and%20conquer%20your%20terminal</id><content type="html" xml:base="http://localhost:4000/dsp2017/hacks/2017/03/28/iTermocil-divide-and-conquer-your-terminal.html">&lt;h3 id=&quot;itermocil&quot;&gt;iTermocil&lt;/h3&gt;
 &lt;p&gt;Last week I’ve introduced to your very neat script called &lt;a href=&quot;http://speedcom.github.io/dsp2017/hacks/2017/03/20/z-move-around-catalogs-in-terminal-like-a-pro.html&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Z.sh&lt;/code&gt;&lt;/a&gt;. 💖 Next to it I consider &lt;a href=&quot;https://github.com/TomAnthony/itermocil&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;iTermocil&lt;/code&gt;&lt;/a&gt; as a perfect complement of your heavily used dev toolbox. 🔧&lt;/p&gt;
 
 &lt;h4 id=&quot;what-is-it&quot;&gt;What is it?&lt;/h4&gt;
