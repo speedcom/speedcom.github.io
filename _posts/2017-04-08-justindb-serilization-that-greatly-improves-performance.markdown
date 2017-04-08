@@ -23,9 +23,9 @@ Unfortunately Java Serializer is one of the exemplary mechanism known to be slow
 When talking about serialization mechanism in terms of [JustinDB][justindb] I've recently decided to move on and switch to using **Akka-Kryo** extension which provides custom Kryo-based serializers for Scala and Akka.
 
 ### JustinDB and Kryo got married 👰
-[Kryo][kryo] is known to be a very fast and efficient serialization. I've decided to use [Romix’s kryo-based serialization library] which is a well maintained project (its implementation of Akka Extension).
+[Kryo][kryo] is known to be a very fast and efficient serialization. I've decided to use [Romix’s kryo-based serialization library][akka-kryo] which is a well maintained project (exemplary implementation of own Akka Serializer).
 
-You can find all defined payload serializers [here][justindb-payload-serializers].
+You can find all defined [JustinDB][justindb] payload serializers [here][justindb-payload-serializers].
 
 **SerializerInit** is an entrypoint for Akka-Kryo extension to know what payload/classes/messages we want to register into it. As you can see every registration line consists of msg class definition, its dedicated serializer function and ID.
 This class is instantiated right after new process of [JustinDB][justindb] is rolling out.
@@ -59,8 +59,9 @@ class SerializerInit extends StrictLogging {
 }
 ```
 
-Its worth to take a look at into how did I manage to serialize ADT (Abstract data type) which extends common interface (e.g. StorageNodeFailedWrite, StorageNodeSuccessfulWrite, StorageNodeConflictedWrite - they share the same serializer).
+Its worth to take a look at into how did I manage to serialize ADT (Abstract Data Type) which extends common interface (e.g. `StorageNodeFailedWrite`, `StorageNodeSuccessfulWrite`, `StorageNodeConflictedWrite` - they share the same serializer).
 
+I've also declared in the Akka `serialization-bindings` section which classes should use kryo serialization. You can find it under [`application.conf`][justindb-application-conf] file.
 ```
 
 object StorageNodeWriteResponseSerializer extends Serializer[StorageNodeWriteResponse] {
@@ -74,10 +75,10 @@ object StorageNodeWriteResponseSerializer extends Serializer[StorageNodeWriteRes
   override def write(kryo: Kryo, output: Output, response: StorageNodeWriteResponse): Unit = response match {
     case StorageNodeSuccessfulWrite(id)               =>
       output.writeInt(Discriminator.SuccessfulWrite)
-      output.writeString(id.toString) // UUID
+      output.writeString(id.toString)
     case StorageNodeFailedWrite(id)                   =>
       output.writeInt(Discriminator.FailedWrite)
-      output.writeString(id.toString) // UUID
+      output.writeString(id.toString)
     case StorageNodeConflictedWrite(oldData, newData) =>
       output.writeInt(Discriminator.ConflictedWrite)
       DataSerializer.write(kryo, output, oldData)
@@ -99,7 +100,9 @@ object StorageNodeWriteResponseSerializer extends Serializer[StorageNodeWriteRes
 ```
 Solution is simply - I use specific discriminator numbers that are saved next to specific serialized payload (e.g. `1` for `StorageNodeSuccessfulWrite` payload). Pattern matching for the win! 👊
 
-We also declare in the Akka `serialization-bindings` section which classes should use kryo serialization. You can find it under [`application.conf`][justindb-application-conf] file.
+You can find more details about Akka-Kryo in its official [documentation][akka-kryo].
+
+### Performance
 
 [justindb]: https://github.com/speedcom/JustinDB
 [akka-cluster]: http://doc.akka.io/docs/akka/current/java/cluster-usage.html
