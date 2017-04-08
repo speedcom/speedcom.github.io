@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "JustinDB - serialization that greatly improves performance"
-date:   2017-04-07 08:00:00 +0100
+date:   2017-04-08 20:00:00 +0100
 categories: [DSP2017]
 ---
 
@@ -102,7 +102,8 @@ Solution is simply - I use specific discriminator numbers that are saved next to
 
 You can find more details about Akka-Kryo in its official [documentation][akka-kryo].
 
-### Performance
+# Performance
+Currently I'm doing some heavy test loading against cluster of [JustinDB][justindb] that runs on 5 JVMs (5 node cluster) with enabled replication factor set to 3. All tests speak to databse via http protocol. You can find them [here][justindb-load-tests]. Repository is almost empty but I've finally got a time to do some database stabilization and benchmarking around. As soon as I will get any meaningful result I will update this post (or write dedicated one).
 
 [justindb]: https://github.com/speedcom/JustinDB
 [akka-cluster]: http://doc.akka.io/docs/akka/current/java/cluster-usage.html
@@ -111,3 +112,5 @@ You can find more details about Akka-Kryo in its official [documentation][akka-k
 [kryo]: https://github.com/EsotericSoftware/kryo
 [justindb-payload-serializers]: https://github.com/justin-db/JustinDB/tree/master/justin-core/src/main/scala/justin/db/kryo
 [justindb-application-conf]: https://github.com/justin-db/JustinDB/blob/master/src/main/resources/application.conf
+[justindb-load-tests]: https://github.com/justin-db/JustinDB-load-testing
+[gatling]: http://gatling.io
