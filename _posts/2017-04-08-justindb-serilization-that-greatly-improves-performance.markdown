@@ -28,6 +28,7 @@ When talking about serialization mechanism in terms of [JustinDB][justindb] I've
 You can find all defined payload serializers [here][justindb-payload-serializers].
 
 **SerializerInit** is an entrypoint for Akka-Kryo extension to know what payload/classes/messages we want to register into it. As you can see every registration line consists of msg class definition, its dedicated serializer function and ID.
+This class is instantiated right after new process of [JustinDB][justindb] is rolling out.
 
 ```
 class SerializerInit extends StrictLogging {
@@ -98,6 +99,7 @@ object StorageNodeWriteResponseSerializer extends Serializer[StorageNodeWriteRes
 ```
 Solution is simply - I use specific discriminator numbers that are saved next to specific serialized payload (e.g. `1` for `StorageNodeSuccessfulWrite` payload). Pattern matching for the win! 👊
 
+We also declare in the Akka `serialization-bindings` section which classes should use kryo serialization. You can find it under [`application.conf`][justindb-application-conf] file.
 
 [justindb]: https://github.com/speedcom/JustinDB
 [akka-cluster]: http://doc.akka.io/docs/akka/current/java/cluster-usage.html
@@ -105,3 +107,4 @@ Solution is simply - I use specific discriminator numbers that are saved next to
 [akka-kryo]: https://github.com/romix/akka-kryo-serialization
 [kryo]: https://github.com/EsotericSoftware/kryo
 [justindb-payload-serializers]: https://github.com/justin-db/JustinDB/tree/master/justin-core/src/main/scala/justin/db/kryo
+[justindb-application-conf]: https://github.com/justin-db/JustinDB/blob/master/src/main/resources/application.conf
