@@ -6,9 +6,9 @@ categories: [DSP2017]
 ---
 
 ### Preface
-[JustinDB][justindb] is a highly distributed system which forms cluster of nodes that communicate each other via message passing. All of these messages (think about internal communication of nodes or typical data replication) are send over wire (network). In order to being able do that we have to serialize and deserialize passing state to single bytes back and forth. That can costs. Sometimes a lot. We tend to think that network is always the slowest part of distributed systems communication. Numerous tests however show that using not an efficient serializer can lead to getting times that are on par with a network hop. Thats crazy!
+[JustinDB][justindb] is a highly distributed system which forms cluster of nodes that communicate each other via message passing. All of these messages (think about internal communication of nodes or typical data replication) are send over wire (network). In order to being able do that we have to serialize and deserialize passing state to single bytes back and forth. That can cost. Sometimes a lot. We tend to think that network is always the slowest part of distributed systems communication. Numerous tests however show that using not an efficient serializer can lead to getting times that are on par with a network hop. Thats crazy!
 
-[JustinDB][justindb] is build on top of [Akka Cluster][akka-cluster] toolkit.
+[JustinDB][justindb] is built on top of [Akka Cluster][akka-cluster] toolkit.
 Akka has a built-in Extension for serialization which allows us to use the built-in serializers or even write our own.
 The mechanism is both used by Akka internally to serialize messages and ad-hoc serialization of whatever message you might need it for.
 
@@ -16,7 +16,7 @@ Quick notes to follow:
 1. Current remoting module of Akka uses standard Java Serializer mechanism.
 2. Since the 2.4.11 release of Akka it is possible to entirely disable the default Java Serialization mechanism.
 3. New remoting implementation (codename [Artery][akka-artery], still experimental though) does not use Java serialization for internal messages by default.
-4. All messages that are send in the same local Actor System don't need to be serialized as in-memory message passing is done via references.
+4. All messages that are sent in the same local Actor System don't need to be serialized as in-memory message passing is done via references.
 
 Unfortunately Java Serializer is one of the exemplary mechanism known to be slow - it never was designed for high throughput messaging though. At the same time it's very convenient to use - when prototyping your project you can focus on logic implementation and leave this part for later time.
 
@@ -34,7 +34,7 @@ This class is instantiated right after new process of [JustinDB][justindb] is ro
 class SerializerInit extends StrictLogging {
 
   def customize(kryo: Kryo): Unit = {
-    logger.info("Initialized Kryo")
+    logger.info("Initializing Kryo")
 
     // cluster
     kryo.register(classOf[justin.db.actors.protocol.RegisterNode], RegisterNodeSerializer, 50)
@@ -59,7 +59,7 @@ class SerializerInit extends StrictLogging {
 }
 ```
 
-Its worth to take a look at into how did I manage to serialize ADT (Abstract Data Type) which extends common interface (e.g. `StorageNodeFailedWrite`, `StorageNodeSuccessfulWrite`, `StorageNodeConflictedWrite` - they share the same serializer).
+Its worth to take a look at into how I managed to serialize ADT (Abstract Data Type) which extends common interface (e.g. `StorageNodeFailedWrite`, `StorageNodeSuccessfulWrite`, `StorageNodeConflictedWrite` - they share the same serializer).
 
 I've also declared in the Akka `serialization-bindings` section which classes should use kryo serialization. You can find it under [`application.conf`][justindb-application-conf] file.
 ```
