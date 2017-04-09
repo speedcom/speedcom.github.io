@@ -1,5 +1,105 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-04-08T20:57:21+02:00</updated><id>http://localhost:4000/</id><title type="html">Mateusz Maciaszek</title><subtitle>This blog covers topics about many different computer science fields, mainly distributed and concurrent systems. Some day it will help me to escape from the simulation we live in (not sure how yet).
-</subtitle><entry><title type="html">JustinDB - has got more than 700 commits!</title><link href="http://localhost:4000/dsp2017/2017/04/03/justindb-more-than-seven-hundred-commits.html" rel="alternate" type="text/html" title="JustinDB - has got more than 700 commits!" /><published>2017-04-03T19:59:00+02:00</published><updated>2017-04-03T19:59:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/04/03/justindb-more-than-seven-hundred-commits</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/04/03/justindb-more-than-seven-hundred-commits.html">&lt;h3 id=&quot;next-goal-achieved-&quot;&gt;Next goal achieved 🎉&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-04-09T11:42:24+02:00</updated><id>http://localhost:4000/</id><title type="html">Mateusz Maciaszek</title><subtitle>This blog covers topics about many different computer science fields, mainly distributed and concurrent systems. Some day it will help me to escape from the simulation we live in (not sure how yet).
+</subtitle><entry><title type="html">JustinDB - serialization that greatly improves performance</title><link href="http://localhost:4000/dsp2017/2017/04/08/justindb-serilization-that-greatly-improves-performance.html" rel="alternate" type="text/html" title="JustinDB - serialization that greatly improves performance" /><published>2017-04-08T21:00:00+02:00</published><updated>2017-04-08T21:00:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/04/08/justindb-serilization-that-greatly-improves-performance</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/04/08/justindb-serilization-that-greatly-improves-performance.html">&lt;h3 id=&quot;preface&quot;&gt;Preface&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; is a highly distributed system which forms cluster of nodes that communicate each other via message passing. All of these messages (think about internal communication of nodes or typical data replication) are send over wire (network). In order to being able do that we have to serialize and deserialize passing state to single bytes back and forth. That can costs. Sometimes a lot. We tend to think that network is always the slowest part of distributed systems communication. Numerous tests however show that using not an efficient serializer can lead to getting times that are on par with a network hop. Thats crazy!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; is build on top of &lt;a href=&quot;http://doc.akka.io/docs/akka/current/java/cluster-usage.html&quot;&gt;Akka Cluster&lt;/a&gt; toolkit.
+Akka has a built-in Extension for serialization which allows us to use the built-in serializers or even write our own.
+The mechanism is both used by Akka internally to serialize messages and ad-hoc serialization of whatever message you might need it for.&lt;/p&gt;
+
+&lt;p&gt;Quick notes to follow:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Current remoting module of Akka uses standard Java Serializer mechanism.&lt;/li&gt;
+  &lt;li&gt;Since the 2.4.11 release of Akka it is possible to entirely disable the default Java Serialization mechanism.&lt;/li&gt;
+  &lt;li&gt;New remoting implementation (codename &lt;a href=&quot;http://doc.akka.io/docs/akka/current/scala/remoting-artery.html&quot;&gt;Artery&lt;/a&gt;, still experimental though) does not use Java serialization for internal messages by default.&lt;/li&gt;
+  &lt;li&gt;All messages that are send in the same local Actor System don’t need to be serialized as in-memory message passing is done via references.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Unfortunately Java Serializer is one of the exemplary mechanism known to be slow - it never was designed for high throughput messaging though. At the same time it’s very convenient to use - when prototyping your project you can focus on logic implementation and leave this part for later time.&lt;/p&gt;
+
+&lt;p&gt;When talking about serialization mechanism in terms of &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; I’ve recently decided to move on and switch to using &lt;strong&gt;Akka-Kryo&lt;/strong&gt; extension which provides custom Kryo-based serializers for Scala and Akka.&lt;/p&gt;
+
+&lt;h3 id=&quot;justindb-and-kryo-got-married-&quot;&gt;JustinDB and Kryo got married 👰&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/EsotericSoftware/kryo&quot;&gt;Kryo&lt;/a&gt; is known to be a very fast and efficient serialization. I’ve decided to use &lt;a href=&quot;https://github.com/romix/akka-kryo-serialization&quot;&gt;Romix’s kryo-based serialization library&lt;/a&gt; which is a well maintained project (exemplary implementation of own Akka Serializer).&lt;/p&gt;
+
+&lt;p&gt;You can find all defined &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; payload serializers &lt;a href=&quot;https://github.com/justin-db/JustinDB/tree/master/justin-core/src/main/scala/justin/db/kryo&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;SerializerInit&lt;/strong&gt; is an entrypoint for Akka-Kryo extension to know what payload/classes/messages we want to register into it. As you can see every registration line consists of msg class definition, its dedicated serializer function and ID.
+This class is instantiated right after new process of &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; is rolling out.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class SerializerInit extends StrictLogging {
+
+  def customize(kryo: Kryo): Unit = {
+    logger.info(&quot;Initializing Kryo&quot;)
+
+    // cluster
+    kryo.register(classOf[justin.db.actors.protocol.RegisterNode], RegisterNodeSerializer, 50)
+
+    // write -- request
+    kryo.register(classOf[justin.db.actors.protocol.StorageNodeWriteDataLocal], StorageNodeWriteDataLocalSerializer, 60)
+
+    // write -- responses
+    kryo.register(classOf[justin.db.actors.protocol.StorageNodeFailedWrite],     StorageNodeWriteResponseSerializer, 70)
+    kryo.register(classOf[justin.db.actors.protocol.StorageNodeSuccessfulWrite], StorageNodeWriteResponseSerializer, 71)
+    kryo.register(classOf[justin.db.actors.protocol.StorageNodeConflictedWrite], StorageNodeWriteResponseSerializer, 72)
+
+    // read - request
+    kryo.register(classOf[justin.db.actors.protocol.StorageNodeLocalRead], StorageNodeLocalReadSerializer, 80)
+
+    // read - responses
+    kryo.register(classOf[justin.db.actors.protocol.StorageNodeFoundRead],      StorageNodeReadResponseSerializer, 90)
+    kryo.register(classOf[justin.db.actors.protocol.StorageNodeConflictedRead], StorageNodeReadResponseSerializer, 91)
+    kryo.register(classOf[justin.db.actors.protocol.StorageNodeNotFoundRead],   StorageNodeReadResponseSerializer, 92)
+    kryo.register(classOf[justin.db.actors.protocol.StorageNodeFailedRead],     StorageNodeReadResponseSerializer, 93)
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Its worth to take a look at into how did I manage to serialize ADT (Abstract Data Type) which extends common interface (e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;StorageNodeFailedWrite&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;StorageNodeSuccessfulWrite&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;StorageNodeConflictedWrite&lt;/code&gt; - they share the same serializer).&lt;/p&gt;
+
+&lt;p&gt;I’ve also declared in the Akka &lt;code class=&quot;highlighter-rouge&quot;&gt;serialization-bindings&lt;/code&gt; section which classes should use kryo serialization. You can find it under &lt;a href=&quot;https://github.com/justin-db/JustinDB/blob/master/src/main/resources/application.conf&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;application.conf&lt;/code&gt;&lt;/a&gt; file.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+object StorageNodeWriteResponseSerializer extends Serializer[StorageNodeWriteResponse] {
+
+  private object Discriminator {
+    val SuccessfulWrite = 1
+    val FailedWrite     = 2
+    val ConflictedWrite = 3
+  }
+
+  override def write(kryo: Kryo, output: Output, response: StorageNodeWriteResponse): Unit = response match {
+    case StorageNodeSuccessfulWrite(id)               =&amp;gt;
+      output.writeInt(Discriminator.SuccessfulWrite)
+      output.writeString(id.toString)
+    case StorageNodeFailedWrite(id)                   =&amp;gt;
+      output.writeInt(Discriminator.FailedWrite)
+      output.writeString(id.toString)
+    case StorageNodeConflictedWrite(oldData, newData) =&amp;gt;
+      output.writeInt(Discriminator.ConflictedWrite)
+      DataSerializer.write(kryo, output, oldData)
+      DataSerializer.write(kryo, output, newData)
+  }
+
+  override def read(kryo: Kryo, input: Input, `type`: Class[StorageNodeWriteResponse]): StorageNodeWriteResponse = input.readInt() match {
+    case Discriminator.SuccessfulWrite =&amp;gt;
+      StorageNodeSuccessfulWrite(UUID.fromString(input.readString()))
+    case Discriminator.FailedWrite     =&amp;gt;
+      StorageNodeFailedWrite(UUID.fromString(input.readString()))
+    case Discriminator.ConflictedWrite =&amp;gt;
+      StorageNodeConflictedWrite(
+        oldData = DataSerializer.read(kryo, input, classOf[Data]),
+        newData = DataSerializer.read(kryo, input, classOf[Data])
+      )
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Solution is simply - I use specific discriminator numbers that are saved next to specific serialized payload (e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;1&lt;/code&gt; for &lt;code class=&quot;highlighter-rouge&quot;&gt;StorageNodeSuccessfulWrite&lt;/code&gt; payload). Pattern matching for the win! 👊&lt;/p&gt;
+
+&lt;p&gt;You can find more details about Akka-Kryo in its official &lt;a href=&quot;https://github.com/romix/akka-kryo-serialization&quot;&gt;documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;performance&quot;&gt;Performance&lt;/h1&gt;
+&lt;p&gt;Currently I’m doing some heavy test loading against cluster of &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; that runs on 5 JVMs (5 node cluster) with enabled replication factor set to 3. All tests speak to databse via http protocol. You can find them &lt;a href=&quot;https://github.com/justin-db/JustinDB-load-testing&quot;&gt;here&lt;/a&gt;. Repository is almost empty but I’ve finally got a time to do some database stabilization and benchmarking around. As soon as I will get any meaningful result I will update this post (or write dedicated one).&lt;/p&gt;</content><author><name></name></author><summary type="html">Preface JustinDB is a highly distributed system which forms cluster of nodes that communicate each other via message passing. All of these messages (think about internal communication of nodes or typical data replication) are send over wire (network). In order to being able do that we have to serialize and deserialize passing state to single bytes back and forth. That can costs. Sometimes a lot. We tend to think that network is always the slowest part of distributed systems communication. Numerous tests however show that using not an efficient serializer can lead to getting times that are on par with a network hop. Thats crazy!</summary></entry><entry><title type="html">JustinDB - has got more than 700 commits!</title><link href="http://localhost:4000/dsp2017/2017/04/03/justindb-more-than-seven-hundred-commits.html" rel="alternate" type="text/html" title="JustinDB - has got more than 700 commits!" /><published>2017-04-03T19:59:00+02:00</published><updated>2017-04-03T19:59:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/04/03/justindb-more-than-seven-hundred-commits</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/04/03/justindb-more-than-seven-hundred-commits.html">&lt;h3 id=&quot;next-goal-achieved-&quot;&gt;Next goal achieved 🎉&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; is a project of mine which helps me to explore broad world of architecture of a database systems. With day of 23.04.2017 it passed &lt;strong&gt;5 months of continous work&lt;/strong&gt; during which I achieved many set goals. Project has now more than &lt;strong&gt;700 commits&lt;/strong&gt;, &lt;strong&gt;6 watches&lt;/strong&gt;, &lt;strong&gt;18 stars&lt;/strong&gt; and &lt;strong&gt;4 forks&lt;/strong&gt; - these numbers mean very much to me (makes me very motivated to continue working on it).&lt;/p&gt;
 
 &lt;p&gt;The more I work on this project the more I realize how broad this topic actually is. DBMSs (Database Management Systems) are a critical components of modern computing and the result of decades of research in both industry and academia. Since they were among the earliest multi-user server systems to be developed thus pioneered many systems design techniques for scalability and relability (these days are concerns in many other contexts).&lt;/p&gt;

@@ -34,7 +34,7 @@ This class is instantiated right after new process of [JustinDB][justindb] is ro
 class SerializerInit extends StrictLogging {
 
   def customize(kryo: Kryo): Unit = {
-    logger.info("Initialized Kryo")
+    logger.info("Initializing Kryo")
 
     // cluster
     kryo.register(classOf[justin.db.actors.protocol.RegisterNode], RegisterNodeSerializer, 50)
