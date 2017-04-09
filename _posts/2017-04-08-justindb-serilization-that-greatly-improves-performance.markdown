@@ -30,7 +30,7 @@ You can find all defined [JustinDB][justindb] payload serializers [here][justind
 **SerializerInit** is an entrypoint for Akka-Kryo extension to know what payload/classes/messages we want to register into it. As you can see every registration line consists of msg class definition, its dedicated serializer function and ID.
 This class is instantiated right after new process of [JustinDB][justindb] is rolling out.
 
-```
+{% highlight Scala %}
 class SerializerInit extends StrictLogging {
 
   def customize(kryo: Kryo): Unit = {
@@ -57,13 +57,14 @@ class SerializerInit extends StrictLogging {
     kryo.register(classOf[justin.db.actors.protocol.StorageNodeFailedRead],     StorageNodeReadResponseSerializer, 93)
   }
 }
-```
+{% endhighlight %}
 
 Its worth to take a look at into how I managed to serialize ADT (Abstract Data Type) which extends common interface (e.g. `StorageNodeFailedWrite`, `StorageNodeSuccessfulWrite`, `StorageNodeConflictedWrite` - they share the same serializer).
 
 I've also declared in the Akka `serialization-bindings` section which classes should use kryo serialization. You can find it under [`application.conf`][justindb-application-conf] file.
 ```
 
+{% highlight Scala %}
 object StorageNodeWriteResponseSerializer extends Serializer[StorageNodeWriteResponse] {
 
   private object Discriminator {
@@ -97,7 +98,8 @@ object StorageNodeWriteResponseSerializer extends Serializer[StorageNodeWriteRes
       )
   }
 }
-```
+{% endhighlight %}
+
 Solution is simply - I use specific discriminator numbers that are saved next to specific serialized payload (e.g. `1` for `StorageNodeSuccessfulWrite` payload). Pattern matching for the win! 👊
 
 You can find more details about Akka-Kryo in its official [documentation][akka-kryo].

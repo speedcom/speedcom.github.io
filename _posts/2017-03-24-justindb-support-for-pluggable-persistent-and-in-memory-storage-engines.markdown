@@ -31,19 +31,19 @@ Last but not least we are even able to define storage module per cluster node so
 #### How engine is loaded 🔥
 
 It uses reflection:
-```
+{% highlight Scala %}
 object JustinDriver {
 
   def load(clazz: String): PluggableStorageProtocol = Class.forName(clazz)
     .newInstance()
     .asInstanceOf[PluggableStorageProtocol]
 }
-```
+{% endhighlight %}
 
 Exemplary usage taken from project (can be found [here][justindb-driver-usage]):
-```
+{% highlight Scala %}
 val storage = JustinDriver.load(config.getString("justin-db.storage"))
-```
+{% endhighlight %}
 It just reads path to implementation of `PluggableStorageProtocol` interface from project's `config` value e.g. `justin.db.storage.InMemStorage`
 
 
