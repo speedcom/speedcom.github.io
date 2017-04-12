@@ -22,11 +22,24 @@ However, besides its obvious advantages replication brings many downsides. Since
 
 Data is partitioned via some intrinsic mechanism which deducts what partition is going to be chosen for a particular value (its very often application-specific).
 
-Imagine that you have cluster of two nodes: **A** and **B**. Its goal is to store numbers from 0 to 100. We can say that range from 0 to 50 goes to **A** node (partition) and rest to **B** partition (this is our pattern of splitting data and this is all about actually).
+Imagine that you have cluster of two nodes: **A** and **B**. Its goal is to store numbers from 1 to 100. We can say that range from 1 to 50 goes to **A** node (partition) and rest to **B** partition (this is our pattern of splitting data and is all about actually).
 
-However, having independent partitions comes with some cost - we must keep tract of what range of values live on which node. Think also about potential different rate of growth and inefficient access across partitions. There is also additional downside - if one node goes down, that entire partition of data in unavailable.
+However, having independent partitions comes with some cost - we must keep track of what range of values live on which node. Think also about potential different rate of growth and inefficient access across partitions. There is also additional downside - if one node goes down, that entire partition of data in unavailable.
 
 And this is why [JustinDB][justindb] uses both **replication** and **partitioning**.
 
-[justindb]: https://github.com/speedcom/JustinDB
+## Replication + Partitioning 💕
+[JustinDB][justindb] partition data across multiple nodes, as well as replicate that data into a couple of them. Thanks to such decision it get improves availability and increase capacity and the same time.
 
+![][partition-and-replication-image]
+
+Try to imagine a cluster of 5 nodes with set replication factor to 3. That means when we create a new value in system its saved to 3 standalone nodes. We should be able to get this data laterback from every of these nodes.
+
+I've mentioned that partitioning mechanism apply some specific pattern of splitting data - thats correct. How [JustinDB][justindb] actually reason what nodes should be taken into account when storing new value (along with replicas)?
+
+It uses modified version of **Consistent Hashing** algorithm that is widely used by such databases like **Cassandra** or **Riak**. I'm going to cover this topic more extensively in next post.
+
+Stay tuned! ✌️
+
+[justindb]: https://github.com/speedcom/JustinDB
+[partition-and-replication-image]: ../../../../../partition-with-replication.jpg "Partition with replication"
