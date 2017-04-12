@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "JustinDB - replication and partitioning"
-date:   2017-04-10 10:00:00 +0100
+date:   2017-04-09 10:00:00 +0100
 categories: [DSP2017]
 ---
 
