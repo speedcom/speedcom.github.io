@@ -1,14 +1,14 @@
 ---
 layout: post
 title:  "JustinDB - replication and partitioning"
-date:   2017-04-09 10:00:00 +0100
+date:   2017-04-13 07:25:00 +0100
 categories: [DSP2017]
 ---
 
 ## Preface
 Availability is the proportion of time a system is in a functioning condition. If a user cannot access the system, it is said to be unavailable. The manner in which a data set is distributed between multiple nodes is very important and this is how [JustinDB][justindb] is able to remain highly available, tolerating outages and network partitions.
 
-[JustinDB][justindb] combines two styles of distribution to achieve this: **replication** and **partiions**.
+[JustinDB][justindb] combines two styles of distribution to achieve this: **replication** and **partitions**.
 
 ## Replication
 **Replication** is making copies of the same data on multiple nodes; this allows more servers to take part in the computation. [JustinDB][justindb] replicates by default.
@@ -37,7 +37,7 @@ Try to imagine a cluster of 5 nodes with set replication factor to 3. That means
 
 I've mentioned that partitioning mechanism apply some specific pattern of splitting data - thats correct. How [JustinDB][justindb] actually reason what nodes should be taken into account when storing new value (along with replicas)?
 
-It uses modified version of **Consistent Hashing** algorithm that is widely used by such databases like **Cassandra** or **Riak**. I'm going to cover this topic more extensively in next post.
+It uses _modified_ version of **Consistent Hashing** algorithm that is widely used by such databases like **Cassandra** or **Riak**. I'm going to cover this topic more extensively in next post.
 
 Stay tuned! ✌️
 
