@@ -62,7 +62,6 @@ class SerializerInit extends StrictLogging {
 Its worth to take a look at into how I managed to serialize ADT (Abstract Data Type) which extends common interface (e.g. `StorageNodeFailedWrite`, `StorageNodeSuccessfulWrite`, `StorageNodeConflictedWrite` - they share the same serializer).
 
 I've also declared in the Akka `serialization-bindings` section which classes should use kryo serialization. You can find it under [`application.conf`][justindb-application-conf] file.
-```
 
 {% highlight Scala %}
 object StorageNodeWriteResponseSerializer extends Serializer[StorageNodeWriteResponse] {
