@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "JustinDB - why Scala and Akka?"
-date:   2017-04-15 10:25:00 +0100
+date:   2017-04-15 14:15:00 +0100
 categories: [DSP2017]
 ---
 
