@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-04-21T09:12:58+02:00</updated><id>http://localhost:4000/</id><title type="html">Mateusz Maciaszek</title><subtitle>This blog covers topics about many different computer science fields, mainly distributed and concurrent systems. Some day it will help me to escape from the simulation we live in (not sure how yet).
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-04-21T09:46:14+02:00</updated><id>http://localhost:4000/</id><title type="html">Mateusz Maciaszek</title><subtitle>This blog covers topics about many different computer science fields, mainly distributed and concurrent systems. Some day it will help me to escape from the simulation we live in (not sure how yet).
 </subtitle><entry><title type="html">JustinDB - data versioning (part 1)</title><link href="http://localhost:4000/dsp2017/2017/04/15/justindb-data-versioning.html" rel="alternate" type="text/html" title="JustinDB - data versioning (part 1)" /><published>2017-04-15T15:15:00+02:00</published><updated>2017-04-15T15:15:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/04/15/justindb-data-versioning</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/04/15/justindb-data-versioning.html">&lt;h2 id=&quot;preface&quot;&gt;Preface&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; provides &lt;strong&gt;eventaul consistency&lt;/strong&gt;, which allows for updates to be propagated to all replicas &lt;strong&gt;asynchronously&lt;/strong&gt;.&lt;/p&gt;
 
@@ -67,7 +67,81 @@ Its effectively a list of (node, counter) pairs. One vector clock is associated 
   &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 
   &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;zero&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Counter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Counter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><summary type="html">Preface JustinDB provides eventaul consistency, which allows for updates to be propagated to all replicas asynchronously.</summary></entry><entry><title type="html">JustinDB - why Scala and Akka?</title><link href="http://localhost:4000/dsp2017/2017/04/15/justindb-why-scala-and-akka.html" rel="alternate" type="text/html" title="JustinDB - why Scala and Akka?" /><published>2017-04-15T15:15:00+02:00</published><updated>2017-04-15T15:15:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/04/15/justindb-why-scala-and-akka</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/04/15/justindb-why-scala-and-akka.html">&lt;h2 id=&quot;preface&quot;&gt;Preface&lt;/h2&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;lets-illustrate-vector-clocks-in-action&quot;&gt;Lets illustrate vector clocks in action&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; at it basis can thought be as a typical &lt;code class=&quot;highlighter-rouge&quot;&gt;key -&amp;gt; value&lt;/code&gt; data structure.
+We have 3 actors in our system: Luke, Han Solo and Leia.
+They try to order the food.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Luke has decided to order sushi. Vector clock now contains his name and the number of updates he’s performed.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;key: food
+
+vclock: {Luke: 1}
+value: sushi
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Han Solo has got a message about an order but he doesn’t like Luke decision. He decided to &lt;em&gt;update&lt;/em&gt; the order to take
+spaghetti instead.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;key: food
+
+vclock: {Luke: 1, Han Solo: 1}
+value: spaghetti
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;At the sime time as Han Solo, Leia comes along. She decides that &lt;em&gt;sushi&lt;/em&gt; is a good idea (author: c’mon, it always is!) but she prefers to eat &lt;em&gt;ramen&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;key: food
+
+vclock: {Luke: 1, Leia: 1}
+value: ramen
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;We got a problem. Now we have two distinct vector clocks in play that diverge from &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Luke:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;. &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; store both values.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Later in the day Han Solo checks again, but this time he gets two conflicts values, with two vector clocks.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;key: food
+
+vclock: {Luke: 1, Leia: 1}
+value: ramen
+--
+vclock: {Luke: 1, Han Solo: 1}
+value: spaghetti
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Han Solo tries to solve this problem. He actually knows that Leia is a big fun of ramen so he decided to resolves the conflict choosing her option and providing new vector clock (sorry Luke…).&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;key: food
+
+vclock: {Luke: 1, Leia: 1, Han Solo: 2}
+value: ramen
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Now every subsequent request for &lt;em&gt;food&lt;/em&gt; key will just return the agreed upon &lt;em&gt;ramen&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;</content><author><name></name></author><summary type="html">Preface JustinDB provides eventaul consistency, which allows for updates to be propagated to all replicas asynchronously.</summary></entry><entry><title type="html">JustinDB - why Scala and Akka?</title><link href="http://localhost:4000/dsp2017/2017/04/15/justindb-why-scala-and-akka.html" rel="alternate" type="text/html" title="JustinDB - why Scala and Akka?" /><published>2017-04-15T15:15:00+02:00</published><updated>2017-04-15T15:15:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/04/15/justindb-why-scala-and-akka</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/04/15/justindb-why-scala-and-akka.html">&lt;h2 id=&quot;preface&quot;&gt;Preface&lt;/h2&gt;
 &lt;p&gt;As you may read &lt;a href=&quot;http://speedcom.github.io/dsp2017/2017/03/14/justindb-modern-reactive-nosql-database.html&quot;&gt;JustinDB - Modern REACTIVE NoSQL database&lt;/a&gt; post you know that &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; is written in &lt;strong&gt;Scala&lt;/strong&gt; language and built on top of &lt;strong&gt;Akka&lt;/strong&gt; toolkit.&lt;/p&gt;
 
 &lt;h2 id=&quot;why-these&quot;&gt;Why these?&lt;/h2&gt;

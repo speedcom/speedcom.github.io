@@ -77,6 +77,67 @@ object Counter {
 }
 {% endhighlight %}
 
+#### Lets illustrate vector clocks in action
+[JustinDB][justindb] at it basis can thought be as a typical `key -> value` data structure.
+We have 3 actors in our system: Luke, Han Solo and Leia.
+They try to order the food.
+
+- Luke has decided to order sushi. Vector clock now contains his name and the number of updates he's performed.
+
+```
+key: food
+
+vclock: {Luke: 1}
+value: sushi
+
+```
+
+- Han Solo has got a message about an order but he doesn't like Luke decision. He decided to _update_ the order to take
+spaghetti instead.
+
+```
+key: food
+
+vclock: {Luke: 1, Han Solo: 1}
+value: spaghetti
+```
+
+- At the sime time as Han Solo, Leia comes along. She decides that _sushi_ is a good idea (author: c'mon, it always is!) but she prefers to eat _ramen_.
+
+```
+key: food
+
+vclock: {Luke: 1, Leia: 1}
+value: ramen
+```
+
+- We got a problem. Now we have two distinct vector clocks in play that diverge from `{Luke: 1}`. [JustinDB][justindb] store both values.
+
+- Later in the day Han Solo checks again, but this time he gets two conflicts values, with two vector clocks.
+
+```
+key: food
+
+vclock: {Luke: 1, Leia: 1}
+value: ramen
+--
+vclock: {Luke: 1, Han Solo: 1}
+value: spaghetti
+```
+
+Han Solo tries to solve this problem. He actually knows that Leia is a big fun of ramen so he decided to resolves the conflict choosing her option and providing new vector clock (sorry Luke...).
+
+```
+key: food
+
+vclock: {Luke: 1, Leia: 1, Han Solo: 2}
+value: ramen
+```
+
+- Now every subsequent request for _food_ key will just return the agreed upon _ramen_.
+
+## Summary
+
 [justindb]: https://github.com/speedcom/JustinDB
 [justindb-replication]: http://speedcom.github.io/dsp2017/2017/04/13/justindb-replication-and-partitioning.html
 [wiki-vector-clock]: https://www.wikiwand.com/en/Vector_clock
