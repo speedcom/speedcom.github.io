@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "JustinDB - data versioning (part 1)"
-date:   2017-04-15 14:15:00 +0100
+date:   2017-04-15 09:15:00 +0100
 categories: [DSP2017]
 ---
 
@@ -148,7 +148,7 @@ In next part I'm going to show how actually we use Vector Clock with [JustinDB][
 - how to update conflicted versions
 - how system reason about causality of conflicted versions
 
-Cheers!
+Cheers! ✌️
 
 [justindb]: https://github.com/speedcom/JustinDB
 [justindb-replication]: http://speedcom.github.io/dsp2017/2017/04/13/justindb-replication-and-partitioning.html
