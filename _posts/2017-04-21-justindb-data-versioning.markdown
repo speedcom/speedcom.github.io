@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "JustinDB - data versioning (part 1)"
-date:   2017-04-15 09:15:00 +0100
+date:   2017-04-21 10:15:00 +0100
 categories: [DSP2017]
 ---
 
