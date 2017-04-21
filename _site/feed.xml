@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-04-21T09:46:14+02:00</updated><id>http://localhost:4000/</id><title type="html">Mateusz Maciaszek</title><subtitle>This blog covers topics about many different computer science fields, mainly distributed and concurrent systems. Some day it will help me to escape from the simulation we live in (not sure how yet).
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-04-21T09:48:53+02:00</updated><id>http://localhost:4000/</id><title type="html">Mateusz Maciaszek</title><subtitle>This blog covers topics about many different computer science fields, mainly distributed and concurrent systems. Some day it will help me to escape from the simulation we live in (not sure how yet).
 </subtitle><entry><title type="html">JustinDB - data versioning (part 1)</title><link href="http://localhost:4000/dsp2017/2017/04/15/justindb-data-versioning.html" rel="alternate" type="text/html" title="JustinDB - data versioning (part 1)" /><published>2017-04-15T15:15:00+02:00</published><updated>2017-04-15T15:15:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/04/15/justindb-data-versioning</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/04/15/justindb-data-versioning.html">&lt;h2 id=&quot;preface&quot;&gt;Preface&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; provides &lt;strong&gt;eventaul consistency&lt;/strong&gt;, which allows for updates to be propagated to all replicas &lt;strong&gt;asynchronously&lt;/strong&gt;.&lt;/p&gt;
 
@@ -141,7 +141,23 @@ value: ramen
   &lt;li&gt;Now every subsequent request for &lt;em&gt;food&lt;/em&gt; key will just return the agreed upon &lt;em&gt;ramen&lt;/em&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;</content><author><name></name></author><summary type="html">Preface JustinDB provides eventaul consistency, which allows for updates to be propagated to all replicas asynchronously.</summary></entry><entry><title type="html">JustinDB - why Scala and Akka?</title><link href="http://localhost:4000/dsp2017/2017/04/15/justindb-why-scala-and-akka.html" rel="alternate" type="text/html" title="JustinDB - why Scala and Akka?" /><published>2017-04-15T15:15:00+02:00</published><updated>2017-04-15T15:15:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/04/15/justindb-why-scala-and-akka</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/04/15/justindb-why-scala-and-akka.html">&lt;h2 id=&quot;preface&quot;&gt;Preface&lt;/h2&gt;
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;In this part about Vector Clock we get know:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;what is it actually&lt;/li&gt;
+  &lt;li&gt;why do we need such technique in distributed system with enabled replication&lt;/li&gt;
+  &lt;li&gt;how to use it in real world&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In next part I’m going to show how actually we use Vector Clock with &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; &lt;em&gt;API&lt;/em&gt;:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;how Vector Clocks are generated for every stored objects&lt;/li&gt;
+  &lt;li&gt;how to update particular object&lt;/li&gt;
+  &lt;li&gt;how to update conflicted versions&lt;/li&gt;
+  &lt;li&gt;how system reason about causality of conflicted versions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Cheers!&lt;/p&gt;</content><author><name></name></author><summary type="html">Preface JustinDB provides eventaul consistency, which allows for updates to be propagated to all replicas asynchronously.</summary></entry><entry><title type="html">JustinDB - why Scala and Akka?</title><link href="http://localhost:4000/dsp2017/2017/04/15/justindb-why-scala-and-akka.html" rel="alternate" type="text/html" title="JustinDB - why Scala and Akka?" /><published>2017-04-15T15:15:00+02:00</published><updated>2017-04-15T15:15:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/04/15/justindb-why-scala-and-akka</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/04/15/justindb-why-scala-and-akka.html">&lt;h2 id=&quot;preface&quot;&gt;Preface&lt;/h2&gt;
 &lt;p&gt;As you may read &lt;a href=&quot;http://speedcom.github.io/dsp2017/2017/03/14/justindb-modern-reactive-nosql-database.html&quot;&gt;JustinDB - Modern REACTIVE NoSQL database&lt;/a&gt; post you know that &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; is written in &lt;strong&gt;Scala&lt;/strong&gt; language and built on top of &lt;strong&gt;Akka&lt;/strong&gt; toolkit.&lt;/p&gt;
 
 &lt;h2 id=&quot;why-these&quot;&gt;Why these?&lt;/h2&gt;

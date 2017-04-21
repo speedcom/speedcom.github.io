@@ -137,6 +137,18 @@ value: ramen
 - Now every subsequent request for _food_ key will just return the agreed upon _ramen_.
 
 ## Summary
+In this part about Vector Clock we get know:
+- what is it actually
+- why do we need such technique in distributed system with enabled replication
+- how to use it in real world
+
+In next part I'm going to show how actually we use Vector Clock with [JustinDB][justindb] *API*:
+- how Vector Clocks are generated for every stored objects
+- how to update particular object
+- how to update conflicted versions
+- how system reason about causality of conflicted versions
+
+Cheers!
 
 [justindb]: https://github.com/speedcom/JustinDB
 [justindb-replication]: http://speedcom.github.io/dsp2017/2017/04/13/justindb-replication-and-partitioning.html
