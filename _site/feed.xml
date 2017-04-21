@@ -1,5 +1,48 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-04-15T14:25:07+02:00</updated><id>http://localhost:4000/</id><title type="html">Mateusz Maciaszek</title><subtitle>This blog covers topics about many different computer science fields, mainly distributed and concurrent systems. Some day it will help me to escape from the simulation we live in (not sure how yet).
-</subtitle><entry><title type="html">JustinDB - replication and partitioning</title><link href="http://localhost:4000/dsp2017/2017/04/13/justindb-replication-and-partitioning.html" rel="alternate" type="text/html" title="JustinDB - replication and partitioning" /><published>2017-04-13T08:25:00+02:00</published><updated>2017-04-13T08:25:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/04/13/justindb-replication-and-partitioning</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/04/13/justindb-replication-and-partitioning.html">&lt;h2 id=&quot;preface&quot;&gt;Preface&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-04-21T09:56:17+02:00</updated><id>http://localhost:4000/</id><title type="html">Mateusz Maciaszek</title><subtitle>This blog covers topics about many different computer science fields, mainly distributed and concurrent systems. Some day it will help me to escape from the simulation we live in (not sure how yet).
+</subtitle><entry><title type="html">JustinDB - why Scala and Akka?</title><link href="http://localhost:4000/dsp2017/2017/04/15/justindb-why-scala-and-akka.html" rel="alternate" type="text/html" title="JustinDB - why Scala and Akka?" /><published>2017-04-15T15:15:00+02:00</published><updated>2017-04-15T15:15:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/04/15/justindb-why-scala-and-akka</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/04/15/justindb-why-scala-and-akka.html">&lt;h2 id=&quot;preface&quot;&gt;Preface&lt;/h2&gt;
+&lt;p&gt;As you may read &lt;a href=&quot;http://speedcom.github.io/dsp2017/2017/03/14/justindb-modern-reactive-nosql-database.html&quot;&gt;JustinDB - Modern REACTIVE NoSQL database&lt;/a&gt; post you know that &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; is written in &lt;strong&gt;Scala&lt;/strong&gt; language and built on top of &lt;strong&gt;Akka&lt;/strong&gt; toolkit.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-these&quot;&gt;Why these?&lt;/h2&gt;
+&lt;p&gt;Because of the assumptions that were made during designing architecture of &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt;. I wanted to make highly-available, fault-tolerant, performant, concurrent and as less as error-prone product during runtime.&lt;/p&gt;
+
+&lt;p&gt;This means that I need to have tools that embrace these ideas from the ground up.&lt;/p&gt;
+
+&lt;h3 id=&quot;scala&quot;&gt;Scala&lt;/h3&gt;
+&lt;p&gt;Scala is the language which is perfect to build high throughput and low latency systems. It is a statically typed language that runs on the JVM (the best managed runtime out there). This trait means:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;excellent performance (comparing even to Java which is relatively a lower level language) 🔥&lt;/li&gt;
+  &lt;li&gt;compiler is your friend - catching bugs and design errors early in the development process; easier to do refactoring&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Citing Wikipedia:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;The name Scala is a portmanteau of scalable and language, signifying that it is designed to grow with the demands of its users.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Last but not least, Scala was designed to be concise. It is a very expressive language thus beeing statically typed language at the same time. It has many features of functional programming languages, just naming a few: type inference, immutability, lazy evaluation, pattern matching and many many more. All of these help to build better context of the program.&lt;/p&gt;
+
+&lt;p&gt;Scala, as woking on JVM, inherits its concurrent primitives. It also brings high-level concurrency abstractions, each tailored toward a specific class of programmings tasks.&lt;/p&gt;
+
+&lt;p&gt;Its not a surprise that Scala has became one of the most widely used language in &lt;strong&gt;Big Data&lt;/strong&gt; world.&lt;/p&gt;
+
+&lt;h3 id=&quot;akka&quot;&gt;Akka&lt;/h3&gt;
+&lt;p&gt;Akka is a toolkit and runtime for building highly concurrent, distributed, and fault tolerant applications on the JVM.
+Does it sound like something that would be a good fit for our purposes? Don’t even ask.&lt;/p&gt;
+
+&lt;p&gt;Writing concurrent programs is hard but at the same time it &lt;strong&gt;REALLY MATTERS&lt;/strong&gt;.
+Many multi-threading abstractions assume the presence of shared memory (futures/promises, concurrent data structures, STM and so on and on). This assumption limits them to applications running on a single computer.&lt;/p&gt;
+
+&lt;p&gt;Akka’s approach to handling concurrency is based on the &lt;strong&gt;Actor Model&lt;/strong&gt;. In this programming model, we create program represented by a large number of entities (called actors) that execute computations independently and communicate by passing messages.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;All the complexity of creating and scheduling threads, receiving and dispatching messages, and handling race conditions and synchronization, is relegated to the framework to handle transparently.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Very prominent part about &lt;strong&gt;Akka&lt;/strong&gt; is its &lt;strong&gt;Cluster&lt;/strong&gt; module which is used by &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt;. Thanks to it we can make our system to span across multiple machines that communicate through a computer network. The actor model allows you to write programs that run inside a single process, multiple processes on the same machine (this is how actually I test my local instance of database), or on multiple machines (this is called &lt;strong&gt;location transparency&lt;/strong&gt;).&lt;/p&gt;
+
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; tries to take the best from &lt;strong&gt;Scala&lt;/strong&gt; and &lt;strong&gt;Akka&lt;/strong&gt;. Both tools could help me to quickly build barebones of the distributed database and move forward with new features which prove that they simplifies and facilitates the development of such products. 💕&lt;/p&gt;</content><author><name></name></author><summary type="html">Preface As you may read JustinDB - Modern REACTIVE NoSQL database post you know that JustinDB is written in Scala language and built on top of Akka toolkit.</summary></entry><entry><title type="html">JustinDB - replication and partitioning</title><link href="http://localhost:4000/dsp2017/2017/04/13/justindb-replication-and-partitioning.html" rel="alternate" type="text/html" title="JustinDB - replication and partitioning" /><published>2017-04-13T08:25:00+02:00</published><updated>2017-04-13T08:25:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/04/13/justindb-replication-and-partitioning</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/04/13/justindb-replication-and-partitioning.html">&lt;h2 id=&quot;preface&quot;&gt;Preface&lt;/h2&gt;
 &lt;p&gt;Availability is the proportion of time a system is in a functioning condition. If a user cannot access the system, it is said to be unavailable. The manner in which a data set is distributed between multiple nodes is very important and this is how &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; is able to remain highly available, tolerating outages and network partitions.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; combines two styles of distribution to achieve this: &lt;strong&gt;replication&lt;/strong&gt; and &lt;strong&gt;partitions&lt;/strong&gt;.&lt;/p&gt;
