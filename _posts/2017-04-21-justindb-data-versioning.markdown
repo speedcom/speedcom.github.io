@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "JustinDB - data versioning (part 1)"
-date:   2017-04-21 10:15:00 +0100
+date:   2017-04-21 08:15:00 +0100
 categories: [DSP2017]
 ---
 
@@ -78,7 +78,8 @@ object Counter {
 {% endhighlight %}
 
 #### Lets illustrate vector clocks in action
-[JustinDB][justindb] at it basis can thought be as a typical `key -> value` data structure.
+Quick reminder: [JustinDB][justindb] at it basis can thought be as a typical `key -> value` data structure.
+
 We have 3 actors in our system: Luke, Han Solo and Leia.
 They try to order the food.
 
@@ -137,12 +138,12 @@ value: ramen
 - Now every subsequent request for _food_ key will just return the agreed upon _ramen_.
 
 ## Summary
-In this part about Vector Clock we get know:
+In this part about Vector Clock we learned:
 - what is it actually
 - why do we need such technique in distributed system with enabled replication
 - how to use it in real world
 
-In next part I'm going to show how actually we use Vector Clock with [JustinDB][justindb] *API*:
+In next part I'm going to show how actually we use Vector Clock with [JustinDB][justindb] **API**:
 - how Vector Clocks are generated for every stored objects
 - how to update particular object
 - how to update conflicted versions
