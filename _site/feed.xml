@@ -1,5 +1,191 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-04-21T09:56:17+02:00</updated><id>http://localhost:4000/</id><title type="html">Mateusz Maciaszek</title><subtitle>This blog covers topics about many different computer science fields, mainly distributed and concurrent systems. Some day it will help me to escape from the simulation we live in (not sure how yet).
-</subtitle><entry><title type="html">JustinDB - why Scala and Akka?</title><link href="http://localhost:4000/dsp2017/2017/04/15/justindb-why-scala-and-akka.html" rel="alternate" type="text/html" title="JustinDB - why Scala and Akka?" /><published>2017-04-15T15:15:00+02:00</published><updated>2017-04-15T15:15:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/04/15/justindb-why-scala-and-akka</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/04/15/justindb-why-scala-and-akka.html">&lt;h2 id=&quot;preface&quot;&gt;Preface&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-04-22T12:03:34+02:00</updated><id>http://localhost:4000/</id><title type="html">Mateusz Maciaszek</title><subtitle>This blog covers topics about many different computer science fields, mainly distributed and concurrent systems. Some day it will help me to escape from the simulation we live in (not sure how yet).
+</subtitle><entry><title type="html">JustinDB - first summing up</title><link href="http://localhost:4000/dsp2017/2017/04/22/get-noticed-first-summing-up.html" rel="alternate" type="text/html" title="JustinDB - first summing up" /><published>2017-04-22T10:20:00+02:00</published><updated>2017-04-22T10:20:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/04/22/get-noticed-first-summing-up</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/04/22/get-noticed-first-summing-up.html">&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;It passed more than one month since I wrote my first blogpost during &lt;a href=&quot;http://speedcom.github.io/dsp2017/2017/03/12/get-noticed.html&quot;&gt;“Get noticed”&lt;/a&gt; competition.
+I’ve decided to write quick recap for myself and others to hear what I’ve achieved during this time.&lt;/p&gt;
+
+&lt;p&gt;Lets start! 💪&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; database is getting more and more popular. It’s open sourced project so everyone can see how exactly it’s build and looks like (its hosted on GitHub).&lt;/p&gt;
+
+&lt;p&gt;As of today, &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; has:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;9 watchers&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;35 stars&lt;/strong&gt; (my goal is to have at least &lt;strong&gt;100&lt;/strong&gt;!)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;5 forks&lt;/strong&gt;
+I like these stats and they mean a lot of to me!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Most of the time I share with new blogposts via LinkedIn platform on dedicated Scala enthusiasts group. I think that I should start considering such services as Twitter and Reddit to get more attention.&lt;/p&gt;
+
+&lt;p&gt;Whats more, &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; project crossed &lt;strong&gt;800 commits&lt;/strong&gt;! 👍
+Its code coverage get more than &lt;strong&gt;80%&lt;/strong&gt; (now its around 86%). Thats relatively very good result. Current tests only help me to make this project better and doesn’t slow down the whole development process.&lt;/p&gt;
+
+&lt;p&gt;In the next couple of months I’m going to focus more on &lt;strong&gt;PHYSICAL MODEL&lt;/strong&gt; - how exactly to store data indefinitely, what algorithms and data structures to use, how to exploit parallel architecture, talk effectively to disk and be CPU cache friendly at the same time (and so on and on).&lt;/p&gt;
+
+&lt;p&gt;Last but not least, even this blog has getting more attention! 💕 Big surprise to me!&lt;/p&gt;
+
+&lt;p&gt;Whole this time was very productive for me but you can’t simply forget that working on the project and trying to write at least 2 posts every week is not that easy at first glance as you might think of.&lt;/p&gt;
+
+&lt;p&gt;I’ve very happy! Cheers! ✌️&lt;/p&gt;</content><author><name></name></author><summary type="html">Summary It passed more than one month since I wrote my first blogpost during “Get noticed” competition. I’ve decided to write quick recap for myself and others to hear what I’ve achieved during this time.</summary></entry><entry><title type="html">JustinDB - data versioning (part 1)</title><link href="http://localhost:4000/dsp2017/2017/04/21/justindb-data-versioning.html" rel="alternate" type="text/html" title="JustinDB - data versioning (part 1)" /><published>2017-04-21T10:20:00+02:00</published><updated>2017-04-21T10:20:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/04/21/justindb-data-versioning</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/04/21/justindb-data-versioning.html">&lt;h2 id=&quot;preface&quot;&gt;Preface&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; provides &lt;strong&gt;eventaul consistency&lt;/strong&gt;, which allows for updates to be propagated to all replicas &lt;strong&gt;asynchronously&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; has a &lt;strong&gt;tunable availability&lt;/strong&gt; characteristic. It is highly available to serve requests, with the ability to tune its level of availability–nearing, but never quite reaching, strong consistency. As you may have read previous post about &lt;a href=&quot;http://speedcom.github.io/dsp2017/2017/04/13/justindb-replication-and-partitioning.html&quot;&gt;replication&lt;/a&gt; you know that every data is replicated to N distinct physical nodes (servers). Besides that it allows you to decide how many nodes must be written to or read from per request. These values are settings labeled &lt;strong&gt;N&lt;/strong&gt; (the number of nodes to replicate to), &lt;strong&gt;R&lt;/strong&gt; (the number of nodes read from before returning), and &lt;strong&gt;W&lt;/strong&gt; (the number of nodes written to before considered successful).&lt;/p&gt;
+
+&lt;p&gt;Under certain failure scenarios (e.g. network partitions), updates may not arrive at all replicas for an extended period of time. Its worth to notice that updates in the presence of e.g. node failures can potentially result in an object having distinct version sub-hitories, which the system wil need to reconcile in the future.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; uses &lt;strong&gt;Vector Clock&lt;/strong&gt; in order to capture causality between different versions of the same object.&lt;/p&gt;
+
+&lt;h2 id=&quot;vector-clock&quot;&gt;Vector Clock&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.wikiwand.com/en/Vector_clock&quot;&gt;&lt;em&gt;Wikipedia&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;A vector clock is an algorithm for generating a partial ordering of events in a distributed system and detecting causality violations.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Sounds a bit confusing.&lt;/p&gt;
+
+&lt;p&gt;At it basis, Vector Clocks just measures a sequence of events and keep a running history of updates.
+Its effectively a list of (node, counter) pairs. One vector clock is associated with every version of every objects.&lt;/p&gt;
+
+&lt;p&gt;This is how Vector Clock is modeled in &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt;:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scala&quot; data-lang=&quot;scala&quot;&gt;&lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;VectorClock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clock&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Id&lt;/span&gt;, &lt;span class=&quot;kt&quot;&gt;Counter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Option&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Counter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;increase&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;VectorClock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;searchedCounter&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getOrElse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Counter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zero&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;updatedCounter&lt;/span&gt;  &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;searchedCounter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;addOne&lt;/span&gt;
+
+    &lt;span class=&quot;nc&quot;&gt;VectorClock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clock&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;updatedCounter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;toList&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Id&lt;/span&gt;, &lt;span class=&quot;kt&quot;&gt;Counter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)]&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;toList&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;keys&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Set&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;keys&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;toSet&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;VectorClock&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]()&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;VectorClock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;VectorClock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;empty&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Id&lt;/span&gt;, &lt;span class=&quot;kt&quot;&gt;Counter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;])&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;empty&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;VectorClock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;VectorClock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Counter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zero&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;merge&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;receiverId&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vc1&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;VectorClock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vc2&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;VectorClock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;])&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;VectorClock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mergedClocks&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vc1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clock&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;++&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vc2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clock&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mergedCounter&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vc1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;receiverId&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vc2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;receiverId&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;match&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Some&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;counter1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Some&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;counter2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Counter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;counter1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;counter2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Some&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;counter2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;           &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;counter2&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Some&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;counter1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;           &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;counter1&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;                     &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Counter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zero&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;counter&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mergedCounter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;addOne&lt;/span&gt;
+
+    &lt;span class=&quot;nc&quot;&gt;VectorClock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mergedClocks&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;receiverId&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;counter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Counter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AnyVal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;addOne&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Counter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;copy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Counter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c1&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Counter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c2&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Counter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Counter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;Counter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;math&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;zero&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Counter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Counter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;lets-illustrate-vector-clocks-in-action&quot;&gt;Lets illustrate vector clocks in action&lt;/h4&gt;
+&lt;p&gt;Quick reminder: &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; at it basis can thought be as a typical &lt;code class=&quot;highlighter-rouge&quot;&gt;key -&amp;gt; value&lt;/code&gt; data structure.&lt;/p&gt;
+
+&lt;p&gt;We have 3 actors in our system: Luke, Han Solo and Leia.
+They try to order the food.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Luke has decided to order sushi. Vector clock now contains his name and the number of updates he’s performed.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;key: food
+
+vclock: {Luke: 1}
+value: sushi
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Han Solo has got a message about an order but he doesn’t like Luke decision. He decided to &lt;em&gt;update&lt;/em&gt; the order to take
+spaghetti instead.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;key: food
+
+vclock: {Luke: 1, Han Solo: 1}
+value: spaghetti
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;At the sime time as Han Solo, Leia comes along. She decides that &lt;em&gt;sushi&lt;/em&gt; is a good idea (author: c’mon, it always is!) but she prefers to eat &lt;em&gt;ramen&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;key: food
+
+vclock: {Luke: 1, Leia: 1}
+value: ramen
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;We got a problem. Now we have two distinct vector clocks in play that diverge from &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Luke:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;. &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; store both values.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Later in the day Han Solo checks again, but this time he gets two conflicts values, with two vector clocks.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;key: food
+
+vclock: {Luke: 1, Leia: 1}
+value: ramen
+--
+vclock: {Luke: 1, Han Solo: 1}
+value: spaghetti
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Han Solo tries to solve this problem. He actually knows that Leia is a big fun of ramen so he decided to resolves the conflict choosing her option and providing new vector clock (sorry Luke…).&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;key: food
+
+vclock: {Luke: 1, Leia: 1, Han Solo: 2}
+value: ramen
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Now every subsequent request for &lt;em&gt;food&lt;/em&gt; key will just return the agreed upon &lt;em&gt;ramen&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;In this part about Vector Clock we learned:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;what is it actually&lt;/li&gt;
+  &lt;li&gt;why do we need such technique in distributed system with enabled replication&lt;/li&gt;
+  &lt;li&gt;how to use it in real world&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In next part I’m going to show how actually we use Vector Clock with &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; &lt;strong&gt;API&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;how Vector Clocks are generated for every stored objects&lt;/li&gt;
+  &lt;li&gt;how to update particular object&lt;/li&gt;
+  &lt;li&gt;how to update conflicted versions&lt;/li&gt;
+  &lt;li&gt;how system reason about causality of conflicted versions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Cheers! ✌️&lt;/p&gt;</content><author><name></name></author><summary type="html">Preface JustinDB provides eventaul consistency, which allows for updates to be propagated to all replicas asynchronously.</summary></entry><entry><title type="html">JustinDB - why Scala and Akka?</title><link href="http://localhost:4000/dsp2017/2017/04/15/justindb-why-scala-and-akka.html" rel="alternate" type="text/html" title="JustinDB - why Scala and Akka?" /><published>2017-04-15T15:15:00+02:00</published><updated>2017-04-15T15:15:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/04/15/justindb-why-scala-and-akka</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/04/15/justindb-why-scala-and-akka.html">&lt;h2 id=&quot;preface&quot;&gt;Preface&lt;/h2&gt;
 &lt;p&gt;As you may read &lt;a href=&quot;http://speedcom.github.io/dsp2017/2017/03/14/justindb-modern-reactive-nosql-database.html&quot;&gt;JustinDB - Modern REACTIVE NoSQL database&lt;/a&gt; post you know that &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; is written in &lt;strong&gt;Scala&lt;/strong&gt; language and built on top of &lt;strong&gt;Akka&lt;/strong&gt; toolkit.&lt;/p&gt;
 
 &lt;h2 id=&quot;why-these&quot;&gt;Why these?&lt;/h2&gt;
@@ -386,73 +572,4 @@ They are very good for modeling complex relationship between nodes e.g. friends 
 &lt;p&gt;If you application demands a high query load by any means other than key/value lookup e.g. SQL-style &lt;code class=&quot;highlighter-rouge&quot;&gt;SELECT * FROM table&lt;/code&gt; operations - JustinDB will not be as efficient as other databases. Other thing, so to speak, JustinDB’s simple data model means that your data must be denormalized if your system is to be reasonably performant.&lt;/p&gt;
 
 &lt;h3 id=&quot;summary&quot;&gt;Summary&lt;/h3&gt;
-&lt;p&gt;Making decision about chosing key/value logical model was one of the most important part while architecting my own NoSQL database. Since its relatively easy concept to wrap head around it could help me to move faster to other fancy “distributed” stuff. 💎&lt;/p&gt;</content><author><name></name></author><summary type="html">Database models Althought there are numerous differents NoSQL databases we can group them the ways they represent logical data. This characteristic is the answer that arose to specific problems not originally envisioned by the relational counterparts.</summary></entry><entry><title type="html">JustinDB - Modern REACTIVE NoSQL database</title><link href="http://localhost:4000/dsp2017/2017/03/14/justindb-modern-reactive-nosql-database.html" rel="alternate" type="text/html" title="JustinDB - Modern REACTIVE NoSQL database" /><published>2017-03-14T07:29:17+01:00</published><updated>2017-03-14T07:29:17+01:00</updated><id>http://localhost:4000/dsp2017/2017/03/14/justindb-modern-reactive-nosql-database</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/03/14/justindb-modern-reactive-nosql-database.html">&lt;h3 id=&quot;what-is-this-all-about&quot;&gt;What is this all about&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.wikiwand.com/en/NoSQL&quot;&gt;NoSQL&lt;/a&gt; term was coined a decade ago. We have on market at least a dozen of different NoSQL databases with specific data model. They are so popular that many of engineers are not afraid to take them as a tool of first choice while bootsraping a new project.&lt;/p&gt;
-
-&lt;p&gt;Its tend to think that they are “scalable out of the box product” - lets assume thats true. But…&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;What exactly causes it?&lt;/li&gt;
-  &lt;li&gt;What kind of algorithms and data structures are used in place?&lt;/li&gt;
-  &lt;li&gt;What trade-off database engineers are need to deal with?&lt;/li&gt;
-  &lt;li&gt;What makes that they are so-said scalable?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;These are the questions we are going to answer through a couple of next posts. 🤔&lt;/p&gt;
-
-&lt;h3 id=&quot;why-yet-another-database&quot;&gt;Why yet another database&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; is an attempt to write my own distributed database. Its mainly educational goal. This project is far from being production ready in mind (such non-travial things are built over several years). Since its a complete writing from scratch I was happy to make it the way I would like - I was the one who decided what  algorithms, data structures and architecture will be. Being frankly, at current point JustinDB is a pretty faithfull implementation of &lt;a href=&quot;http://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf&quot;&gt;whitepaper&lt;/a&gt; written by Amazon research team describing architecture of DynamoDB database (they prominent product used actively over decade in AWS).&lt;/p&gt;
-
-&lt;p&gt;Lets sum up main characteristic of &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; (these will be covered more extensively in next posts):&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;key-value model:
-every single value written to database has its uniqe own key across the whole database (cluster as well); database is value type agnostic which simply mean it can store e.g. strings, numbers and even binaries&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;high-availablity:
-this trait is naturraly welcome when we want to have solution that works possibly all the time; when one node of the cluster’s node is not available during job processing then rest of them takes care of it&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;partitioning:
-data is split across the cluster by using technique called Consistent Hashing (JustinDB uses its modified version); it simply deducts what node of the cluster should store the pushed data and which node should be asked in order to get particular data by its key&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;replication:
-having splitted data across the cluster is not sufficient when we want to achieve high-availability; data needs to be copied to a couple of distinct nodes&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;data multi-versioning:
-there are the cases when client wants to update its data; in distributed system its highly possible scenario that while updating specific record node with desired replica is not available so we can’t update it to the newest version; we should follow such situations in order to not override our data with older versions (nobody wants stales reads); to achieve that JustinDB uses Vector Clocks, CRDTs and different levels of fightining against data entropy e.g. Active-Anti Entropy and Merkle Trees (its used e.g. in Bitcoin)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;concurrency:
-whole architecture is built on top of Actor Model - it greatly simplify modeling of concurrent operations&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.wikiwand.com/en/CAP_theorem&quot;&gt;CAP theorem&lt;/a&gt;:
-from perspective of this theorem JustinDB was designed to be AP system - highy available (A) and partition tolerant (P) and the same time. This was achieved by bringing relaxed model of data (so called Eventual Consistency).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;stack:
-database is entirely written in Scala using Akka library (e.g. its Cluster module); Admin UI is written using Elm language (still in progress though)&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;aaand last part…&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;reactivness:
-What does it mean? Is this sth that other databases don’t have? From official site of &lt;a href=&quot;http://www.reactivemanifesto.org&quot;&gt;manifesto&lt;/a&gt; we can read that characteristic of such systems are: responsivness, resiliency, elasticity, message driven approach. JustinDB has (or try to have) all of it. Its very broad topic we will cover in one of the next post.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;summary&quot;&gt;Summary&lt;/h3&gt;
-&lt;p&gt;JustinDB is relatively young project which still lack of many welcome features (some of them are in progress, some not even started). Its OOS so its really welcome to have contributors - I think that this topic can be very interesting to many of you.&lt;/p&gt;
-
-&lt;p&gt;You can find an official JustinDB respository &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;here&lt;/a&gt;. 💪&lt;/p&gt;
-
-&lt;p&gt;In next post we are going to cover one of the above point more extensively looking closer how exactly NoSQL databases work and how JustinDB solely solves it. 👍&lt;/p&gt;</content><author><name></name></author><summary type="html">What is this all about NoSQL term was coined a decade ago. We have on market at least a dozen of different NoSQL databases with specific data model. They are so popular that many of engineers are not afraid to take them as a tool of first choice while bootsraping a new project.</summary></entry><entry><title type="html">Get noticed!</title><link href="http://localhost:4000/dsp2017/2017/03/12/get-noticed.html" rel="alternate" type="text/html" title="Get noticed!" /><published>2017-03-12T16:55:17+01:00</published><updated>2017-03-12T16:55:17+01:00</updated><id>http://localhost:4000/dsp2017/2017/03/12/get-noticed</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/03/12/get-noticed.html">&lt;p&gt;Hello there! How are you? 😊&lt;/p&gt;
-
-&lt;p&gt;I’m Mateusz and welcome on my homepage. This whole blog is a result of polish initiative called &lt;a href=&quot;http://devstyle.pl/daj-sie-poznac/&quot;&gt;Get noticed!&lt;/a&gt; in which you write a bunch of posts every single week and create OSS project till end of May 2017. Its goal is to motivate every person who want to actively blog but never really started do that. 👍&lt;/p&gt;
-
-&lt;p&gt;In the couple of next weeks I’m going to cover how exactly I’ve built (still building btw) &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; which is actually a faithful implementation of Amazon DynamoDB specification (the one that was inspiration for modern NoSQL databases) with some exceptions. 🔥&lt;/p&gt;</content><author><name></name></author><summary type="html">Hello there! How are you? 😊</summary></entry></feed>
+&lt;p&gt;Making decision about chosing key/value logical model was one of the most important part while architecting my own NoSQL database. Since its relatively easy concept to wrap head around it could help me to move faster to other fancy “distributed” stuff. 💎&lt;/p&gt;</content><author><name></name></author><summary type="html">Database models Althought there are numerous differents NoSQL databases we can group them the ways they represent logical data. This characteristic is the answer that arose to specific problems not originally envisioned by the relational counterparts.</summary></entry></feed>
