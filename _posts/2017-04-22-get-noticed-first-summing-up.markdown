@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "JustinDB - first summing up"
-date:   2017-04-22 09:20:00 +0100
+date:   2017-04-22 12:20:00 +0100
 categories: [DSP2017]
 ---
 
