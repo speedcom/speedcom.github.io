@@ -1,5 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-04-22T12:04:42+02:00</updated><id>http://localhost:4000/</id><title type="html">Mateusz Maciaszek</title><subtitle>This blog covers topics about many different computer science fields, mainly distributed and concurrent systems. Some day it will help me to escape from the simulation we live in (not sure how yet).
-</subtitle><entry><title type="html">JustinDB - data versioning (part 1)</title><link href="http://localhost:4000/dsp2017/2017/04/21/justindb-data-versioning.html" rel="alternate" type="text/html" title="JustinDB - data versioning (part 1)" /><published>2017-04-21T10:20:00+02:00</published><updated>2017-04-21T10:20:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/04/21/justindb-data-versioning</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/04/21/justindb-data-versioning.html">&lt;h2 id=&quot;preface&quot;&gt;Preface&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-04-26T08:26:15+02:00</updated><id>http://localhost:4000/</id><title type="html">Mateusz Maciaszek</title><subtitle>This blog covers topics about many different computer science fields, mainly distributed and concurrent systems. Some day it will help me to escape from the simulation we live in (not sure how yet).
+</subtitle><entry><title type="html">Streaming Databases - the future</title><link href="http://localhost:4000/dsp2017/2017/04/25/streaming-databases-future.html" rel="alternate" type="text/html" title="Streaming Databases - the future" /><published>2017-04-25T09:20:00+02:00</published><updated>2017-04-25T09:20:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/04/25/streaming-databases-future</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/04/25/streaming-databases-future.html">&lt;h2 id=&quot;streaming-world&quot;&gt;Streaming World&lt;/h2&gt;
+
+&lt;p&gt;We leave in the world where streaming got to be a serious part of building distributed applications. In this ecosystem we face a lot of innovation at open source including such frameworks like Apache Spark/Storm/Flink, Kafka/Samza or proprietary services such AWS Lambda and Google’s DataFlow.&lt;/p&gt;
+
+&lt;p&gt;Every single serious application needs some kind of data storage in order to store results and get them back later.
+Thought, there is one thing that seems to be very constant at this field - &lt;strong&gt;MONOPOL of RDBMs&lt;/strong&gt; (&lt;em&gt;Relational Database Management Systems&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;In typical software developer mindset these solutions seems to exists as the only one even though they simply often do not fit to application requirements!&lt;/p&gt;</content><author><name></name></author><summary type="html">Streaming World</summary></entry><entry><title type="html">Get noticed - first summing up</title><link href="http://localhost:4000/dsp2017/2017/04/22/get-noticed-first-summing-up.html" rel="alternate" type="text/html" title="Get noticed - first summing up" /><published>2017-04-22T13:20:00+02:00</published><updated>2017-04-22T13:20:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/04/22/get-noticed-first-summing-up</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/04/22/get-noticed-first-summing-up.html">&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;It passed more than one month since I wrote my first blogpost during &lt;a href=&quot;http://speedcom.github.io/dsp2017/2017/03/12/get-noticed.html&quot;&gt;“Get noticed”&lt;/a&gt; competition.
+I’ve decided to write quick recap for myself and others to hear what I’ve achieved during this time.&lt;/p&gt;
+
+&lt;p&gt;Lets start! 💪&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; database is getting more and more popular. It’s open sourced project so everyone can see how exactly it’s build and looks like (its hosted on GitHub).&lt;/p&gt;
+
+&lt;p&gt;As of today, &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; has:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;9 watchers&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;35 stars&lt;/strong&gt; (my goal is to have at least &lt;strong&gt;100&lt;/strong&gt;!)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;5 forks&lt;/strong&gt;
+I like these stats and they mean a lot of to me!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Most of the time I share with new blogposts via LinkedIn platform on dedicated Scala enthusiasts group. I think that I should start considering such services as Twitter and Reddit to get more attention.&lt;/p&gt;
+
+&lt;p&gt;Whats more, &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; project crossed &lt;strong&gt;800 commits&lt;/strong&gt;! 👍
+Its code coverage get more than &lt;strong&gt;80%&lt;/strong&gt; (now its around 86%). Thats relatively very good result. Current tests only help me to make this project better and doesn’t slow down the whole development process.&lt;/p&gt;
+
+&lt;p&gt;In the next couple of months I’m going to focus more on &lt;strong&gt;PHYSICAL MODEL&lt;/strong&gt; - how exactly to store data indefinitely, what algorithms and data structures to use, how to exploit parallel architecture, talk effectively to disk and be CPU cache friendly at the same time (and so on and on).&lt;/p&gt;
+
+&lt;p&gt;Last but not least, even this blog has getting more attention! 💕 Big surprise to me!&lt;/p&gt;
+
+&lt;p&gt;Whole this time was very productive for me but you can’t simply forget that working on the project and trying to write at least 2 posts every week is not that easy at first glance as you might think of.&lt;/p&gt;
+
+&lt;p&gt;I’ve very happy! Cheers! ✌️&lt;/p&gt;</content><author><name></name></author><summary type="html">Summary It passed more than one month since I wrote my first blogpost during “Get noticed” competition. I’ve decided to write quick recap for myself and others to hear what I’ve achieved during this time.</summary></entry><entry><title type="html">JustinDB - data versioning (part 1)</title><link href="http://localhost:4000/dsp2017/2017/04/21/justindb-data-versioning.html" rel="alternate" type="text/html" title="JustinDB - data versioning (part 1)" /><published>2017-04-21T10:20:00+02:00</published><updated>2017-04-21T10:20:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/04/21/justindb-data-versioning</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/04/21/justindb-data-versioning.html">&lt;h2 id=&quot;preface&quot;&gt;Preface&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; provides &lt;strong&gt;eventaul consistency&lt;/strong&gt;, which allows for updates to be propagated to all replicas &lt;strong&gt;asynchronously&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; has a &lt;strong&gt;tunable availability&lt;/strong&gt; characteristic. It is highly available to serve requests, with the ability to tune its level of availability–nearing, but never quite reaching, strong consistency. As you may have read previous post about &lt;a href=&quot;http://speedcom.github.io/dsp2017/2017/04/13/justindb-replication-and-partitioning.html&quot;&gt;replication&lt;/a&gt; you know that every data is replicated to N distinct physical nodes (servers). Besides that it allows you to decide how many nodes must be written to or read from per request. These values are settings labeled &lt;strong&gt;N&lt;/strong&gt; (the number of nodes to replicate to), &lt;strong&gt;R&lt;/strong&gt; (the number of nodes read from before returning), and &lt;strong&gt;W&lt;/strong&gt; (the number of nodes written to before considered successful).&lt;/p&gt;
@@ -496,118 +530,4 @@ Now, when &lt;code class=&quot;highlighter-rouge&quot;&gt;z.sh&lt;/code&gt; has 
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Cheers and don’t thank me 👍&lt;/p&gt;</content><author><name></name></author><summary type="html">Eureka Have you ever get to known something that is simply brilliant and you feel that you were living without it way too long?</summary></entry><entry><title type="html">JustinDB - Database Model</title><link href="http://localhost:4000/dsp2017/2017/03/17/justindb-database-model.html" rel="alternate" type="text/html" title="JustinDB - Database Model" /><published>2017-03-17T17:09:17+01:00</published><updated>2017-03-17T17:09:17+01:00</updated><id>http://localhost:4000/dsp2017/2017/03/17/justindb-database-model</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/03/17/justindb-database-model.html">&lt;h3 id=&quot;database-models&quot;&gt;Database models&lt;/h3&gt;
-&lt;p&gt;Althought there are &lt;a href=&quot;http://nosql-database.org/&quot;&gt;numerous&lt;/a&gt; differents NoSQL databases we can group them the ways they represent logical data. This characteristic is the answer that arose to specific problems not originally envisioned by the relational counterparts.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Note: Be mind that the following models can be mixed together (e.g. key-value model built on top of relational DB)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;1. Key/Value:&lt;/strong&gt;
-They are conceptually like hashtables where values are stored and accessed by immutable key. Such products usually offer relatively simple interface we work against with; more complex queries are often deprecated.
-&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; along with e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;Riak&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;Redis&lt;/code&gt; are exemplary products of such.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;2. Columnar:&lt;/strong&gt;
-Its goal is to group similiar data into column families. They often characterizes itself with very good write throughput.
-One of the most popular actively used database here is &lt;code class=&quot;highlighter-rouge&quot;&gt;Apache Cassandra&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;3. Document:&lt;/strong&gt;
-These kind of datbases does not enforce a document schema. They owe their name because of storing hierarchical values called documents. Examples: &lt;code class=&quot;highlighter-rouge&quot;&gt;MongoDB&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;CouchDB&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;4. Graph:&lt;/strong&gt;
-They are very good for modeling complex relationship between nodes e.g. friends (lets think about social media sites like Facebook or LinkedIn). Examples: &lt;code class=&quot;highlighter-rouge&quot;&gt;Neo4j, OrientDB&lt;/code&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;justindb-database-model&quot;&gt;JustinDB database model&lt;/h4&gt;
-&lt;p&gt;Choosing logical model is a very important part at a time of architecture modeling.&lt;/p&gt;
-
-&lt;p&gt;I’ve decided to make JustinDB key-value oriented database. Reasoning was simple:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;we all intuitively know how key-value data structure works (think about e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;HashMap&lt;/code&gt;)&lt;/li&gt;
-  &lt;li&gt;I wasn’t forced to think about implementation of Query Planner (thing that translate complex queries (e.g. SQL query) into understandable structures by db engine against which it gets appropriate data)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;That way I was able to implement more interesting parts to me of distributed databases. Whats more important its broadly used model so there are many available docs we can read.&lt;/p&gt;
-
-&lt;p&gt;Making such a decision has an important tradeoffs and impact how we design the rest of the system:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;how do we query complex set of data?&lt;/li&gt;
-  &lt;li&gt;how do we replicate data and spread them (do partitioning actually) across the cluster?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Trying to get answers is the real challenge and whole fun is starting exactly here. 👍&lt;/p&gt;
-
-&lt;h4 id=&quot;when-using-keyvalue-store-make-sense&quot;&gt;When using key/value store make sense&lt;/h4&gt;
-&lt;p&gt;Databases such as JustinDB almost always performs best when you build your application around basic CRUD application (create, read, update, and delete) on objects.&lt;/p&gt;
-
-&lt;p&gt;JustinDB’s key/value architecture enables it to be more performant than relational databases in many scenarios because it doesn’t need to perform lock, union, join, or other operations when working with objects. Instead, it interacts with objects on a one-by-one basis, using primary key lookups.&lt;/p&gt;
-
-&lt;h4 id=&quot;when-using-keyvalue-store-is-less-of-a-good-fit&quot;&gt;When using key/value store is less of a good fit&lt;/h4&gt;
-&lt;p&gt;If you application demands a high query load by any means other than key/value lookup e.g. SQL-style &lt;code class=&quot;highlighter-rouge&quot;&gt;SELECT * FROM table&lt;/code&gt; operations - JustinDB will not be as efficient as other databases. Other thing, so to speak, JustinDB’s simple data model means that your data must be denormalized if your system is to be reasonably performant.&lt;/p&gt;
-
-&lt;h3 id=&quot;summary&quot;&gt;Summary&lt;/h3&gt;
-&lt;p&gt;Making decision about chosing key/value logical model was one of the most important part while architecting my own NoSQL database. Since its relatively easy concept to wrap head around it could help me to move faster to other fancy “distributed” stuff. 💎&lt;/p&gt;</content><author><name></name></author><summary type="html">Database models Althought there are numerous differents NoSQL databases we can group them the ways they represent logical data. This characteristic is the answer that arose to specific problems not originally envisioned by the relational counterparts.</summary></entry><entry><title type="html">JustinDB - Modern REACTIVE NoSQL database</title><link href="http://localhost:4000/dsp2017/2017/03/14/justindb-modern-reactive-nosql-database.html" rel="alternate" type="text/html" title="JustinDB - Modern REACTIVE NoSQL database" /><published>2017-03-14T07:29:17+01:00</published><updated>2017-03-14T07:29:17+01:00</updated><id>http://localhost:4000/dsp2017/2017/03/14/justindb-modern-reactive-nosql-database</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/03/14/justindb-modern-reactive-nosql-database.html">&lt;h3 id=&quot;what-is-this-all-about&quot;&gt;What is this all about&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.wikiwand.com/en/NoSQL&quot;&gt;NoSQL&lt;/a&gt; term was coined a decade ago. We have on market at least a dozen of different NoSQL databases with specific data model. They are so popular that many of engineers are not afraid to take them as a tool of first choice while bootsraping a new project.&lt;/p&gt;
-
-&lt;p&gt;Its tend to think that they are “scalable out of the box product” - lets assume thats true. But…&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;What exactly causes it?&lt;/li&gt;
-  &lt;li&gt;What kind of algorithms and data structures are used in place?&lt;/li&gt;
-  &lt;li&gt;What trade-off database engineers are need to deal with?&lt;/li&gt;
-  &lt;li&gt;What makes that they are so-said scalable?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;These are the questions we are going to answer through a couple of next posts. 🤔&lt;/p&gt;
-
-&lt;h3 id=&quot;why-yet-another-database&quot;&gt;Why yet another database&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; is an attempt to write my own distributed database. Its mainly educational goal. This project is far from being production ready in mind (such non-travial things are built over several years). Since its a complete writing from scratch I was happy to make it the way I would like - I was the one who decided what  algorithms, data structures and architecture will be. Being frankly, at current point JustinDB is a pretty faithfull implementation of &lt;a href=&quot;http://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf&quot;&gt;whitepaper&lt;/a&gt; written by Amazon research team describing architecture of DynamoDB database (they prominent product used actively over decade in AWS).&lt;/p&gt;
-
-&lt;p&gt;Lets sum up main characteristic of &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; (these will be covered more extensively in next posts):&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;key-value model:
-every single value written to database has its uniqe own key across the whole database (cluster as well); database is value type agnostic which simply mean it can store e.g. strings, numbers and even binaries&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;high-availablity:
-this trait is naturraly welcome when we want to have solution that works possibly all the time; when one node of the cluster’s node is not available during job processing then rest of them takes care of it&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;partitioning:
-data is split across the cluster by using technique called Consistent Hashing (JustinDB uses its modified version); it simply deducts what node of the cluster should store the pushed data and which node should be asked in order to get particular data by its key&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;replication:
-having splitted data across the cluster is not sufficient when we want to achieve high-availability; data needs to be copied to a couple of distinct nodes&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;data multi-versioning:
-there are the cases when client wants to update its data; in distributed system its highly possible scenario that while updating specific record node with desired replica is not available so we can’t update it to the newest version; we should follow such situations in order to not override our data with older versions (nobody wants stales reads); to achieve that JustinDB uses Vector Clocks, CRDTs and different levels of fightining against data entropy e.g. Active-Anti Entropy and Merkle Trees (its used e.g. in Bitcoin)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;concurrency:
-whole architecture is built on top of Actor Model - it greatly simplify modeling of concurrent operations&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.wikiwand.com/en/CAP_theorem&quot;&gt;CAP theorem&lt;/a&gt;:
-from perspective of this theorem JustinDB was designed to be AP system - highy available (A) and partition tolerant (P) and the same time. This was achieved by bringing relaxed model of data (so called Eventual Consistency).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;stack:
-database is entirely written in Scala using Akka library (e.g. its Cluster module); Admin UI is written using Elm language (still in progress though)&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;aaand last part…&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;reactivness:
-What does it mean? Is this sth that other databases don’t have? From official site of &lt;a href=&quot;http://www.reactivemanifesto.org&quot;&gt;manifesto&lt;/a&gt; we can read that characteristic of such systems are: responsivness, resiliency, elasticity, message driven approach. JustinDB has (or try to have) all of it. Its very broad topic we will cover in one of the next post.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;summary&quot;&gt;Summary&lt;/h3&gt;
-&lt;p&gt;JustinDB is relatively young project which still lack of many welcome features (some of them are in progress, some not even started). Its OOS so its really welcome to have contributors - I think that this topic can be very interesting to many of you.&lt;/p&gt;
-
-&lt;p&gt;You can find an official JustinDB respository &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;here&lt;/a&gt;. 💪&lt;/p&gt;
-
-&lt;p&gt;In next post we are going to cover one of the above point more extensively looking closer how exactly NoSQL databases work and how JustinDB solely solves it. 👍&lt;/p&gt;</content><author><name></name></author><summary type="html">What is this all about NoSQL term was coined a decade ago. We have on market at least a dozen of different NoSQL databases with specific data model. They are so popular that many of engineers are not afraid to take them as a tool of first choice while bootsraping a new project.</summary></entry></feed>
+&lt;p&gt;Cheers and don’t thank me 👍&lt;/p&gt;</content><author><name></name></author><summary type="html">Eureka Have you ever get to known something that is simply brilliant and you feel that you were living without it way too long?</summary></entry></feed>
