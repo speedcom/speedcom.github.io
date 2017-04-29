@@ -1,12 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-04-26T08:26:15+02:00</updated><id>http://localhost:4000/</id><title type="html">Mateusz Maciaszek</title><subtitle>This blog covers topics about many different computer science fields, mainly distributed and concurrent systems. Some day it will help me to escape from the simulation we live in (not sure how yet).
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-04-29T06:40:23+02:00</updated><id>http://localhost:4000/</id><title type="html">Mateusz Maciaszek</title><subtitle>This blog covers topics about many different computer science fields, mainly distributed and concurrent systems. Some day it will help me to escape from the simulation we live in (not sure how yet).
 </subtitle><entry><title type="html">Streaming Databases - the future</title><link href="http://localhost:4000/dsp2017/2017/04/25/streaming-databases-future.html" rel="alternate" type="text/html" title="Streaming Databases - the future" /><published>2017-04-25T09:20:00+02:00</published><updated>2017-04-25T09:20:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/04/25/streaming-databases-future</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/04/25/streaming-databases-future.html">&lt;h2 id=&quot;streaming-world&quot;&gt;Streaming World&lt;/h2&gt;
 
-&lt;p&gt;We leave in the world where streaming got to be a serious part of building distributed applications. In this ecosystem we face a lot of innovation at open source including such frameworks like Apache Spark/Storm/Flink, Kafka/Samza or proprietary services such AWS Lambda and Google’s DataFlow.&lt;/p&gt;
+&lt;p&gt;We leave in the world where &lt;strong&gt;streaming&lt;/strong&gt; has started to be a serious part of building distributed applications. In this ecosystem we face a lot of innovation at open source including such frameworks like &lt;em&gt;Apache Spark/Storm/Flink&lt;/em&gt;, &lt;em&gt;Kafka/Samza&lt;/em&gt; or proprietary services such &lt;em&gt;AWS Lambda&lt;/em&gt; and &lt;em&gt;Google’s DataFlow&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;Every single serious application needs some kind of data storage in order to store results and get them back later.
 Thought, there is one thing that seems to be very constant at this field - &lt;strong&gt;MONOPOL of RDBMs&lt;/strong&gt; (&lt;em&gt;Relational Database Management Systems&lt;/em&gt;).&lt;/p&gt;
 
-&lt;p&gt;In typical software developer mindset these solutions seems to exists as the only one even though they simply often do not fit to application requirements!&lt;/p&gt;</content><author><name></name></author><summary type="html">Streaming World</summary></entry><entry><title type="html">Get noticed - first summing up</title><link href="http://localhost:4000/dsp2017/2017/04/22/get-noticed-first-summing-up.html" rel="alternate" type="text/html" title="Get noticed - first summing up" /><published>2017-04-22T13:20:00+02:00</published><updated>2017-04-22T13:20:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/04/22/get-noticed-first-summing-up</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/04/22/get-noticed-first-summing-up.html">&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;In typical software developer mindset these solutions seems to exists as the only one even though they often do not fit to application requirements!&lt;/p&gt;
+
+&lt;p&gt;In this artcile I’m going to cover a little bit different model - streaming database. Ever hear about such?&lt;/p&gt;
+
+&lt;h2 id=&quot;data-stream-management-system-dsms&quot;&gt;Data Stream Management System (DSMS)&lt;/h2&gt;
+
+&lt;p&gt;In typical RDBMs before we do any query against it we load needed data which are stored in atomic transactional way. Then we perform some subsequent queries to analyze what we want.&lt;/p&gt;
+
+&lt;p&gt;However, try to imagine the class of applications which have to deal with constant contiguous load of new data and do analysis of whem in time they arrive to system. Once the result is computed we present it in real time. Financial systems, network monitoring, server logs monitoring, traffic intensity and many more - systems with &lt;strong&gt;massive load&lt;/strong&gt;. Minimalization of latency is crucial here and relying on RDBM system can lead to serious bottlenecks.&lt;/p&gt;
+
+&lt;p&gt;Contigous, dynamic, changing over time set of new data - this is what we call &lt;strong&gt;STREAM&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;First term is coined. Next one that goes in pair is &lt;strong&gt;Continous Queries&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;stream-model-and-continous-queries&quot;&gt;STREAM model and Continous Queries&lt;/h3&gt;
+
+&lt;p&gt;So how exactly such databases work?&lt;/p&gt;
+
+&lt;p&gt;Continous queries expect to working until they are deleted from system on coming contiguous stream of data (potentially ifinit). They do its work every single time new data arrives to system (not when client make requests). Client simply register itself and listen for generated results on the fly.&lt;/p&gt;
+
+&lt;h3 id=&quot;current-projects&quot;&gt;Current projects&lt;/h3&gt;
+
+&lt;p&gt;Most of them are done by Academia world but either are no longer supported or were just a playground for new ideas. I’m a fan of promising &lt;a href=&quot;https://www.pipelinedb.com/&quot;&gt;PipelineDB&lt;/a&gt; which is an extension of Postgres database adding &lt;em&gt;CQL&lt;/em&gt; (continous query language) for handling streaming data. Worth to mention is also &lt;a href=&quot;https://www.confluent.io/blog/introducing-kafka-streams-stream-processing-made-simple/&quot;&gt;Kafka Streams&lt;/a&gt; which is build on top of Kafka distributed queue.&lt;/p&gt;
+
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+
+&lt;p&gt;Streaming programming is getting more and more attention. However, from perspective of databases its still something new and not very popular as it should be - lack of comercialization and too much pinned on RDBMs in typical developers mindset.&lt;/p&gt;</content><author><name></name></author><summary type="html">Streaming World</summary></entry><entry><title type="html">Get noticed - first summing up</title><link href="http://localhost:4000/dsp2017/2017/04/22/get-noticed-first-summing-up.html" rel="alternate" type="text/html" title="Get noticed - first summing up" /><published>2017-04-22T13:20:00+02:00</published><updated>2017-04-22T13:20:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/04/22/get-noticed-first-summing-up</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/04/22/get-noticed-first-summing-up.html">&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;It passed more than one month since I wrote my first blogpost during &lt;a href=&quot;http://speedcom.github.io/dsp2017/2017/03/12/get-noticed.html&quot;&gt;“Get noticed”&lt;/a&gt; competition.
 I’ve decided to write quick recap for myself and others to hear what I’ve achieved during this time.&lt;/p&gt;
 
