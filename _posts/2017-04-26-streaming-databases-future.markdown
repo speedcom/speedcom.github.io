@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Streaming Databases - the future"
-date:   2017-04-25 08:20:00 +0100
+date:   2017-04-29 08:20:00 +0100
 categories: DSP2017
 ---
 
@@ -18,9 +18,9 @@ In this artcile I'm going to cover a little bit different model - streaming data
 
 ## Data Stream Management System (DSMS)
 
-In typical RDBMs before we do any query against it we load needed data which are stored in atomic transactional way. Then we perform some subsequent queries to analyze what we want.
+In typical RDBMs we load needed data which are stored in atomic transactional way and after than perform some subsequent queries to analyze what we want.
 
-However, try to imagine the class of applications which have to deal with constant contiguous load of new data and do analysis of whem in time they arrive to system. Once the result is computed we present it in real time. Financial systems, network monitoring, server logs monitoring, traffic intensity and many more - systems with **massive load**. Minimalization of latency is crucial here and relying on RDBM system can lead to serious bottlenecks.
+However, try to imagine the class of applications which have to deal with constant contiguous load of new data and do analysis of whem in time they arrive to system. Once the result is computed we present it in real time (also incrementaly storing in table/archive). Financial systems, network monitoring, server logs monitoring, traffic intensity and many more - systems with **massive load**. Minimalization of latency is crucial here and relying on RDBM system can lead to serious bottlenecks.
 
 Contigous, dynamic, changing over time set of new data - this is what we call **STREAM**.
 
