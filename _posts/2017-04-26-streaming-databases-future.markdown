@@ -34,7 +34,7 @@ Continous queries expect to working until they are deleted from system on coming
 
 ### Current projects
 
-Most of them are done by Academia world but either are no longer supported or were just a playground for new ideas. I'm a fan of promising [PipelineDB][pipelinedb] which is an extension of Postgres database adding _CQL_ (continous query language) for handling streaming data. Worth to mention is also [Kafka Streams][kafka-streams] which is build on top of Kafka distributed queue.
+Most of them are done by Academia world but either are no longer supported or were just a playground for new ideas. I'm a fan of promising [PipelineDB][pipelinedb] which is an extension of Postgres database adding _CQL_ (continous query language; extension of SQL) for handling streaming data. Worth to mention is also [Kafka Streams][kafka-streams] which is build on top of Kafka distributed queue.
 
 ## Summary
 
