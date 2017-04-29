@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Streaming Databases - the future"
-date:   2017-04-29 08:20:00 +0100
+date:   2017-04-29 15:20:00 +0100
 categories: DSP2017
 ---
 
