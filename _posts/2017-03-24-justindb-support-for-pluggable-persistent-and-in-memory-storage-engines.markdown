@@ -13,7 +13,7 @@ There is only on requirement that needs to be considered into account while impl
 - GET
 - PUT
 
-One for fetching data, another one for putting them into. Since they may cross the boundaries of our system in order make IO operations both adress asynchronicity.
+One for fetching data, another one for putting them into. Since they may cross the boundaries of our system (in order to make IO operations) both adress asynchronicity.
 
 ### Benefits ✴️
 The main reason for designing a pluggable persistence component is to choose the storage engine best suited for an application’s access patterns.
