@@ -24,13 +24,13 @@ However, try to imagine the class of applications which have to deal with consta
 
 Contigous, dynamic, changing over time set of new data - this is what we call **STREAM**.
 
-First term is coined. Next one that goes in pair is **Continous Queries**.
+First term is coined. Next one that goes in pair is **Continuous Queries**.
 
-### STREAM model and Continous Queries
+### STREAM model and Continuous Queries
 
 So how exactly such databases work?
 
-Continous queries expect to working until they are deleted from system on coming contiguous stream of data (potentially ifinit). They do its work every single time new data arrives to system (not when client make requests). Client simply register itself and listen for generated results on the fly.
+Continuous queries expect to working until they are deleted from system on coming contiguous stream of data (potentially ifinit). They do its work every single time new data arrives to system (not when client make requests). Client simply register itself and listen for generated results on the fly.
 
 ### Current projects
 
