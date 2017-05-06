@@ -7,7 +7,7 @@ categories: DSP2017
 
 ## Streaming World
 
-We leave in the world where **streaming** has started to be a serious part of building distributed applications. In this ecosystem we face a lot of innovation at open source including such frameworks like _Apache Spark/Storm/Flink_, _Kafka/Samza_ or proprietary services such _AWS Lambda_ and _Google's DataFlow_.
+We live in the world where **streaming** has started to be a serious part of building distributed applications. In this ecosystem we face a lot of innovation at open source including such frameworks like _Apache Spark/Storm/Flink_, _Kafka/Samza_ or proprietary services such _AWS Lambda_ and _Google's DataFlow_.
 
 Every single serious application needs some kind of data storage in order to store results and get them back later.
 Thought, there is one thing that seems to be very constant at this field - **MONOPOL of RDBMs** (_Relational Database Management Systems_).
