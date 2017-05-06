@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "JustinDB - The Ring"
-date:   2017-05-06 10:20:00 +0100
+date:   2017-05-06 18:00:00 +0100
 categories: DSP2017
 ---
 
