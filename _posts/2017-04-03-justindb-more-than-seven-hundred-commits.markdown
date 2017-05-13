@@ -10,7 +10,7 @@ categories: [DSP2017]
 
 The more I work on this project the more I realize how broad this topic actually is. DBMSs (Database Management Systems) are a critical components of modern computing and the result of decades of research in both industry and academia. Since they were among the earliest multi-user server systems to be developed thus pioneered many systems design techniques for scalability and relability (these days are concerns in many other contexts).
 
-Builiding by own such advanced conceptually product is very demanding. There has been relatively sparse coverage in the literature of the systems design issues that make a DBMS work. Sometimes official docs of arleady created databases are a source of thruth and used as points of reference, particulary when multiple alternative designs have been adopted by different groups. Just think about all the concepts: process models, storage system design, parallel architecture, transaction system, querry processor and optimizer (plus some utilities and typical shared components). Very, very deep subject.
+Builiding by own such advanced conceptually product is very demanding. There has been relatively sparse coverage in the literature of the systems design issues that make a DBMS work. Sometimes official docs of arleady created databases are a source of thruth and used as points of reference, particulary when multiple alternative designs have been adopted by different groups. Just think about all the concepts: process models, storage system design, parallel architecture, transaction system, query processor and optimizer (plus some utilities and typical shared components). Very, very deep subject.
 
 
 ### Summary of current implementation 👷
@@ -18,7 +18,7 @@ Builiding by own such advanced conceptually product is very demanding. There has
 I will let myself to point out what I've achieved/what topics were touched during mentioned 5 months of active development.
 If you still hadn't a chance to get familiarize with JustinDB you can read my previous [post][justindb-reactive-database] (it covers many concepts).
 
-* clustering - [JustinDB][justindb] is able to horizontally scale; we can add up and remove nodes from cluster configuration during runtime (depens on the user traffics this allows better utilization of server power consumption)
+* clustering - [JustinDB][justindb] is able to horizontally scale; we can add up and remove nodes from cluster configuration during runtime (depends on the user traffics this allows better utilization of server power consumption)
 
 * replication - data is copied to N of nodes in the cluster (in order to achieve high availability); we are able to tune how many of replicas we want to read/write (R/W) before we return result to client (the main advantage of [JustinDB][justindb] is that its client applications can tune the values of N, R and W to achieve their desired levels of performance, availability and durability).
 
@@ -34,20 +34,20 @@ If you still hadn't a chance to get familiarize with JustinDB you can read my pr
 
 * performance tests - [JustinDB][justindb] can be tested againts performance tests (not many of them though, heh) using this [repository][justindb-performance-tests]; tests are written with usage of [Gatling][gatling] toolkit
 
-* CI/code coverage - every single time new commit is pushed to master branch Travis fires off new task running tests and countng code coverage; we can see relevant badges in README file
+* CI/code coverage - every single time new commit is pushed to master branch Travis fires off new task running tests and counting code coverage; we can see relevant badges in README file
 
 * modularized project - I've done many small/bigger refactoring into this; project is splitted into many sub-projects (its still monorepo though) which allows for better separation of concerns
 
 * logo - yup, it has! 💖
 
-* dockerizing/service discovery - I would like to start full [JustinDB][justindb] cluster under container with single command; I've dont first attemp in integration with [Consul][consul] and [Docker][docker] but its still big WIP
+* dockerizing/service discovery - I would like to start full [JustinDB][justindb] cluster under container with single command; I've made first attemp in integration with [Consul][consul] and [Docker][docker] but its still big WIP
 
 ### Set goals 🏆
 I am pretty happy with what I've actually achieved during this time. 💯 I'm aware of that I'm nowhere close to current existing solutions but it doesn't matter - the most important part for me is constant learning, having fun and getting familiarize with really great topic (who knows what this project can bring to me in the future).
 
-Nevertheless, its not the end. Its beggining.
+Nevertheless, its not the end. Its beginning.
 
-The most intriguing part to me about database now is cooperation of engine with storage - how to store and get effectively data to/from it. I know that this going to be really challenging (simply can't wait to implement own B+ tree data structure or sth similiar which will be a basic building block).
+The most intriguing part to me about database now is cooperation of engine with storage - how to store and get effectively data to/from it. I know that this going to be really challenging (simply can't wait to implement own B+ tree data structure or sth similiar which will be a basic building block for [JustinDB][justindb]).
 
 When not talking about technical specification I wish some day [JustinDB][justindb]:
 * will have **100 stars** on GitHub
