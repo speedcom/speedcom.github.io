@@ -17,6 +17,7 @@ As of today, [JustinDB][justindb] has:
 - **9 watchers**
 - **35 stars** (my goal is to have at least **100**!)
 - **5 forks**
+
 I like these stats and they mean a lot of to me!
 
 Most of the time I share with new blogposts via LinkedIn platform on dedicated Scala enthusiasts group. I think that I should start considering such services as Twitter and Reddit to get more attention.
