@@ -12,11 +12,11 @@ We live in the world where **streaming** has started to be a serious part of bui
 Every single serious application needs some kind of data storage in order to store results and get them back later.
 Thought, there is one thing that seems to be very constant at this field - **MONOPOL of RDBMs** (_Relational Database Management Systems_).
 
-In typical software developer mindset these solutions seems to exists as the only one even though they often do not fit to application requirements!
+In typical software developer mindset these solutions seems to exists as the only one even though they often do not fit to application requirements! 🤷
 
 In this artcile I'm going to cover a little bit different model - streaming database. Ever hear about such?
 
-## Data Stream Management System (DSMS)
+## Data Stream Management System (DSMS) 🕵️‍
 
 In typical RDBMs we load needed data which are stored in atomic transactional way and after than perform some subsequent queries to analyze what we want.
 
@@ -38,7 +38,7 @@ Most of them are done by Academia world but either are no longer supported or we
 
 ## Summary
 
-Streaming programming is getting more and more attention. However, from perspective of databases its still something new and not very popular as it should be - lack of comercialization and too much pinned on RDBMs in typical developers mindset.
+Streaming programming is getting more and more attention. However, from perspective of databases its still something new and not very popular as it should be - lack of comercialization and too much pinned on RDBMs in typical developers mindset. 🦄
 
 [pipelinedb]: https://www.pipelinedb.com/
 [kafka-streams]: https://www.confluent.io/blog/introducing-kafka-streams-stream-processing-made-simple/

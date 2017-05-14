@@ -10,7 +10,7 @@ As you might read [here][justindb-replication] [JustinDB][justindb] replicates i
 
 The list of nodes that is responsible for storing a particular value is called a **preference list**.
 
-This is the way JustinDB represents preference list from code perspective.
+This is the way JustinDB represents preference list from code perspective. 👍
 
 {% highlight Scala %}
 case class PreferenceList(primaryNodeId: NodeId, replicasNodeId: List[NodeId]) {

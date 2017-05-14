@@ -12,7 +12,7 @@ categories: DSP2017
 Just to recall [JustinDB][justindb] is a key-value database so you can think about it as a *big distributed hashtable*.
 Every signle data we save is identifiable in the system by its key (*UUID* actually).
 
-But how exactly [JustinDB][justindb] know what node is responsible for handling request (storing/fetching value)? This is where already mentioned **Consistent Hashing** algorithm take place.
+But how exactly [JustinDB][justindb] know what node is responsible for handling request (storing/fetching value)? This is where already mentioned **Consistent Hashing** algorithm take place. 👍
 
 ## Consistent Hashing
 Let visualise cluster of 5 nodes size. This is our space we can cover with data. [JustinDB][justindb] employs such algorithm to uniform data distribution. This space is divided into equal partitions called **"vnodes"**. These vnodes are evenly distributed amongst participating physical nodes in the cluster.
@@ -33,7 +33,7 @@ Participating nodes in a [JustinDB][justindb] cluster are homogeneous - every no
 class Ring(private val ring: Map[RingPartitionId, NodeId])
 {% endhighlight %}
 
-You can find these snippets [here][justindb-snippets].
+You can find these snippets [here][justindb-snippets]. 💪
 
 
 [justindb]: https://github.com/speedcom/JustinDB

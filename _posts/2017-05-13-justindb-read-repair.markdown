@@ -12,9 +12,9 @@ categories: DSP2017
 * [**Replication and Partitioning**][justindb-replication-partitioning] - creating multiple replicas of same data and splitting them across cluster nodes
 * [**Vector Clocks**][justindb-vector-clock] - following made updates to every replica
 
-[JustinDB][justindb] states that is **eventually consistent** database meaning that write will replicate to other nodes in time but there can be a bit of delay during which all nodes do not contain the same value. I've already wrote about how an **R/W** quorum can deal with differing values when write/read requests overlap at least one node. [JustinDB][justindb] has also a single strategy to address conflicting writes - **Vector Clocks**.
+[JustinDB][justindb] states that is **eventually consistent** database meaning that write will replicate to other nodes in time but there can be a bit of delay during which all nodes do not contain the same value. I've already wrote about how an **R/W** quorum can deal with differing values when write/read requests overlap at least one node. [JustinDB][justindb] has also a single strategy to address conflicting writes - **Vector Clocks**. 👍
 
-All this difference between replicas in time is called *entropy*. How to deal with it?
+All this difference between replicas in time is called *entropy*. How to deal with it? 🤔
 
 ## Data Entropy
 Entropy is a byproduct of **eventual consistency**.
