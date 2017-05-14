@@ -18,29 +18,29 @@ Builiding by own such advanced conceptually product is very demanding. There has
 I will let myself to point out what I've achieved/what topics were touched during mentioned 5 months of active development.
 If you still hadn't a chance to get familiarize with JustinDB you can read my previous [post][justindb-reactive-database] (it covers many concepts).
 
-* clustering - [JustinDB][justindb] is able to horizontally scale; we can add up and remove nodes from cluster configuration during runtime (depends on the user traffics this allows better utilization of server power consumption)
+* **clustering** - [JustinDB][justindb] is able to horizontally scale; we can add up and remove nodes from cluster configuration during runtime (depends on the user traffics this allows better utilization of server power consumption)
 
-* replication - data is copied to N of nodes in the cluster (in order to achieve high availability); we are able to tune how many of replicas we want to read/write (R/W) before we return result to client (the main advantage of [JustinDB][justindb] is that its client applications can tune the values of N, R and W to achieve their desired levels of performance, availability and durability).
+* **replication** - data is copied to N of nodes in the cluster (in order to achieve high availability); we are able to tune how many of replicas we want to read/write (R/W) before we return result to client (the main advantage of [JustinDB][justindb] is that its client applications can tune the values of N, R and W to achieve their desired levels of performance, availability and durability; EDIT: [JustinDB - replication and partitioning][justindb-replication-partitioning]).
 
-* records versioning - [JustinDB][justindb] uses concept of Vector Clocks here
+* **records versioning** - [JustinDB][justindb] uses concept of Vector Clocks here (EDIT: [JustinDB - data versioning: Vector Clocks][justindb-vector-clock])
 
-* entropy replica solving - existing of copies of same data and highly distributed systems brings  high possibility of having not coverged replicas; this part is not finished fully yet though (Read-Repair and Active-Anti entropy algorithms)
+* **entropy replica solving** - existing of copies of same data and highly distributed systems brings high possibility of having not coverged replicas; this part is not finished fully yet though (EDIT: [JustinDB - solving data entropy: Active-Anti Entropy][justindb-aae], [JustinDB - solving data entropy: Read Repair][justindb-read-repair])
 
-* communication protocol - currently we can talk with [JustinDB][justindb] via http protocol
+* **communication protocol** - currently we can talk with [JustinDB][justindb] via http protocol (EDIT: [JustinDB - HTTP API][justindb-http-api])
 
-* pluggable backends - this is what I've described [here][justindb-pluggable-backends] recently
+* **pluggable backends** - this is what I've described [here][justindb-pluggable-backends] recently
 
-* serialization - during last week I was working on integration with [Akka-Kryo][akka-kryo] serialization plugin; I will describe this part more intensively in one of the next posts
+* **serialization** - during last week I was working on integration with [Akka-Kryo][akka-kryo] serialization plugin; I will describe this part more intensively in one of the next posts (EDIT: [JustinDB - serialization that greatly improves performance][justindb-serialization])
 
-* performance tests - [JustinDB][justindb] can be tested againts performance tests (not many of them though, heh) using this [repository][justindb-performance-tests]; tests are written with usage of [Gatling][gatling] toolkit
+* **performance tests** - [JustinDB][justindb] can be tested againts performance tests (not many of them though, heh) using this [repository][justindb-performance-tests]; tests are written with usage of [Gatling][gatling] toolkit
 
-* CI/code coverage - every single time new commit is pushed to master branch Travis fires off new task running tests and counting code coverage; we can see relevant badges in README file
+* **CI/code coverage** - every single time new commit is pushed to master branch Travis fires off new task running tests and counting code coverage; we can see relevant badges in README file
 
-* modularized project - I've done many small/bigger refactoring into this; project is splitted into many sub-projects (its still monorepo though) which allows for better separation of concerns
+* **modularized project** - I've done many small/bigger refactoring into this; project is splitted into many sub-projects (its still monorepo though) which allows for better separation of concerns
 
-* logo - yup, it has! 💖
+* **logo** - yup, it has! 💖
 
-* dockerizing/service discovery - I would like to start full [JustinDB][justindb] cluster under container with single command; I've made first attemp in integration with [Consul][consul] and [Docker][docker] but its still big WIP
+* **dockerizing/service discovery** - I would like to start full [JustinDB][justindb] cluster under container with single command; I've made first attemp in integration with [Consul][consul] and [Docker][docker] but its still big WIP
 
 ### Set goals 🏆
 I am pretty happy with what I've actually achieved during this time. 💯 I'm aware of that I'm nowhere close to current existing solutions but it doesn't matter - the most important part for me is constant learning, having fun and getting familiarize with really great topic (who knows what this project can bring to me in the future).
@@ -64,3 +64,9 @@ Wish me luck! 🤞
 [justindb-performance-tests]: https://github.com/justin-db/JustinDB-load-testing
 [consul]: https://www.consul.io/
 [docker]: https://docker.com/
+[justindb-serialization]: http://speedcom.github.io/dsp2017/2017/04/08/justindb-serilization-that-greatly-improves-performance.html
+[justindb-read-repair]: http://speedcom.github.io/dsp2017/2017/05/13/justindb-read-repair.html
+[justindb-aae]: http://speedcom.github.io/dsp2017/2017/05/14/justindb-active-anti-entropy.html
+[justindb-vector-clock]: http://speedcom.github.io/dsp2017/2017/04/21/justindb-data-versioning.html
+[justindb-replication-partitioning]: http://speedcom.github.io/dsp2017/2017/04/13/justindb-replication-and-partitioning.html
+[justindb-http-api]: http://speedcom.github.io/dsp2017/2017/04/30/justindb-http-api.html
