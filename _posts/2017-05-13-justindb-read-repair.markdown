@@ -28,7 +28,8 @@ As the name states this technique solves *entropy* while reading data. When a su
 
 For example, we fetch data with ID=1 and R=3 (N is set to 3 also) - for some reason one of the fetched replica is considered to be "older" than rest. Once the final result could be easly deducted and returned to client behind the scene **Read Repair** mechanism was fired of in asynchronous manner decided to update source node with old replica to the newest value.
 
-However, data which is never read can eventually be lost as nodes fail or/and are replaced. This is exactly where **Active Anti-Entropy** comes to the party!
+However, data which is never read can eventually be lost as nodes fail or/and are replaced. This is exactly where **Active Anti-Entropy** comes to the party! ✌️
+
 
 [justindb]: https://github.com/speedcom/JustinDB
 [justindb-ring]: http://speedcom.github.io/dsp2017/2017/05/06/justindb-ring.html

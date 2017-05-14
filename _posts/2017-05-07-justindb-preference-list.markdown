@@ -20,7 +20,8 @@ case class PreferenceList(primaryNodeId: NodeId, replicasNodeId: List[NodeId]) {
 {% endhighlight %}
 *PrimaryNodeId is an Id of a coordinator node*
 
-If you are interested more about code you can start exploring [here][justindb-preference-list].
+If you are interested more about code you can start exploring [here][justindb-preference-list]. 💪
+
 
 [justindb]: https://github.com/speedcom/JustinDB
 [justindb-ring]: http://speedcom.github.io/dsp2017/2017/05/06/justindb-ring.html
