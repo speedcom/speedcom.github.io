@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "JustinDB - next COMPETITION"
-date:   2017-05-20 13:10:00 +0100
+date:   2017-05-20 18:10:00 +0100
 categories: DSP2017
 ---
 
