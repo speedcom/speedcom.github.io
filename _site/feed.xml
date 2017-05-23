@@ -1,5 +1,211 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-04-29T16:01:25+02:00</updated><id>http://localhost:4000/</id><title type="html">Mateusz Maciaszek</title><subtitle>This blog covers topics about many different computer science fields, mainly distributed and concurrent systems. Some day it will help me to escape from the simulation we live in (not sure how yet).
-</subtitle><entry><title type="html">Get noticed - first summing up</title><link href="http://localhost:4000/dsp2017/2017/04/22/get-noticed-first-summing-up.html" rel="alternate" type="text/html" title="Get noticed - first summing up" /><published>2017-04-22T13:20:00+02:00</published><updated>2017-04-22T13:20:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/04/22/get-noticed-first-summing-up</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/04/22/get-noticed-first-summing-up.html">&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-05-23T20:52:22+02:00</updated><id>http://localhost:4000/</id><title type="html">Mateusz Maciaszek</title><subtitle>This blog covers topics about many different computer science fields, mainly distributed and concurrent systems. Some day it will help me to escape from the simulation we live in (not sure how yet).
+</subtitle><entry><title type="html">JustinDB - next COMPETITION</title><link href="http://localhost:4000/dsp2017/2017/05/20/justindb-next-competition.html" rel="alternate" type="text/html" title="JustinDB - next COMPETITION" /><published>2017-05-20T19:10:00+02:00</published><updated>2017-05-20T19:10:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/05/20/justindb-next-competition</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/05/20/justindb-next-competition.html">&lt;h2 id=&quot;blogpost-nr-20&quot;&gt;BLOGPOST NR 20&lt;/h2&gt;
+&lt;p&gt;You may know that I’m taking a part in polish competition called &lt;a href=&quot;http://devstyle.pl/daj-sie-poznac/&quot;&gt;Get noticed!&lt;/a&gt; (read more &lt;a href=&quot;http://speedcom.github.io/dsp2017/2017/03/12/get-noticed.html&quot;&gt;here&lt;/a&gt; about it). It took more than 2 months since I wrote it.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Time flies so fast.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;But I’m very happy and proud from myself. 😊 I achieved my personal goal - to write 20 blogposts (mainly about &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt;). 💖&lt;/p&gt;
+
+&lt;h2 id=&quot;next-competition&quot;&gt;NEXT COMPETITION&lt;/h2&gt;
+&lt;p&gt;I don’t know why but I love competitions. Recently I found a new possibility to move on with &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; to make it even more recognizable.&lt;/p&gt;
+
+&lt;p&gt;I’m going to take a part in so called &lt;a href=&quot;https://chmurowisko.pl/konkurs-z-chmura/#disqus_thread&quot;&gt;“Konkurs z chmurą”&lt;/a&gt; (ang. “Contest with cloud”) which is organized by team from Chmurowisko and e24cloud (cloud provider). Subject of topic is very broad.&lt;/p&gt;
+
+&lt;h4 id=&quot;step-1-build-something-in-e24cloud&quot;&gt;&lt;strong&gt;STEP 1&lt;/strong&gt;. Build “something” in e24cloud&lt;/h4&gt;
+&lt;p&gt;It can be anything even like installing Wordpress site on virtual machine there or some hybrid solution using e24cloud + AWS at the same time.&lt;/p&gt;
+
+&lt;p&gt;My plan minimum is simple - &lt;strong&gt;Initializing Multiple Data Center Clusters on &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt;&lt;/strong&gt;.
+I will use &lt;strong&gt;e24cloud&lt;/strong&gt; + &lt;strong&gt;AWS/Scaleway&lt;/strong&gt; public cloud providers.&lt;/p&gt;
+
+&lt;p&gt;If everything will spin up correctly I will additionaly try to cover different data replication scenarios.
+I will also try to see how &lt;strong&gt;network&lt;/strong&gt; failures affect on database stability (cluster forming), data consistency and behavior in case of &lt;strong&gt;Split Brain&lt;/strong&gt; happening.&lt;/p&gt;
+
+&lt;h4 id=&quot;step-2-show-it-to-the-world&quot;&gt;&lt;strong&gt;STEP 2&lt;/strong&gt;. Show it to the world&lt;/h4&gt;
+
+&lt;p&gt;Easly undestandable. Just write about your whole “journey” on blog or record video.&lt;/p&gt;
+
+&lt;h4 id=&quot;step-3-win&quot;&gt;&lt;strong&gt;STEP 3&lt;/strong&gt;. Win&lt;/h4&gt;
+&lt;p&gt;Yeah! 👊&lt;/p&gt;</content><author><name></name></author><summary type="html">BLOGPOST NR 20 You may know that I’m taking a part in polish competition called Get noticed! (read more here about it). It took more than 2 months since I wrote it.</summary></entry><entry><title type="html">JustinDB - executable JAR</title><link href="http://localhost:4000/dsp2017/2017/05/20/justindb-executable-jar.html" rel="alternate" type="text/html" title="JustinDB - executable JAR" /><published>2017-05-20T14:10:00+02:00</published><updated>2017-05-20T14:10:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/05/20/justindb-executable-jar</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/05/20/justindb-executable-jar.html">&lt;h2 id=&quot;preface&quot;&gt;Preface&lt;/h2&gt;
+
+&lt;p&gt;In the &lt;a href=&quot;http://speedcom.github.io/dsp2017/hacks/2017/03/28/iTermocil-divide-and-conquer-your-terminal.html&quot;&gt;“iTermocil - divide and conquer your terminal like a PRO”&lt;/a&gt; blogpost I showed to you a way of running local &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; cluster (imitation). It runs &lt;a href=&quot;http://www.scala-sbt.org/&quot;&gt;sbt&lt;/a&gt; process under project catalog in different terminal panes. As this way was convenient in continous development I have had sometimes the feeling its simply too slow (a couple of parallely working sbt processes trying to crunch the same sources at the same time) and it would be better idea to run already having generated package.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Patience has its limits. Take it too far, and it's cowardice.
+George Jackson
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;assembly&quot;&gt;Assembly&lt;/h2&gt;
+
+&lt;p&gt;I’ve finally decided to employ &lt;code class=&quot;highlighter-rouge&quot;&gt;sbt-assembly&lt;/code&gt; plugin. It creates a fat JAR of your project with all of its dependencies. 👊
+Now simply by invoking &lt;code class=&quot;highlighter-rouge&quot;&gt;sbt assembly&lt;/code&gt; command I am able to build new version of &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; JAR.
+That way I’ve got the possibility of running full standalone &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; instance in very fast way!&lt;/p&gt;
+
+&lt;p&gt;Take a look at the pictures to see how I build exemplary &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; JAR and then form cluster on top of it (with passed appropriate parameters). Once JAR is built I’m running 3-node cluster (right side of terminal). Exemplary command to run single node is:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;java -jar -Djustin.node-id=0 -Djustin.http.port=9000 -Djustin.netty-tcp-port=2551 JustinDB-assembly-0.3.jar
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;note&lt;/em&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;0.3&lt;/code&gt; is the current version of &lt;code class=&quot;highlighter-rouge&quot;&gt;JustinDB&lt;/code&gt; defined in &lt;code class=&quot;highlighter-rouge&quot;&gt;build.sbt&lt;/code&gt; file (that come from this name).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Building&lt;/strong&gt;: 👷
+&lt;img src=&quot;../../../../../executable-jar-1.png&quot; alt=&quot;&quot; title=&quot;JustinDB build commands 1&quot; /&gt;
+&lt;em&gt;JAR is building&lt;/em&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Note:
+Built JAR is placed under target/scala-2.12 project catalog
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Running&lt;/strong&gt;: 🚴‍
+&lt;img src=&quot;../../../../../executable-jar-2.png&quot; alt=&quot;&quot; title=&quot;JustinDB build commands 2&quot; /&gt;
+&lt;em&gt;On the right side you can see formed &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; cluster built on top of already generated JAR&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;You can try to download &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; sources from GitHub (official repository) and do it by yourself. That way you can start to play with it! 💪&lt;/p&gt;
+
+&lt;p&gt;Seeing all this running processes make my heart beating faster. 💖&lt;/p&gt;</content><author><name></name></author><summary type="html">Preface</summary></entry><entry><title type="html">JustinDB - solving data entropy: Active-Anti Entropy</title><link href="http://localhost:4000/dsp2017/2017/05/14/justindb-active-anti-entropy.html" rel="alternate" type="text/html" title="JustinDB - solving data entropy: Active-Anti Entropy" /><published>2017-05-14T10:10:00+02:00</published><updated>2017-05-14T10:10:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/05/14/justindb-active-anti-entropy</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/05/14/justindb-active-anti-entropy.html">&lt;h2 id=&quot;preface&quot;&gt;Preface&lt;/h2&gt;
+&lt;p&gt;In &lt;a href=&quot;http://speedcom.github.io/dsp2017/2017/05/13/justindb-read-repair.html&quot;&gt;previous&lt;/a&gt; post I wrote what data &lt;em&gt;entropy&lt;/em&gt; is and how &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; tries to solve it. I’ve introduced to you also &lt;strong&gt;Read-Repair&lt;/strong&gt; technique and gave quick intro to todays hero - &lt;strong&gt;Active Anti-Entropy&lt;/strong&gt;. 💪&lt;/p&gt;
+
+&lt;p&gt;We know that &lt;strong&gt;Read-Repair&lt;/strong&gt; is triggered on &lt;em&gt;read&lt;/em&gt; side, rather than a write. But what if read some data very rarely? It can be eventually be lost! To handle this and other threats to durability, &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; implements mentioned an anti-entorpy (replica synchronization) protocol to keep the replicas synchronized.&lt;/p&gt;
+
+&lt;h2 id=&quot;active-anti-entropy-aae&quot;&gt;Active-Anti Entropy (AAE)&lt;/h2&gt;
+
+&lt;p&gt;So &lt;strong&gt;AAE&lt;/strong&gt; is nothing more like a synchronization protocol to handling permanent failures. &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; supports it to proactively identify and repair inconsident data. This feature helps to recover data loss in the event of disk corruption or administrative error.&lt;/p&gt;
+
+&lt;p&gt;To detect inconsistencies between replicas faster and to minimize the amount of transferred data, &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; uses &lt;a href=&quot;https://github.com/justin-db/JustinDB/tree/master/justin-merkle-trees/src&quot;&gt;&lt;strong&gt;Merkle Trees&lt;/strong&gt;&lt;/a&gt;. Its a sophisticated &lt;strong&gt;hash tree&lt;/strong&gt; which makes it easy to compare data sets between &lt;a href=&quot;http://speedcom.github.io/dsp2017/2017/05/06/justindb-ring.html&quot;&gt;&lt;strong&gt;vnodes&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;merkle-trees&quot;&gt;Merkle Trees&lt;/h2&gt;
+&lt;p&gt;Merkle Trees is a hash tree where leafes are hashes of the values of individual keys. Parent nodes are hashes of their respective children.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Hash_Tree.svg/620px-Hash_Tree.svg.png&quot; alt=&quot;Image of Merkle Trees&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;They minimize the amount of data that needs to be transferred for synchronization.&lt;/p&gt;
+
+&lt;p&gt;Each &lt;strong&gt;vnode&lt;/strong&gt; maintains a separate &lt;strong&gt;Merkle Tree&lt;/strong&gt; for each key range it hosts. If the hash values of the root of two trees are equal, then there is no point in doing synchronization since its meaning that leaf nodes are equal (replicas are the same). If not, it implies that the values of some replicas are different and they need to be synchronized.&lt;/p&gt;
+
+&lt;p&gt;Since this process can be a bit expensive (think about existing many divergent replicas or just about profilactic checking of hashes throughout all cluster) its &lt;strong&gt;triggered manually&lt;/strong&gt; by database administrator (e.g every friday night). ✌️&lt;/p&gt;</content><author><name></name></author><summary type="html">Preface In previous post I wrote what data entropy is and how JustinDB tries to solve it. I’ve introduced to you also Read-Repair technique and gave quick intro to todays hero - Active Anti-Entropy. 💪</summary></entry><entry><title type="html">JustinDB - solving data entropy: Read Repair</title><link href="http://localhost:4000/dsp2017/2017/05/13/justindb-read-repair.html" rel="alternate" type="text/html" title="JustinDB - solving data entropy: Read Repair" /><published>2017-05-13T15:00:00+02:00</published><updated>2017-05-13T15:00:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/05/13/justindb-read-repair</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/05/13/justindb-read-repair.html">&lt;h2 id=&quot;preface&quot;&gt;Preface&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; brings many techniques to achieve &lt;strong&gt;high availability&lt;/strong&gt; and &lt;strong&gt;duratibility&lt;/strong&gt; at the same time. To name few:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://speedcom.github.io/dsp2017/2017/05/06/justindb-ring.html&quot;&gt;&lt;strong&gt;The Ring&lt;/strong&gt;&lt;/a&gt; - &lt;strong&gt;Consistent Hashing&lt;/strong&gt; algorithm trying to distribute workload across all cluster evenly&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://speedcom.github.io/dsp2017/2017/05/07/justindb-preference-list.html&quot;&gt;&lt;strong&gt;Preference list&lt;/strong&gt;&lt;/a&gt; - list of nodes responsible for storing/fetching particular data replica&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://speedcom.github.io/dsp2017/2017/04/13/justindb-replication-and-partitioning.html&quot;&gt;&lt;strong&gt;Replication and Partitioning&lt;/strong&gt;&lt;/a&gt; - creating multiple replicas of same data and splitting them across cluster nodes&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://speedcom.github.io/dsp2017/2017/04/21/justindb-data-versioning.html&quot;&gt;&lt;strong&gt;Vector Clocks&lt;/strong&gt;&lt;/a&gt; - following made updates to every replica&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; states that is &lt;strong&gt;eventually consistent&lt;/strong&gt; database meaning that write will replicate to other nodes in time but there can be a bit of delay during which all nodes do not contain the same value. I’ve already wrote about how an &lt;strong&gt;R/W&lt;/strong&gt; quorum can deal with differing values when write/read requests overlap at least one node. &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; has also a single strategy to address conflicting writes - &lt;strong&gt;Vector Clocks&lt;/strong&gt;. 👍&lt;/p&gt;
+
+&lt;p&gt;All this difference between replicas in time is called &lt;em&gt;entropy&lt;/em&gt;. How to deal with it? 🤔&lt;/p&gt;
+
+&lt;h2 id=&quot;data-entropy&quot;&gt;Data Entropy&lt;/h2&gt;
+&lt;p&gt;Entropy is a byproduct of &lt;strong&gt;eventual consistency&lt;/strong&gt;.
+&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; has created (or has plan to do) 2 &lt;em&gt;anti-entropy&lt;/em&gt; strategies:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Read Repair&lt;/strong&gt; (our todays hero)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Active Anti-Entropy&lt;/strong&gt; (I will write more about it in next post)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;read-repair&quot;&gt;Read Repair&lt;/h3&gt;
+
+&lt;p&gt;As the name states this technique solves &lt;em&gt;entropy&lt;/em&gt; while reading data. When a successful read happens but not all replicas agree upon the value, &lt;em&gt;Read Repair&lt;/em&gt; is triggered. How &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; reason about agreement? With &lt;a href=&quot;http://speedcom.github.io/dsp2017/2017/04/21/justindb-data-versioning.html&quot;&gt;Vector Clocks&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;For example, we fetch data with ID=1 and R=3 (N is set to 3 also) - for some reason one of the fetched replica is considered to be “older” than rest. Once the final result could be easly deducted and returned to client behind the scene &lt;strong&gt;Read Repair&lt;/strong&gt; mechanism was fired of in asynchronous manner decided to update source node with old replica to the newest value.&lt;/p&gt;
+
+&lt;p&gt;However, data which is never read can eventually be lost as nodes fail or/and are replaced. This is exactly where &lt;strong&gt;Active Anti-Entropy&lt;/strong&gt; comes to the party! ✌️&lt;/p&gt;</content><author><name></name></author><summary type="html">Preface JustinDB brings many techniques to achieve high availability and duratibility at the same time. To name few: The Ring - Consistent Hashing algorithm trying to distribute workload across all cluster evenly Preference list - list of nodes responsible for storing/fetching particular data replica Replication and Partitioning - creating multiple replicas of same data and splitting them across cluster nodes Vector Clocks - following made updates to every replica</summary></entry><entry><title type="html">JustinDB - Preference list</title><link href="http://localhost:4000/dsp2017/2017/05/07/justindb-preference-list.html" rel="alternate" type="text/html" title="JustinDB - Preference list" /><published>2017-05-07T23:00:00+02:00</published><updated>2017-05-07T23:00:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/05/07/justindb-preference-list</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/05/07/justindb-preference-list.html">&lt;h2 id=&quot;preference-list&quot;&gt;Preference List&lt;/h2&gt;
+&lt;p&gt;As you might read &lt;a href=&quot;http://speedcom.github.io/dsp2017/2017/04/13/justindb-replication-and-partitioning.html&quot;&gt;here&lt;/a&gt; &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; replicates its data on multiple hosts in order to achieve high availability and durability. Each data is replicated at &lt;code class=&quot;highlighter-rouge&quot;&gt;N&lt;/code&gt; host (this term is also called &lt;code class=&quot;highlighter-rouge&quot;&gt;Replication Factor&lt;/code&gt;). Each key is assigned to a &lt;strong&gt;coordinator node&lt;/strong&gt; (a node handling a read or write operation). The coordinator is in charge of the replication of the data items that fall within its range. In addition to locally storing each key within its range, the coordinator replicates these keys at the N-1 clockwise successor nodes in the &lt;a href=&quot;http://speedcom.github.io/dsp2017/2017/05/06/justindb-ring.html&quot;&gt;Ring&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The list of nodes that is responsible for storing a particular value is called a &lt;strong&gt;preference list&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;This is the way JustinDB represents preference list from code perspective. 👍&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scala&quot; data-lang=&quot;scala&quot;&gt;&lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;PreferenceList&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;primaryNodeId&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;NodeId&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;replicasNodeId&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;NodeId&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Int&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;size&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;NodeId&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;primaryNodeId&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;::&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;replicasNodeId&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;em&gt;PrimaryNodeId is an Id of a coordinator node&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;If you are interested more about code you can start exploring &lt;a href=&quot;https://github.com/justin-db/JustinDB/blob/master/justin-core/src/main/scala/justin/db/replica/PreferenceList.scala&quot;&gt;here&lt;/a&gt;. 💪&lt;/p&gt;</content><author><name></name></author><summary type="html">Preference List As you might read here JustinDB replicates its data on multiple hosts in order to achieve high availability and durability. Each data is replicated at N host (this term is also called Replication Factor). Each key is assigned to a coordinator node (a node handling a read or write operation). The coordinator is in charge of the replication of the data items that fall within its range. In addition to locally storing each key within its range, the coordinator replicates these keys at the N-1 clockwise successor nodes in the Ring.</summary></entry><entry><title type="html">JustinDB - The Ring</title><link href="http://localhost:4000/dsp2017/2017/05/06/justindb-ring.html" rel="alternate" type="text/html" title="JustinDB - The Ring" /><published>2017-05-06T19:00:00+02:00</published><updated>2017-05-06T19:00:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/05/06/justindb-ring</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/05/06/justindb-ring.html">&lt;h2 id=&quot;the-ring&quot;&gt;The Ring&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; applies modified version of &lt;strong&gt;Consistent Hashing&lt;/strong&gt; to map objects along the edge of a circle (the ring).&lt;/p&gt;
+
+&lt;p&gt;Just to recall &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; is a key-value database so you can think about it as a &lt;em&gt;big distributed hashtable&lt;/em&gt;.
+Every signle data we save is identifiable in the system by its key (&lt;em&gt;UUID&lt;/em&gt; actually).&lt;/p&gt;
+
+&lt;p&gt;But how exactly &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; know what node is responsible for handling request (storing/fetching value)? This is where already mentioned &lt;strong&gt;Consistent Hashing&lt;/strong&gt; algorithm take place. 👍&lt;/p&gt;
+
+&lt;h2 id=&quot;consistent-hashing&quot;&gt;Consistent Hashing&lt;/h2&gt;
+&lt;p&gt;Let visualise cluster of 5 nodes size. This is our space we can cover with data. &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; employs such algorithm to uniform data distribution. This space is divided into equal partitions called &lt;strong&gt;“vnodes”&lt;/strong&gt;. These vnodes are evenly distributed amongst participating physical nodes in the cluster.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; uses very simplistic version of mapping data UUID key to particular vnode.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scala&quot; data-lang=&quot;scala&quot;&gt;&lt;span class=&quot;k&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;UUID2RingPartitionId&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;UUID&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Ring&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Ring&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;RingPartitionId&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;UUID&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ring&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Ring&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;RingPartitionId&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;scala&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;math&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;abs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hashCode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ring&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;size&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Participating nodes in a &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; cluster are homogeneous - every node in the cluster knows where data should reside within the cluster. Requests for data can target any node. It will horizontally access data from the proper nodes, and return the result.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Ring&lt;/strong&gt; is represented as a wrapper around Map datastructure that know what &lt;strong&gt;vnode&lt;/strong&gt; (other name: ring’s partitionId) belongs to which cluster node.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scala&quot; data-lang=&quot;scala&quot;&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Ring&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ring&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;RingPartitionId&lt;/span&gt;, &lt;span class=&quot;kt&quot;&gt;NodeId&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;])&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;You can find these snippets &lt;a href=&quot;https://github.com/justin-db/JustinDB/tree/master/justin-consistent-hashing/src/main/scala/justin/consistent_hashing&quot;&gt;here&lt;/a&gt;. 💪&lt;/p&gt;</content><author><name></name></author><summary type="html">The Ring</summary></entry><entry><title type="html">JustinDB - HTTP API</title><link href="http://localhost:4000/dsp2017/2017/04/30/justindb-http-api.html" rel="alternate" type="text/html" title="JustinDB - HTTP API" /><published>2017-04-30T15:30:00+02:00</published><updated>2017-04-30T15:30:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/04/30/justindb-http-api</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/04/30/justindb-http-api.html">&lt;h2 id=&quot;how-to-talk-to-justindb&quot;&gt;How to talk to JustinDB&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; its a key/value store - you associate valeus with keys, and retrieve whem using the same keys. This means that basic commands are setting and getting values.&lt;/p&gt;
+
+&lt;p&gt;As I wrote in &lt;a href=&quot;http://speedcom.github.io/dsp2017/2017/03/14/justindb-modern-reactive-nosql-database.html&quot;&gt;“JustinDB - Modern REACTIVE NoSQL database”&lt;/a&gt; one possibility to talk with &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; is &lt;strong&gt;HTTP protocol&lt;/strong&gt;. The actions are currently related to HTTP methods (GET, PUT).&lt;/p&gt;
+
+&lt;h3 id=&quot;get&quot;&gt;&lt;strong&gt;GET&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Its very simple form of read, responding with only the value.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;GET /get?id={UUID}&amp;amp;r={r}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;r&lt;/code&gt; is the number of nodes read from before returning&lt;/p&gt;
+
+&lt;h3 id=&quot;put&quot;&gt;&lt;strong&gt;PUT&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;The simplest write command in Riak is putting a value.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;PUT /put body: { w: Int, value: Array[Byte], vectorClock: Base64 }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;w&lt;/code&gt; is the number of nodes written to before considered successful.
+&lt;code class=&quot;highlighter-rouge&quot;&gt;vectorClock&lt;/code&gt; is the mechanism for partial ordering of values in &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt;. You can read more about this mechanism &lt;a href=&quot;http://speedcom.github.io/dsp2017/2017/04/21/justindb-data-versioning.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Cheers! ✌️&lt;/p&gt;</content><author><name></name></author><summary type="html">How to talk to JustinDB JustinDB its a key/value store - you associate valeus with keys, and retrieve whem using the same keys. This means that basic commands are setting and getting values.</summary></entry><entry><title type="html">Streaming Databases - the future</title><link href="http://localhost:4000/dsp2017/2017/04/29/streaming-databases-future.html" rel="alternate" type="text/html" title="Streaming Databases - the future" /><published>2017-04-29T16:20:00+02:00</published><updated>2017-04-29T16:20:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/04/29/streaming-databases-future</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/04/29/streaming-databases-future.html">&lt;h2 id=&quot;streaming-world&quot;&gt;Streaming World&lt;/h2&gt;
+
+&lt;p&gt;We live in the world where &lt;strong&gt;streaming&lt;/strong&gt; has started to be a serious part of building distributed applications. In this ecosystem we face a lot of innovation at open source including such frameworks like &lt;em&gt;Apache Spark/Storm/Flink&lt;/em&gt;, &lt;em&gt;Kafka/Samza&lt;/em&gt; or proprietary services such &lt;em&gt;AWS Lambda&lt;/em&gt; and &lt;em&gt;Google’s DataFlow&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Every single serious application needs some kind of data storage in order to store results and get them back later.
+Thought, there is one thing that seems to be very constant at this field - &lt;strong&gt;MONOPOL of RDBMs&lt;/strong&gt; (&lt;em&gt;Relational Database Management Systems&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;In typical software developer mindset these solutions seems to exists as the only one even though they often do not fit to application requirements! 🤷&lt;/p&gt;
+
+&lt;p&gt;In this artcile I’m going to cover a little bit different model - streaming database. Ever hear about such?&lt;/p&gt;
+
+&lt;h2 id=&quot;data-stream-management-system-dsms-️&quot;&gt;Data Stream Management System (DSMS) 🕵️‍&lt;/h2&gt;
+
+&lt;p&gt;In typical RDBMs we load needed data which are stored in atomic transactional way and after than perform some subsequent queries to analyze what we want.&lt;/p&gt;
+
+&lt;p&gt;However, try to imagine the class of applications which have to deal with constant contiguous load of new data and do analysis of whem in time they arrive to system. Once the result is computed we present it in real time (also incrementaly storing in table/archive). Financial systems, network monitoring, server logs monitoring, traffic intensity and many more - systems with &lt;strong&gt;massive load&lt;/strong&gt;. Minimalization of latency is crucial here and relying on RDBM system can lead to serious bottlenecks.&lt;/p&gt;
+
+&lt;p&gt;Contigous, dynamic, changing over time set of new data - this is what we call &lt;strong&gt;STREAM&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;First term is coined. Next one that goes in pair is &lt;strong&gt;Continuous Queries&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;stream-model-and-continuous-queries&quot;&gt;STREAM model and Continuous Queries&lt;/h3&gt;
+
+&lt;p&gt;So how exactly such databases work?&lt;/p&gt;
+
+&lt;p&gt;Continuous queries expect to working until they are deleted from system on coming contiguous stream of data (potentially ifinit). They do its work every single time new data arrives to system (not when client make requests). Client simply register itself and listen for generated results on the fly.&lt;/p&gt;
+
+&lt;h3 id=&quot;current-projects&quot;&gt;Current projects&lt;/h3&gt;
+
+&lt;p&gt;Most of them are done by Academia world but either are no longer supported or were just a playground for new ideas. I’m a fan of promising &lt;a href=&quot;https://www.pipelinedb.com/&quot;&gt;PipelineDB&lt;/a&gt; which is an extension of Postgres database adding &lt;em&gt;CQL&lt;/em&gt; (continous query language; extension of SQL) for handling streaming data. Worth to mention is also &lt;a href=&quot;https://www.confluent.io/blog/introducing-kafka-streams-stream-processing-made-simple/&quot;&gt;Kafka Streams&lt;/a&gt; which is build on top of Kafka distributed queue.&lt;/p&gt;
+
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+
+&lt;p&gt;Streaming programming is getting more and more attention. However, from perspective of databases its still something new and not very popular as it should be - lack of comercialization and too much pinned on RDBMs in typical developers mindset. 🦄&lt;/p&gt;</content><author><name></name></author><summary type="html">Streaming World</summary></entry><entry><title type="html">Get noticed - first summing up</title><link href="http://localhost:4000/dsp2017/2017/04/22/get-noticed-first-summing-up.html" rel="alternate" type="text/html" title="Get noticed - first summing up" /><published>2017-04-22T13:20:00+02:00</published><updated>2017-04-22T13:20:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/04/22/get-noticed-first-summing-up</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/04/22/get-noticed-first-summing-up.html">&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;It passed more than one month since I wrote my first blogpost during &lt;a href=&quot;http://speedcom.github.io/dsp2017/2017/03/12/get-noticed.html&quot;&gt;“Get noticed”&lt;/a&gt; competition.
 I’ve decided to write quick recap for myself and others to hear what I’ve achieved during this time.&lt;/p&gt;
 
@@ -11,9 +217,10 @@ I’ve decided to write quick recap for myself and others to hear what I’ve ac
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;9 watchers&lt;/strong&gt;&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;35 stars&lt;/strong&gt; (my goal is to have at least &lt;strong&gt;100&lt;/strong&gt;!)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;5 forks&lt;/strong&gt;
-I like these stats and they mean a lot of to me!&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;5 forks&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;I like these stats and they mean a lot of to me!&lt;/p&gt;
 
 &lt;p&gt;Most of the time I share with new blogposts via LinkedIn platform on dedicated Scala enthusiasts group. I think that I should start considering such services as Twitter and Reddit to get more attention.&lt;/p&gt;
 
@@ -26,12 +233,12 @@ Its code coverage get more than &lt;strong&gt;80%&lt;/strong&gt; (now its around
 
 &lt;p&gt;Whole this time was very productive for me but you can’t simply forget that working on the project and trying to write at least 2 posts every week is not that easy at first glance as you might think of.&lt;/p&gt;
 
-&lt;p&gt;I’ve very happy! Cheers! ✌️&lt;/p&gt;</content><author><name></name></author><summary type="html">Summary It passed more than one month since I wrote my first blogpost during “Get noticed” competition. I’ve decided to write quick recap for myself and others to hear what I’ve achieved during this time.</summary></entry><entry><title type="html">JustinDB - data versioning (part 1)</title><link href="http://localhost:4000/dsp2017/2017/04/21/justindb-data-versioning.html" rel="alternate" type="text/html" title="JustinDB - data versioning (part 1)" /><published>2017-04-21T10:20:00+02:00</published><updated>2017-04-21T10:20:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/04/21/justindb-data-versioning</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/04/21/justindb-data-versioning.html">&lt;h2 id=&quot;preface&quot;&gt;Preface&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; provides &lt;strong&gt;eventaul consistency&lt;/strong&gt;, which allows for updates to be propagated to all replicas &lt;strong&gt;asynchronously&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;I’ve very happy! Cheers! ✌️&lt;/p&gt;</content><author><name></name></author><summary type="html">Summary It passed more than one month since I wrote my first blogpost during “Get noticed” competition. I’ve decided to write quick recap for myself and others to hear what I’ve achieved during this time.</summary></entry><entry><title type="html">JustinDB - data versioning: Vector Clocks</title><link href="http://localhost:4000/dsp2017/2017/04/21/justindb-data-versioning.html" rel="alternate" type="text/html" title="JustinDB - data versioning: Vector Clocks" /><published>2017-04-21T10:20:00+02:00</published><updated>2017-04-21T10:20:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/04/21/justindb-data-versioning</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/04/21/justindb-data-versioning.html">&lt;h2 id=&quot;preface&quot;&gt;Preface&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; provides &lt;strong&gt;eventual consistency&lt;/strong&gt;, which allows for updates to be propagated to all replicas &lt;strong&gt;asynchronously&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; has a &lt;strong&gt;tunable availability&lt;/strong&gt; characteristic. It is highly available to serve requests, with the ability to tune its level of availability–nearing, but never quite reaching, strong consistency. As you may have read previous post about &lt;a href=&quot;http://speedcom.github.io/dsp2017/2017/04/13/justindb-replication-and-partitioning.html&quot;&gt;replication&lt;/a&gt; you know that every data is replicated to N distinct physical nodes (servers). Besides that it allows you to decide how many nodes must be written to or read from per request. These values are settings labeled &lt;strong&gt;N&lt;/strong&gt; (the number of nodes to replicate to), &lt;strong&gt;R&lt;/strong&gt; (the number of nodes read from before returning), and &lt;strong&gt;W&lt;/strong&gt; (the number of nodes written to before considered successful).&lt;/p&gt;
 
-&lt;p&gt;Under certain failure scenarios (e.g. network partitions), updates may not arrive at all replicas for an extended period of time. Its worth to notice that updates in the presence of e.g. node failures can potentially result in an object having distinct version sub-hitories, which the system wil need to reconcile in the future.&lt;/p&gt;
+&lt;p&gt;Under certain failure scenarios (e.g. network partitions), updates may not arrive at all replicas for an extended period of time. Its worth to notice that updates in the presence of e.g. node failures can potentially result in an object having distinct version sub-histories, which the system will need to reconcile in the future.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; uses &lt;strong&gt;Vector Clock&lt;/strong&gt; in order to capture causality between different versions of the same object.&lt;/p&gt;
 
@@ -43,7 +250,7 @@ Its code coverage get more than &lt;strong&gt;80%&lt;/strong&gt; (now its around
 &lt;/div&gt;
 &lt;p&gt;Sounds a bit confusing.&lt;/p&gt;
 
-&lt;p&gt;At it basis, Vector Clocks just measures a sequence of events and keep a running history of updates.
+&lt;p&gt;At it basis, Vector Clock just measures a sequence of events and keep a running history of updates.
 Its effectively a list of (node, counter) pairs. One vector clock is associated with every version of every objects.&lt;/p&gt;
 
 &lt;p&gt;This is how Vector Clock is modeled in &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt;:&lt;/p&gt;
@@ -103,7 +310,7 @@ Its effectively a list of (node, counter) pairs. One vector clock is associated 
 They try to order the food.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Luke has decided to order sushi. Vector clock now contains his name and the number of updates he’s performed.&lt;/li&gt;
+  &lt;li&gt;Luke has decided to order sushi. Vector Clock now contains his name and the number of updates he’s performed.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;key: food
@@ -185,391 +392,4 @@ value: ramen
   &lt;li&gt;how system reason about causality of conflicted versions&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Cheers! ✌️&lt;/p&gt;</content><author><name></name></author><summary type="html">Preface JustinDB provides eventaul consistency, which allows for updates to be propagated to all replicas asynchronously.</summary></entry><entry><title type="html">JustinDB - why Scala and Akka?</title><link href="http://localhost:4000/dsp2017/2017/04/15/justindb-why-scala-and-akka.html" rel="alternate" type="text/html" title="JustinDB - why Scala and Akka?" /><published>2017-04-15T15:15:00+02:00</published><updated>2017-04-15T15:15:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/04/15/justindb-why-scala-and-akka</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/04/15/justindb-why-scala-and-akka.html">&lt;h2 id=&quot;preface&quot;&gt;Preface&lt;/h2&gt;
-&lt;p&gt;As you may read &lt;a href=&quot;http://speedcom.github.io/dsp2017/2017/03/14/justindb-modern-reactive-nosql-database.html&quot;&gt;JustinDB - Modern REACTIVE NoSQL database&lt;/a&gt; post you know that &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; is written in &lt;strong&gt;Scala&lt;/strong&gt; language and built on top of &lt;strong&gt;Akka&lt;/strong&gt; toolkit.&lt;/p&gt;
-
-&lt;h2 id=&quot;why-these&quot;&gt;Why these?&lt;/h2&gt;
-&lt;p&gt;Because of the assumptions that were made during designing architecture of &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt;. I wanted to make highly-available, fault-tolerant, performant, concurrent and as less as error-prone product during runtime.&lt;/p&gt;
-
-&lt;p&gt;This means that I need to have tools that embrace these ideas from the ground up.&lt;/p&gt;
-
-&lt;h3 id=&quot;scala&quot;&gt;Scala&lt;/h3&gt;
-&lt;p&gt;Scala is the language which is perfect to build high throughput and low latency systems. It is a statically typed language that runs on the JVM (the best managed runtime out there). This trait means:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;excellent performance (comparing even to Java which is relatively a lower level language) 🔥&lt;/li&gt;
-  &lt;li&gt;compiler is your friend - catching bugs and design errors early in the development process; easier to do refactoring&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Citing Wikipedia:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;The name Scala is a portmanteau of scalable and language, signifying that it is designed to grow with the demands of its users.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Last but not least, Scala was designed to be concise. It is a very expressive language thus beeing statically typed language at the same time. It has many features of functional programming languages, just naming a few: type inference, immutability, lazy evaluation, pattern matching and many many more. All of these help to build better context of the program.&lt;/p&gt;
-
-&lt;p&gt;Scala, as woking on JVM, inherits its concurrent primitives. It also brings high-level concurrency abstractions, each tailored toward a specific class of programmings tasks.&lt;/p&gt;
-
-&lt;p&gt;Its not a surprise that Scala has became one of the most widely used language in &lt;strong&gt;Big Data&lt;/strong&gt; world.&lt;/p&gt;
-
-&lt;h3 id=&quot;akka&quot;&gt;Akka&lt;/h3&gt;
-&lt;p&gt;Akka is a toolkit and runtime for building highly concurrent, distributed, and fault tolerant applications on the JVM.
-Does it sound like something that would be a good fit for our purposes? Don’t even ask.&lt;/p&gt;
-
-&lt;p&gt;Writing concurrent programs is hard but at the same time it &lt;strong&gt;REALLY MATTERS&lt;/strong&gt;.
-Many multi-threading abstractions assume the presence of shared memory (futures/promises, concurrent data structures, STM and so on and on). This assumption limits them to applications running on a single computer.&lt;/p&gt;
-
-&lt;p&gt;Akka’s approach to handling concurrency is based on the &lt;strong&gt;Actor Model&lt;/strong&gt;. In this programming model, we create program represented by a large number of entities (called actors) that execute computations independently and communicate by passing messages.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;All the complexity of creating and scheduling threads, receiving and dispatching messages, and handling race conditions and synchronization, is relegated to the framework to handle transparently.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Very prominent part about &lt;strong&gt;Akka&lt;/strong&gt; is its &lt;strong&gt;Cluster&lt;/strong&gt; module which is used by &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt;. Thanks to it we can make our system to span across multiple machines that communicate through a computer network. The actor model allows you to write programs that run inside a single process, multiple processes on the same machine (this is how actually I test my local instance of database), or on multiple machines (this is called &lt;strong&gt;location transparency&lt;/strong&gt;).&lt;/p&gt;
-
-&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; tries to take the best from &lt;strong&gt;Scala&lt;/strong&gt; and &lt;strong&gt;Akka&lt;/strong&gt;. Both tools could help me to quickly build barebones of the distributed database and move forward with new features which prove that they simplifies and facilitates the development of such products. 💕&lt;/p&gt;</content><author><name></name></author><summary type="html">Preface As you may read JustinDB - Modern REACTIVE NoSQL database post you know that JustinDB is written in Scala language and built on top of Akka toolkit.</summary></entry><entry><title type="html">JustinDB - replication and partitioning</title><link href="http://localhost:4000/dsp2017/2017/04/13/justindb-replication-and-partitioning.html" rel="alternate" type="text/html" title="JustinDB - replication and partitioning" /><published>2017-04-13T08:25:00+02:00</published><updated>2017-04-13T08:25:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/04/13/justindb-replication-and-partitioning</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/04/13/justindb-replication-and-partitioning.html">&lt;h2 id=&quot;preface&quot;&gt;Preface&lt;/h2&gt;
-&lt;p&gt;Availability is the proportion of time a system is in a functioning condition. If a user cannot access the system, it is said to be unavailable. The manner in which a data set is distributed between multiple nodes is very important and this is how &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; is able to remain highly available, tolerating outages and network partitions.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; combines two styles of distribution to achieve this: &lt;strong&gt;replication&lt;/strong&gt; and &lt;strong&gt;partitions&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;replication&quot;&gt;Replication&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Replication&lt;/strong&gt; is making copies of the same data on multiple nodes; this allows more servers to take part in the computation. &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; replicates by default.&lt;/p&gt;
-
-&lt;p&gt;If one node goes down, nodes that contain replicated data remain available to server requests. Besides improving availability of the system it also ameliorate performance by ma making additional bandwidth applicable to a new copy of the data. Imagine that you have cluster of two nodes: &lt;strong&gt;A&lt;/strong&gt; and &lt;strong&gt;B&lt;/strong&gt;. If all you do is replicate that to 2 servers, you would have 2 duplicate databases.&lt;/p&gt;
-
-&lt;p&gt;However, besides its obvious advantages replication brings many downsides. Since there are now independent copies of the data that has to be kept in sync on multiple machines it means ensuring that the replication follows a consistency model. There is also some network overhead; values must be routes to all replicated nodes on write.&lt;/p&gt;
-
-&lt;h2 id=&quot;partitioning&quot;&gt;Partitioning&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Partitioning&lt;/strong&gt; is a way of dividing a set of keys onto separate physical servers. We pick one node to exclusively host a range of keys. This is used to reduce the impact of dataset growth since each partition is a subset of the data. This technique also improves performance by limiting the amount of data to be examined on single partition.&lt;/p&gt;
-
-&lt;p&gt;Data is partitioned via some intrinsic mechanism which deducts what partition is going to be chosen for a particular value (its very often application-specific).&lt;/p&gt;
-
-&lt;p&gt;Imagine that you have cluster of two nodes: &lt;strong&gt;A&lt;/strong&gt; and &lt;strong&gt;B&lt;/strong&gt;. Its goal is to store numbers from 1 to 100. We can say that range from 1 to 50 goes to &lt;strong&gt;A&lt;/strong&gt; node (partition) and rest to &lt;strong&gt;B&lt;/strong&gt; partition (this is our pattern of splitting data and is all about actually).&lt;/p&gt;
-
-&lt;p&gt;However, having independent partitions comes with some cost - we must keep track of what range of values live on which node. Think also about potential different rate of growth and inefficient access across partitions. There is also additional downside - if one node goes down, that entire partition of data in unavailable.&lt;/p&gt;
-
-&lt;p&gt;And this is why &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; uses both &lt;strong&gt;replication&lt;/strong&gt; and &lt;strong&gt;partitioning&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;replication--partitioning-&quot;&gt;Replication + Partitioning 💕&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; partition data across multiple nodes, as well as replicate that data into a couple of them. Thanks to such decision it get improves availability and increase capacity and the same time.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../../../../../partition-with-replication.jpg&quot; alt=&quot;&quot; title=&quot;Partition with replication&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Try to imagine a cluster of 5 nodes with set replication factor to 3. That means when we create a new value in system its saved to 3 standalone nodes. We should be able to get this data laterback from every of these nodes.&lt;/p&gt;
-
-&lt;p&gt;I’ve mentioned that partitioning mechanism apply some specific pattern of splitting data - thats correct. How &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; actually reason what nodes should be taken into account when storing new value (along with replicas)?&lt;/p&gt;
-
-&lt;p&gt;It uses &lt;em&gt;modified&lt;/em&gt; version of &lt;strong&gt;Consistent Hashing&lt;/strong&gt; algorithm that is widely used by such databases like &lt;strong&gt;Cassandra&lt;/strong&gt; or &lt;strong&gt;Riak&lt;/strong&gt;. I’m going to cover this topic more extensively in next post.&lt;/p&gt;
-
-&lt;p&gt;Stay tuned! ✌️&lt;/p&gt;</content><author><name></name></author><summary type="html">Preface Availability is the proportion of time a system is in a functioning condition. If a user cannot access the system, it is said to be unavailable. The manner in which a data set is distributed between multiple nodes is very important and this is how JustinDB is able to remain highly available, tolerating outages and network partitions.</summary></entry><entry><title type="html">JustinDB - serialization that greatly improves performance</title><link href="http://localhost:4000/dsp2017/2017/04/08/justindb-serilization-that-greatly-improves-performance.html" rel="alternate" type="text/html" title="JustinDB - serialization that greatly improves performance" /><published>2017-04-08T21:00:00+02:00</published><updated>2017-04-08T21:00:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/04/08/justindb-serilization-that-greatly-improves-performance</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/04/08/justindb-serilization-that-greatly-improves-performance.html">&lt;h3 id=&quot;preface&quot;&gt;Preface&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; is a highly distributed system which forms cluster of nodes that communicate each other via message passing. All of these messages (think about internal communication of nodes or typical data replication) are send over wire (network). In order to being able do that we have to serialize and deserialize passing state to single bytes back and forth. That can cost. Sometimes a lot. We tend to think that network is always the slowest part of distributed systems communication. Numerous tests however show that using not an efficient serializer can lead to getting times that are on par with a network hop. Thats crazy!&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; is built on top of &lt;a href=&quot;http://doc.akka.io/docs/akka/current/java/cluster-usage.html&quot;&gt;Akka Cluster&lt;/a&gt; toolkit.
-Akka has a built-in Extension for serialization which allows us to use the built-in serializers or even write our own.
-The mechanism is both used by Akka internally to serialize messages and ad-hoc serialization of whatever message you might need it for.&lt;/p&gt;
-
-&lt;p&gt;Quick notes to follow:&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Current remoting module of Akka uses standard Java Serializer mechanism.&lt;/li&gt;
-  &lt;li&gt;Since the 2.4.11 release of Akka it is possible to entirely disable the default Java Serialization mechanism.&lt;/li&gt;
-  &lt;li&gt;New remoting implementation (codename &lt;a href=&quot;http://doc.akka.io/docs/akka/current/scala/remoting-artery.html&quot;&gt;Artery&lt;/a&gt;, still experimental though) does not use Java serialization for internal messages by default.&lt;/li&gt;
-  &lt;li&gt;All messages that are sent in the same local Actor System don’t need to be serialized as in-memory message passing is done via references.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Unfortunately Java Serializer is one of the exemplary mechanism known to be slow - it never was designed for high throughput messaging though. At the same time it’s very convenient to use - when prototyping your project you can focus on logic implementation and leave this part for later time.&lt;/p&gt;
-
-&lt;p&gt;When talking about serialization mechanism in terms of &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; I’ve recently decided to move on and switch to using &lt;strong&gt;Akka-Kryo&lt;/strong&gt; extension which provides custom Kryo-based serializers for Scala and Akka.&lt;/p&gt;
-
-&lt;h3 id=&quot;justindb-and-kryo-got-married-&quot;&gt;JustinDB and Kryo got married 👰&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/EsotericSoftware/kryo&quot;&gt;Kryo&lt;/a&gt; is known to be a very fast and efficient serialization. I’ve decided to use &lt;a href=&quot;https://github.com/romix/akka-kryo-serialization&quot;&gt;Romix’s kryo-based serialization library&lt;/a&gt; which is a well maintained project (exemplary implementation of own Akka Serializer).&lt;/p&gt;
-
-&lt;p&gt;You can find all defined &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; payload serializers &lt;a href=&quot;https://github.com/justin-db/JustinDB/tree/master/justin-core/src/main/scala/justin/db/kryo&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;SerializerInit&lt;/strong&gt; is an entrypoint for Akka-Kryo extension to know what payload/classes/messages we want to register into it. As you can see every registration line consists of msg class definition, its dedicated serializer function and ID.
-This class is instantiated right after new process of &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; is rolling out.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scala&quot; data-lang=&quot;scala&quot;&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;SerializerInit&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;StrictLogging&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-
-  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;customize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kryo&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Kryo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Unit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;logger&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;info&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Initializing Kryo&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-
-    &lt;span class=&quot;c1&quot;&gt;// cluster
-&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;kryo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;register&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;classOf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;justin.db.actors.protocol.RegisterNode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;RegisterNodeSerializer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-
-    &lt;span class=&quot;c1&quot;&gt;// write -- request
-&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;kryo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;register&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;classOf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;justin.db.actors.protocol.StorageNodeWriteDataLocal&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;StorageNodeWriteDataLocalSerializer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;60&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-
-    &lt;span class=&quot;c1&quot;&gt;// write -- responses
-&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;kryo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;register&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;classOf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;justin.db.actors.protocol.StorageNodeFailedWrite&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;],&lt;/span&gt;     &lt;span class=&quot;nc&quot;&gt;StorageNodeWriteResponseSerializer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;70&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;kryo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;register&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;classOf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;justin.db.actors.protocol.StorageNodeSuccessfulWrite&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;StorageNodeWriteResponseSerializer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;71&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;kryo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;register&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;classOf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;justin.db.actors.protocol.StorageNodeConflictedWrite&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;StorageNodeWriteResponseSerializer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;72&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-
-    &lt;span class=&quot;c1&quot;&gt;// read - request
-&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;kryo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;register&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;classOf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;justin.db.actors.protocol.StorageNodeLocalRead&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;StorageNodeLocalReadSerializer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;80&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-
-    &lt;span class=&quot;c1&quot;&gt;// read - responses
-&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;kryo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;register&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;classOf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;justin.db.actors.protocol.StorageNodeFoundRead&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;],&lt;/span&gt;      &lt;span class=&quot;nc&quot;&gt;StorageNodeReadResponseSerializer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;90&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;kryo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;register&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;classOf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;justin.db.actors.protocol.StorageNodeConflictedRead&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;StorageNodeReadResponseSerializer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;91&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;kryo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;register&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;classOf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;justin.db.actors.protocol.StorageNodeNotFoundRead&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;],&lt;/span&gt;   &lt;span class=&quot;nc&quot;&gt;StorageNodeReadResponseSerializer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;92&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;kryo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;register&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;classOf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;justin.db.actors.protocol.StorageNodeFailedRead&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;],&lt;/span&gt;     &lt;span class=&quot;nc&quot;&gt;StorageNodeReadResponseSerializer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;93&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Its worth to take a look at into how I managed to serialize ADT (Abstract Data Type) which extends common interface (e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;StorageNodeFailedWrite&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;StorageNodeSuccessfulWrite&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;StorageNodeConflictedWrite&lt;/code&gt; - they share the same serializer).&lt;/p&gt;
-
-&lt;p&gt;I’ve also declared in the Akka &lt;code class=&quot;highlighter-rouge&quot;&gt;serialization-bindings&lt;/code&gt; section which classes should use kryo serialization. You can find it under &lt;a href=&quot;https://github.com/justin-db/JustinDB/blob/master/src/main/resources/application.conf&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;application.conf&lt;/code&gt;&lt;/a&gt; file.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scala&quot; data-lang=&quot;scala&quot;&gt;&lt;span class=&quot;k&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;StorageNodeWriteResponseSerializer&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Serializer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;StorageNodeWriteResponse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-
-  &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Discriminator&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;SuccessfulWrite&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;FailedWrite&lt;/span&gt;     &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ConflictedWrite&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kryo&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Kryo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;StorageNodeWriteResponse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Unit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;match&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;StorageNodeSuccessfulWrite&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;               &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;writeInt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Discriminator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;SuccessfulWrite&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;writeString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;StorageNodeFailedWrite&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;                   &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;writeInt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Discriminator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;FailedWrite&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;writeString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;StorageNodeConflictedWrite&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;oldData&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newData&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;writeInt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Discriminator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;ConflictedWrite&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-      &lt;span class=&quot;nc&quot;&gt;DataSerializer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kryo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;oldData&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-      &lt;span class=&quot;nc&quot;&gt;DataSerializer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kryo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newData&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kryo&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Kryo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;`type`&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;Class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;StorageNodeWriteResponse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;])&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;StorageNodeWriteResponse&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;readInt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;match&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Discriminator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;SuccessfulWrite&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nc&quot;&gt;StorageNodeSuccessfulWrite&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;UUID&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fromString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;readString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()))&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Discriminator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;FailedWrite&lt;/span&gt;     &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nc&quot;&gt;StorageNodeFailedWrite&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;UUID&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fromString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;readString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()))&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Discriminator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;ConflictedWrite&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nc&quot;&gt;StorageNodeConflictedWrite&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;oldData&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;DataSerializer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kryo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;classOf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]),&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;newData&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;DataSerializer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kryo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;classOf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;Data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;])&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Solution is simply - I use specific discriminator numbers that are saved next to specific serialized payload (e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;1&lt;/code&gt; for &lt;code class=&quot;highlighter-rouge&quot;&gt;StorageNodeSuccessfulWrite&lt;/code&gt; payload). Pattern matching for the win! 👊&lt;/p&gt;
-
-&lt;p&gt;You can find more details about Akka-Kryo in its official &lt;a href=&quot;https://github.com/romix/akka-kryo-serialization&quot;&gt;documentation&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h1 id=&quot;performance&quot;&gt;Performance&lt;/h1&gt;
-&lt;p&gt;Currently I’m doing some heavy test loading against cluster of &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; that runs on 5 JVMs (5 node cluster) with enabled replication factor set to 3. All tests speak to databse via http protocol. You can find them &lt;a href=&quot;https://github.com/justin-db/JustinDB-load-testing&quot;&gt;here&lt;/a&gt;. Repository is almost empty but I’ve finally got a time to do some database stabilization and benchmarking around. As soon as I will get any meaningful result I will update this post (or write dedicated one).&lt;/p&gt;</content><author><name></name></author><summary type="html">Preface JustinDB is a highly distributed system which forms cluster of nodes that communicate each other via message passing. All of these messages (think about internal communication of nodes or typical data replication) are send over wire (network). In order to being able do that we have to serialize and deserialize passing state to single bytes back and forth. That can cost. Sometimes a lot. We tend to think that network is always the slowest part of distributed systems communication. Numerous tests however show that using not an efficient serializer can lead to getting times that are on par with a network hop. Thats crazy!</summary></entry><entry><title type="html">JustinDB - has got more than 700 commits!</title><link href="http://localhost:4000/dsp2017/2017/04/03/justindb-more-than-seven-hundred-commits.html" rel="alternate" type="text/html" title="JustinDB - has got more than 700 commits!" /><published>2017-04-03T19:59:00+02:00</published><updated>2017-04-03T19:59:00+02:00</updated><id>http://localhost:4000/dsp2017/2017/04/03/justindb-more-than-seven-hundred-commits</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/04/03/justindb-more-than-seven-hundred-commits.html">&lt;h3 id=&quot;next-goal-achieved-&quot;&gt;Next goal achieved 🎉&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; is a project of mine which helps me to explore broad world of architecture of a database systems. With day of 23.04.2017 it passed &lt;strong&gt;5 months of continous work&lt;/strong&gt; during which I achieved many set goals. Project has now more than &lt;strong&gt;700 commits&lt;/strong&gt;, &lt;strong&gt;6 watches&lt;/strong&gt;, &lt;strong&gt;18 stars&lt;/strong&gt; and &lt;strong&gt;4 forks&lt;/strong&gt; - these numbers mean very much to me (makes me very motivated to continue working on it).&lt;/p&gt;
-
-&lt;p&gt;The more I work on this project the more I realize how broad this topic actually is. DBMSs (Database Management Systems) are a critical components of modern computing and the result of decades of research in both industry and academia. Since they were among the earliest multi-user server systems to be developed thus pioneered many systems design techniques for scalability and relability (these days are concerns in many other contexts).&lt;/p&gt;
-
-&lt;p&gt;Builiding by own such advanced conceptually product is very demanding. There has been relatively sparse coverage in the literature of the systems design issues that make a DBMS work. Sometimes official docs of arleady created databases are a source of thruth and used as points of reference, particulary when multiple alternative designs have been adopted by different groups. Just think about all the concepts: process models, storage system design, parallel architecture, transaction system, querry processor and optimizer (plus some utilities and typical shared components). Very, very deep subject.&lt;/p&gt;
-
-&lt;h3 id=&quot;summary-of-current-implementation-&quot;&gt;Summary of current implementation 👷&lt;/h3&gt;
-
-&lt;p&gt;I will let myself to point out what I’ve achieved/what topics were touched during mentioned 5 months of active development.
-If you still hadn’t a chance to get familiarize with JustinDB you can read my previous &lt;a href=&quot;http://speedcom.github.io/dsp2017/2017/03/14/justindb-modern-reactive-nosql-database.html&quot;&gt;post&lt;/a&gt; (it covers many concepts).&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;clustering - &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; is able to horizontally scale; we can add up and remove nodes from cluster configuration during runtime (depens on the user traffics this allows better utilization of server power consumption)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;replication - data is copied to N of nodes in the cluster (in order to achieve high availability); we are able to tune how many of replicas we want to read/write (R/W) before we return result to client (the main advantage of &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; is that its client applications can tune the values of N, R and W to achieve their desired levels of performance, availability and durability).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;records versioning - &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; uses concept of Vector Clocks here&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;entropy replica solving - existing of copies of same data and highly distributed systems brings  high possibility of having not coverged replicas; this part is not finished fully yet though (Read-Repair and Active-Anti entropy algorithms)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;communication protocol - currently we can talk with &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; via http protocol&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;pluggable backends - this is what I’ve described &lt;a href=&quot;http://speedcom.github.io/dsp2017/2017/03/24/justindb-support-for-pluggable-persistent-and-in-memory-storage-engines.html&quot;&gt;here&lt;/a&gt; recently&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;serialization - during last week I was working on integration with &lt;a href=&quot;https://github.com/romix/akka-kryo-serialization&quot;&gt;Akka-Kryo&lt;/a&gt; serialization plugin; I will describe this part more intensively in one of the next posts&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;performance tests - &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; can be tested againts performance tests (not many of them though, heh) using this &lt;a href=&quot;https://github.com/justin-db/JustinDB-load-testing&quot;&gt;repository&lt;/a&gt;; tests are written with usage of &lt;a href=&quot;http://gatling.io/&quot;&gt;Gatling&lt;/a&gt; toolkit&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;CI/code coverage - every single time new commit is pushed to master branch Travis fires off new task running tests and countng code coverage; we can see relevant badges in README file&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;modularized project - I’ve done many small/bigger refactoring into this; project is splitted into many sub-projects (its still monorepo though) which allows for better separation of concerns&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;logo - yup, it has! 💖&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;dockerizing/service discovery - I would like to start full &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; cluster under container with single command; I’ve dont first attemp in integration with &lt;a href=&quot;https://www.consul.io/&quot;&gt;Consul&lt;/a&gt; and &lt;a href=&quot;https://docker.com/&quot;&gt;Docker&lt;/a&gt; but its still big WIP&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;set-goals-&quot;&gt;Set goals 🏆&lt;/h3&gt;
-&lt;p&gt;I am pretty happy with what I’ve actually achieved during this time. 💯 I’m aware of that I’m nowhere close to current existing solutions but it doesn’t matter - the most important part for me is constant learning, having fun and getting familiarize with really great topic (who knows what this project can bring to me in the future).&lt;/p&gt;
-
-&lt;p&gt;Nevertheless, its not the end. Its beggining.&lt;/p&gt;
-
-&lt;p&gt;The most intriguing part to me about database now is cooperation of engine with storage - how to store and get effectively data to/from it. I know that this going to be really challenging (simply can’t wait to implement own B+ tree data structure or sth similiar which will be a basic building block).&lt;/p&gt;
-
-&lt;p&gt;When not talking about technical specification I wish some day &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt;:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;will have &lt;strong&gt;100 stars&lt;/strong&gt; on GitHub&lt;/li&gt;
-  &lt;li&gt;will have more than &lt;strong&gt;1000 commits&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;will be a point reference for people who would like to get familiarize with concepts that stand behind databases&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Wish me luck! 🤞&lt;/p&gt;</content><author><name></name></author><summary type="html">Next goal achieved 🎉 JustinDB is a project of mine which helps me to explore broad world of architecture of a database systems. With day of 23.04.2017 it passed 5 months of continous work during which I achieved many set goals. Project has now more than 700 commits, 6 watches, 18 stars and 4 forks - these numbers mean very much to me (makes me very motivated to continue working on it).</summary></entry><entry><title type="html">iTermocil - divide and conquer your terminal like a PRO</title><link href="http://localhost:4000/dsp2017/hacks/2017/03/28/iTermocil-divide-and-conquer-your-terminal.html" rel="alternate" type="text/html" title="iTermocil - divide and conquer your terminal like a PRO" /><published>2017-03-28T16:20:17+02:00</published><updated>2017-03-28T16:20:17+02:00</updated><id>http://localhost:4000/dsp2017/hacks/2017/03/28/iTermocil%20-%20divide%20and%20conquer%20your%20terminal</id><content type="html" xml:base="http://localhost:4000/dsp2017/hacks/2017/03/28/iTermocil-divide-and-conquer-your-terminal.html">&lt;h3 id=&quot;itermocil&quot;&gt;iTermocil&lt;/h3&gt;
-&lt;p&gt;Last week I’ve introduced to your very neat script called &lt;a href=&quot;http://speedcom.github.io/dsp2017/hacks/2017/03/20/z-move-around-catalogs-in-terminal-like-a-pro.html&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Z.sh&lt;/code&gt;&lt;/a&gt;. 💖 Next to it I consider &lt;a href=&quot;https://github.com/TomAnthony/itermocil&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;iTermocil&lt;/code&gt;&lt;/a&gt; as a perfect complement of your heavily used dev toolbox. 🔧&lt;/p&gt;
-
-&lt;h4 id=&quot;what-is-it&quot;&gt;What is it?&lt;/h4&gt;
-&lt;p&gt;As &lt;a href=&quot;https://github.com/TomAnthony/itermocil&quot;&gt;official documentation&lt;/a&gt; stands out it allows us to setup pre-configured layouts of windows and panes in iTerm2, having each open in a specified directory and execute specified commands.&lt;/p&gt;
-
-&lt;p&gt;Correct. 👌&lt;/p&gt;
-
-&lt;p&gt;As a developer we can relatively often deal with situations in which we open the same set of tools in terminal in order to run specific project we work on actively. Its a good occasion to automate such thing and this is what &lt;code class=&quot;highlighter-rouge&quot;&gt;iTermocil&lt;/code&gt; is perfect for. 👊&lt;/p&gt;
-
-&lt;h3 id=&quot;how-do-i-use-it-with-justindb&quot;&gt;How do I use it with JustinDB?&lt;/h3&gt;
-&lt;p&gt;Its worth to notice that JustinDB can be started in a cluster - in order to emulate real-world environment we can represent it on local machine as a pool of processes (single process represents node of cluster).&lt;/p&gt;
-
-&lt;p&gt;I’ve preconfigured bunch of different iTermocil’s configs. Depends on how big I want to have custer (3 or 5 nodes most of the time) I start cluster bootstraping with dedicated configuration.&lt;/p&gt;
-
-&lt;p&gt;I’m running:&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;itermocil justin-cluster-5&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;itermocil jsutin-cluster-3&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Puff, magic happens here 💭. This is what I see after a while - working &lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;JustinDB&lt;/code&gt;&lt;/a&gt; cluster I can run tests against it.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../../../../../itermocil.png&quot; alt=&quot;&quot; title=&quot;Cluster with different loaded backends&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">iTermocil Last week I’ve introduced to your very neat script called Z.sh. 💖 Next to it I consider iTermocil as a perfect complement of your heavily used dev toolbox. 🔧</summary></entry><entry><title type="html">JustinDB - Pluggable persistent and in-memory storage engines</title><link href="http://localhost:4000/dsp2017/2017/03/24/justindb-support-for-pluggable-persistent-and-in-memory-storage-engines.html" rel="alternate" type="text/html" title="JustinDB - Pluggable persistent and in-memory storage engines" /><published>2017-03-24T14:10:17+01:00</published><updated>2017-03-24T14:10:17+01:00</updated><id>http://localhost:4000/dsp2017/2017/03/24/justindb-support-for-pluggable-persistent-and-in-memory-storage-engines</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/03/24/justindb-support-for-pluggable-persistent-and-in-memory-storage-engines.html">&lt;h3 id=&quot;preface&quot;&gt;Preface&lt;/h3&gt;
-&lt;p&gt;JustinDB was built with a mind of a modular architecture that supports pluggable backends. It simply means that you can still use all its features along with different backends to support a variety of use cases.&lt;/p&gt;
-
-&lt;h3 id=&quot;interface&quot;&gt;Interface&lt;/h3&gt;
-&lt;p&gt;There is only on requirement that needs to be considered into account while implementing your own JustinDB’s storage backend - &lt;code class=&quot;highlighter-rouge&quot;&gt;PluggableStorageProtocol&lt;/code&gt; interface (you can find it &lt;a href=&quot;https://github.com/justin-db/JustinDB/blob/master/justin-core/src/main/scala/justin/db/storage/PluggableStorageProtocol.scala&quot;&gt;here&lt;/a&gt;). Its neat and simple because only defines two operations:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;GET&lt;/li&gt;
-  &lt;li&gt;PUT&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;One for fetching data, another one for putting them into. Since they may cross the boundaries of our system in order make IO operations both adress asynchronicity.&lt;/p&gt;
-
-&lt;h3 id=&quot;benefits-️&quot;&gt;Benefits ✴️&lt;/h3&gt;
-&lt;p&gt;The main reason for designing a pluggable persistence component is to choose the storage engine best suited for an application’s access patterns.&lt;/p&gt;
-
-&lt;p&gt;Currently there are two implementations of the interface that JustinDB can work with:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/justin-db/JustinDB/tree/master/justin-storage-in-mem&quot;&gt;in-memory&lt;/a&gt;: it has nature of cache&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/justin-db/JustinDB/tree/master/justin-storage-persistent&quot;&gt;persistent&lt;/a&gt; (big WIP though): this allows to infinitely store data&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;For example, you can combine JustinDB with &lt;strong&gt;In-Memory module&lt;/strong&gt; to use it as a &lt;strong&gt;big data cache&lt;/strong&gt;.
-Alternatively, you can setup another cluster that combines JustinDB with &lt;strong&gt;Persistent module&lt;/strong&gt; as a &lt;strong&gt;big data database&lt;/strong&gt;.
-Last but not least we are even able to define storage module per cluster node so that some of them can act as a cache and others like typical database.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../../../../../justin-cache-persistent.png&quot; alt=&quot;&quot; title=&quot;Cluster with different loaded backends&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;how-engine-is-loaded-&quot;&gt;How engine is loaded 🔥&lt;/h4&gt;
-
-&lt;p&gt;It uses reflection:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scala&quot; data-lang=&quot;scala&quot;&gt;&lt;span class=&quot;k&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;JustinDriver&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-
-  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;load&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clazz&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;PluggableStorageProtocol&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;forName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clazz&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;newInstance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;asInstanceOf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;PluggableStorageProtocol&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Exemplary usage taken from project (can be found &lt;a href=&quot;https://github.com/justin-db/JustinDB/blob/master/justin-http-api/src/main/scala/justin/http_api/Main.scala#L35&quot;&gt;here&lt;/a&gt;):&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scala&quot; data-lang=&quot;scala&quot;&gt;&lt;span class=&quot;k&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;storage&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;JustinDriver&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;load&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;justin-db.storage&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;It just reads path to implementation of &lt;code class=&quot;highlighter-rouge&quot;&gt;PluggableStorageProtocol&lt;/code&gt; interface from project’s &lt;code class=&quot;highlighter-rouge&quot;&gt;config&lt;/code&gt; value e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;justin.db.storage.InMemStorage&lt;/code&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Preface JustinDB was built with a mind of a modular architecture that supports pluggable backends. It simply means that you can still use all its features along with different backends to support a variety of use cases.</summary></entry><entry><title type="html">Z.sh - move around catalogs in terminal like a PRO</title><link href="http://localhost:4000/dsp2017/hacks/2017/03/20/z-move-around-catalogs-in-terminal-like-a-pro.html" rel="alternate" type="text/html" title="Z.sh - move around catalogs in terminal like a PRO" /><published>2017-03-20T14:15:17+01:00</published><updated>2017-03-20T14:15:17+01:00</updated><id>http://localhost:4000/dsp2017/hacks/2017/03/20/z-move-around-catalogs-in-terminal-like-a-pro</id><content type="html" xml:base="http://localhost:4000/dsp2017/hacks/2017/03/20/z-move-around-catalogs-in-terminal-like-a-pro.html">&lt;h3 id=&quot;eureka&quot;&gt;Eureka&lt;/h3&gt;
-&lt;p&gt;Have you ever get to known something that is simply brilliant and you feel that you were living without it way too long?&lt;/p&gt;
-
-&lt;p&gt;Yes, I’ve got. I’ve found &lt;code class=&quot;highlighter-rouge&quot;&gt;z.sh&lt;/code&gt; script &lt;a href=&quot;https://github.com/rupa/z&quot;&gt;link&lt;/a&gt;. Its magic. Its simple. Its fantastic! 💖&lt;/p&gt;
-
-&lt;h4 id=&quot;whats-it-is&quot;&gt;Whats it is&lt;/h4&gt;
-&lt;p&gt;Its the script that tracks your most used directories, based on ‘frecency’. From README we can read that
-“After  a  short  learning  phase, z will take you to the most ‘frecent’ directory that matches ALL of the regexes given on the command line, in order.”&lt;/p&gt;
-
-&lt;p&gt;I was used to spend a lot of time to find appropriate catalog in terminal. To make it simpler I was adding more and more path aliases to shell config. That sounds like sth that could be improved.&lt;/p&gt;
-
-&lt;h4 id=&quot;how-to-use-it&quot;&gt;How to use it&lt;/h4&gt;
-&lt;p&gt;How &lt;code class=&quot;highlighter-rouge&quot;&gt;z.sh&lt;/code&gt; help here? To make it easier to visualize, as an example, lets take &lt;code class=&quot;highlighter-rouge&quot;&gt;Dropbox&lt;/code&gt; catalog into account. Its placed under &lt;code class=&quot;highlighter-rouge&quot;&gt;/Users/new/Dropbox&lt;/code&gt; path on my computer.
-Now, when &lt;code class=&quot;highlighter-rouge&quot;&gt;z.sh&lt;/code&gt; has already registered Dropbox catalog’s path I am not forced to think about it anymore (you need to cd there at least once because z.sh does not scan your disk). I’m typing simple &lt;code class=&quot;highlighter-rouge&quot;&gt;z dropbox&lt;/code&gt; command and… I’m getting moved there correctly. I can even use shorter version like &lt;code class=&quot;highlighter-rouge&quot;&gt;z drop&lt;/code&gt; and it still works (&lt;code class=&quot;highlighter-rouge&quot;&gt;z.sh&lt;/code&gt; script uses regexp for finding matches). If &lt;code class=&quot;highlighter-rouge&quot;&gt;z.sh&lt;/code&gt; didn’t find any matches it simply leave you in current directory. While typing your command you can use tabulator which will unfold your regexp into path that script is thinking you want to move.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../../../../../zscript.gif&quot; alt=&quot;&quot; title=&quot;Z.sh exemplary usage&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;how-to-install-it&quot;&gt;How to install it&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Person who uses &lt;code class=&quot;highlighter-rouge&quot;&gt;oh-my-zsh&lt;/code&gt;.
-    &lt;ol&gt;
-      &lt;li&gt;You probably have already downloaded and having placed under &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.oh-my-zsh/plugins/&lt;/code&gt; path.&lt;/li&gt;
-      &lt;li&gt;In order to enabled it open &lt;code class=&quot;highlighter-rouge&quot;&gt;.zshrc&lt;/code&gt; file, find &lt;code class=&quot;highlighter-rouge&quot;&gt;plugins&lt;/code&gt; section and add name of the plugin (which is &lt;code class=&quot;highlighter-rouge&quot;&gt;z&lt;/code&gt;, hah). In my config this looks like: &lt;code class=&quot;highlighter-rouge&quot;&gt;plugins=(git, git-extras, z)&lt;/code&gt;&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Others (copy-pasted from README)
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Installation:
-    Put something like this in your $HOME/.bashrc or $HOME/.zshrc:
-           . /path/to/z.sh
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-    &lt;p&gt;Now try to cd around for a while to build up the db. You will be amazed by simplicity and usability of it.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Cheers and don’t thank me 👍&lt;/p&gt;</content><author><name></name></author><summary type="html">Eureka Have you ever get to known something that is simply brilliant and you feel that you were living without it way too long?</summary></entry><entry><title type="html">JustinDB - Database Model</title><link href="http://localhost:4000/dsp2017/2017/03/17/justindb-database-model.html" rel="alternate" type="text/html" title="JustinDB - Database Model" /><published>2017-03-17T17:09:17+01:00</published><updated>2017-03-17T17:09:17+01:00</updated><id>http://localhost:4000/dsp2017/2017/03/17/justindb-database-model</id><content type="html" xml:base="http://localhost:4000/dsp2017/2017/03/17/justindb-database-model.html">&lt;h3 id=&quot;database-models&quot;&gt;Database models&lt;/h3&gt;
-&lt;p&gt;Althought there are &lt;a href=&quot;http://nosql-database.org/&quot;&gt;numerous&lt;/a&gt; differents NoSQL databases we can group them the ways they represent logical data. This characteristic is the answer that arose to specific problems not originally envisioned by the relational counterparts.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Note: Be mind that the following models can be mixed together (e.g. key-value model built on top of relational DB)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;1. Key/Value:&lt;/strong&gt;
-They are conceptually like hashtables where values are stored and accessed by immutable key. Such products usually offer relatively simple interface we work against with; more complex queries are often deprecated.
-&lt;a href=&quot;https://github.com/speedcom/JustinDB&quot;&gt;JustinDB&lt;/a&gt; along with e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;Riak&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;Redis&lt;/code&gt; are exemplary products of such.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;2. Columnar:&lt;/strong&gt;
-Its goal is to group similiar data into column families. They often characterizes itself with very good write throughput.
-One of the most popular actively used database here is &lt;code class=&quot;highlighter-rouge&quot;&gt;Apache Cassandra&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;3. Document:&lt;/strong&gt;
-These kind of datbases does not enforce a document schema. They owe their name because of storing hierarchical values called documents. Examples: &lt;code class=&quot;highlighter-rouge&quot;&gt;MongoDB&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;CouchDB&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;4. Graph:&lt;/strong&gt;
-They are very good for modeling complex relationship between nodes e.g. friends (lets think about social media sites like Facebook or LinkedIn). Examples: &lt;code class=&quot;highlighter-rouge&quot;&gt;Neo4j, OrientDB&lt;/code&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;justindb-database-model&quot;&gt;JustinDB database model&lt;/h4&gt;
-&lt;p&gt;Choosing logical model is a very important part at a time of architecture modeling.&lt;/p&gt;
-
-&lt;p&gt;I’ve decided to make JustinDB key-value oriented database. Reasoning was simple:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;we all intuitively know how key-value data structure works (think about e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;HashMap&lt;/code&gt;)&lt;/li&gt;
-  &lt;li&gt;I wasn’t forced to think about implementation of Query Planner (thing that translate complex queries (e.g. SQL query) into understandable structures by db engine against which it gets appropriate data)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;That way I was able to implement more interesting parts to me of distributed databases. Whats more important its broadly used model so there are many available docs we can read.&lt;/p&gt;
-
-&lt;p&gt;Making such a decision has an important tradeoffs and impact how we design the rest of the system:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;how do we query complex set of data?&lt;/li&gt;
-  &lt;li&gt;how do we replicate data and spread them (do partitioning actually) across the cluster?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Trying to get answers is the real challenge and whole fun is starting exactly here. 👍&lt;/p&gt;
-
-&lt;h4 id=&quot;when-using-keyvalue-store-make-sense&quot;&gt;When using key/value store make sense&lt;/h4&gt;
-&lt;p&gt;Databases such as JustinDB almost always performs best when you build your application around basic CRUD application (create, read, update, and delete) on objects.&lt;/p&gt;
-
-&lt;p&gt;JustinDB’s key/value architecture enables it to be more performant than relational databases in many scenarios because it doesn’t need to perform lock, union, join, or other operations when working with objects. Instead, it interacts with objects on a one-by-one basis, using primary key lookups.&lt;/p&gt;
-
-&lt;h4 id=&quot;when-using-keyvalue-store-is-less-of-a-good-fit&quot;&gt;When using key/value store is less of a good fit&lt;/h4&gt;
-&lt;p&gt;If you application demands a high query load by any means other than key/value lookup e.g. SQL-style &lt;code class=&quot;highlighter-rouge&quot;&gt;SELECT * FROM table&lt;/code&gt; operations - JustinDB will not be as efficient as other databases. Other thing, so to speak, JustinDB’s simple data model means that your data must be denormalized if your system is to be reasonably performant.&lt;/p&gt;
-
-&lt;h3 id=&quot;summary&quot;&gt;Summary&lt;/h3&gt;
-&lt;p&gt;Making decision about chosing key/value logical model was one of the most important part while architecting my own NoSQL database. Since its relatively easy concept to wrap head around it could help me to move faster to other fancy “distributed” stuff. 💎&lt;/p&gt;</content><author><name></name></author><summary type="html">Database models Althought there are numerous differents NoSQL databases we can group them the ways they represent logical data. This characteristic is the answer that arose to specific problems not originally envisioned by the relational counterparts.</summary></entry></feed>
+&lt;p&gt;Cheers! ✌️&lt;/p&gt;</content><author><name></name></author><summary type="html">Preface JustinDB provides eventual consistency, which allows for updates to be propagated to all replicas asynchronously.</summary></entry></feed>
