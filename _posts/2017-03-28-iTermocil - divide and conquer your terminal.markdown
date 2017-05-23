@@ -2,7 +2,7 @@
 layout: post
 title:  "iTermocil - divide and conquer your terminal like a PRO"
 date:   2017-03-28 15:20:17 +0100
-categories: [DSP2017, hacks]
+categories: DSP2017
 ---
 
 ### iTermocil
