@@ -28,10 +28,20 @@ Being now more strcit - I've enabled data replication in real-time between two p
 ## A bit about JustinDB
 [JustinDB][justindb] is a distributed NoSQL key-value database. It's written entirely in **Scala** (both object oriented and functional programming language with strong static type system) but what actually allows db to breathe is **Akka** (implementation of **Actor Model** on top of JVM). If you would like to know more about making the decision about tooling read this post: [JustinDB - why Scala and Akka?][why-scala-akka].
 
-Every single data is identifiable by using **immutable keys**. Based on them and modified version of **Consistent Hashing** algorithm all requests (write/read) are partitioned (read also as redistributed) between cluster nodes. Such cluster is a typical P2P system (nodes communicate each other constantly to know the state of the cluster). All nodes are equal (they do the same job/has same role) - we have masterless environment.
+Every single data is identifiable by using **immutable keys**. Based on them and modified version of **Consistent Hashing** algorithm all requests (write/read) are partitioned (read as redistributed) between cluster nodes. Such cluster is a typical P2P system (nodes communicate each other constantly to know the current state of the cluster). All nodes are equal (they do the same job/has same role) - we have masterless environment to cooperate with.
 
 ![][partitioning]
 *Partitioning. All requests are redistributed between nodes based on data identificator*.
+
+To make sure that our saved data is always available we need some kind of redundancy - we keep **N** replicas (replica = data) that are spread among possibly different physical nodes.
+![][replication]
+*Replication. Single value is saved in N copies (here 3 times). Red arrow shows the direct of choosing nodes (node A is the first one; in case of saving just single value it would be put only there in our exemplary scenario).*
+
+If you are more interested about the whole topic I encourage you to read the following blogposts of mine:
+* [JustinDB - Replication and Partitioning][justindb-replication-partitioning]
+* [JustinDB - The Ring][justindb-ring]
+* [JustinDB - Preference list][justindb-preference-list]
+
 
 ## Provisioned clusters
 
@@ -43,6 +53,11 @@ Every single data is identifiable by using **immutable keys**. Based on them and
 [beyond]: https://beyond.pl/en/
 [online.net]: https://www.online.net/en
 [why-scala-akka]: http://speedcom.github.io/dsp2017/2017/04/15/justindb-why-scala-and-akka.html
+[justindb-replication-partitioning]: http://speedcom.github.io/dsp2017/2017/04/13/justindb-replication-and-partitioning.html
+[justindb-ring]: http://speedcom.github.io/dsp2017/2017/05/06/justindb-ring.html
+[justindb-preference-list]: http://speedcom.github.io/dsp2017/2017/05/07/justindb-preference-list.html
 
+<!-- IMG -->
 [multi-data-center-clusters]: ../../../../../img/competition-with-cloud/multi-data-center-clusters.png "Multiple Data Center Clusters"
 [partitioning]: ../../../../../img/competition-with-cloud/partitioning.png "Partitioning"
+[replication]: ../../../../../img/competition-with-cloud/replication.png "Replication"
