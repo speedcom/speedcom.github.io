@@ -36,4 +36,4 @@ Yeah! 👊
 [get-noticed]: http://devstyle.pl/daj-sie-poznac/
 [justindb-get-noticed]: http://speedcom.github.io/dsp2017/2017/03/12/get-noticed.html
 [justindb]: https://github.com/speedcom/JustinDB
-[contest-with-cloud]: https://chmurowisko.pl/konkurs-z-chmura/#disqus_thread
+[contest-with-cloud]: https://chmurowisko.pl/konkurs-z-chmura
