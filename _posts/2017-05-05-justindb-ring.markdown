@@ -10,7 +10,7 @@ categories: DSP2017
 [JustinDB][justindb] applies modified version of **Consistent Hashing** to map objects along the edge of a circle (the ring).
 
 Just to recall [JustinDB][justindb] is a key-value database so you can think about it as a *big distributed hashtable*.
-Every signle data we save is identifiable in the system by its key (*UUID* actually).
+Every single data we save is identifiable in the system by its key (*UUID* actually).
 
 But how exactly [JustinDB][justindb] know what node is responsible for handling request (storing/fetching value)? This is where already mentioned **Consistent Hashing** algorithm take place. 👍
 
