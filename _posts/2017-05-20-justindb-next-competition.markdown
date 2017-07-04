@@ -28,7 +28,7 @@ I will also try to see how **network** failures affect on database stability (cl
 
 #### **STEP 2**. Show it to the world
 
-Easly undestandable. Just write about your whole "journey" on blog or record the video.
+Easly understandable. Just write about your whole "journey" on blog or record the video.
 
 #### **STEP 3**. Win
 Yeah! 👊
