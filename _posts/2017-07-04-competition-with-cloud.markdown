@@ -2,7 +2,6 @@
 layout: post
 title:  "JustinDB - summary of \"Competition with cloud\""
 date:   2017-07-04 08:10:00 +0100
-categories: DSP2017
 ---
 
 ## Preface
