@@ -57,6 +57,16 @@ That way during lack of availability of one Datacenter we transparently send req
 
 #### Architecture
 
+In Multi-Datacenter Replication, a cluster can act as either the:
+* **Primary** cluster (sometimes called **Source**) - the one that sends replica to other one,
+* **Secondary** cluster (sometimes called **Sink**) - the one data is replicated to; it usually is deployed in different geo-region or Datacenter
+
+We can establish bidirectional replication as well when cluster plays both role to other clusters. In our final scenario however (for the sake of the simplicity) we will keep to simpler version (one direction of sending replicas) where **e24cloud will act as a primary and Scaleway as a secondary one** (e24cloud ---> Scaleway).
+
+![][multi-cluster-replication]
+
+*Green arrow represents user's request. Red arrows represent all replica creation within cluster. Blue arrow represents additional sending of user request to secondary cluster (in real-time).*
+
 ## Provisioned clusters
 
 [justindb-next-competition]: http://speedcom.github.io/dsp2017/2017/05/20/justindb-next-competition.html
@@ -75,3 +85,4 @@ That way during lack of availability of one Datacenter we transparently send req
 [multi-data-center-clusters]: ../../../../../img/competition-with-cloud/multi-data-center-clusters.png "Multiple Data Center Clusters"
 [partitioning]: ../../../../../img/competition-with-cloud/partitioning.png "Partitioning"
 [replication]: ../../../../../img/competition-with-cloud/replication.png "Replication"
+[multi-cluster-replication]: ../../../../../img/competition-with-cloud/multi-cluster-replication.png "Multi-Cluster Replication"
