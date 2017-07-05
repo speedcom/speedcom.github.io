@@ -51,10 +51,11 @@ Claiming that faults across distributed systems never occur is silly (some legac
 That way during lack of availability of one of the Datacenter we transparently send requests to the another one - that way our app can process users commands further.
 
 #### Benefits
-
+* **Increase availability** - even in the event of a serious failure businesses must ensure continuity
+* **Improve customer experience** - globally distributed app must be reliable and fast at the same time which means data needs to be served quickly (having multiple clusters we serve data to customers from the closest one)
+* **Increase performance** - having more computation resources we are able to handle more requests
 
 #### Architecture
-kot ma ale
 
 ## Provisioned clusters
 
