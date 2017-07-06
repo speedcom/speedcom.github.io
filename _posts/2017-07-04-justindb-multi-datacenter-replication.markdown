@@ -26,7 +26,7 @@ Being now more strcit - I've enabled data replication in real-time between two p
 *Arrow shows the direct of sending replicas in real-time (from e24cloud cluster to Scaleway)*
 
 ## A bit about JustinDB
-[JustinDB][justindb] is a distributed NoSQL key-value database. It's written entirely in **Scala** (both object oriented and functional programming language with strong static type system) but what actually allows db to breathe is **Akka** (implementation of **Actor Model** on top of JVM). If you would like to know more about making the decision about tooling read this post: [JustinDB - why Scala and Akka?][why-scala-akka].
+[JustinDB][justindb] is a distributed NoSQL eventaully-consistent key-value database. It's written entirely in **Scala** (both object oriented and functional programming language with strong static type system) but what actually allows db to breathe is **Akka** (implementation of **Actor Model** on top of JVM). If you would like to know more about making the decision about tooling read this post: [JustinDB - why Scala and Akka?][why-scala-akka].
 
 Every single data is identifiable by using **immutable keys**. Based on them and modified version of **Consistent Hashing** algorithm all requests (write/read) are partitioned (read as redistributed) between cluster nodes. Such cluster is a typical P2P system (nodes communicate each other constantly to know the current state of the cluster). All nodes are equal (they do the same job/has same role) - we have masterless environment to cooperate with.
 
@@ -47,7 +47,7 @@ If you are more interested about the whole topic I encourage you to read the fol
 #### Motivation
 [JustinDB][justindb] was developed with horizontal scaling in mind from its infancy. Many web applications, healthcare or gaming systems require this to provide disaster recovery, data geo-locality and ability to handle peak loads. [JustinDB][justindb] has come with new possibility to make this all even more available - Mutli-cluster Replication.
 
-Claiming that faults across distributed systems never occur is silly (some legacy databases pretend that). Its typical that in system which consists on many running "things" some of them are not working correctly in particular point of time. The same applies even to Datacenter (yup, thats true!). That is why I've decided to implement one way of Mutli-Datacenter Replication mode - **Real-Time** (there is also full-sync). In real-time mode, continual, incremental synchronization occurs and replication is triggered by new updates.
+Claiming that faults across distributed systems never occur is silly (some legacy databases pretend that). Its typical that in system which consists on many running "things" some of them are not working correctly in particular point of time. The same applies even to Datacenter (yup, thats true!). That is why I've decided to implement one way of Mutli-Datacenter Replication mode - **Real-Time**. In real-time mode, continual, incremental synchronization occurs and replication is triggered by new updates.
 That way during lack of availability of one Datacenter we transparently send requests to the another one - that way our app can process users commands further.
 
 #### Benefits
@@ -65,7 +65,16 @@ We can establish bidirectional replication as well when cluster plays both role 
 
 ![][multi-cluster-replication]
 
-*Green arrow represents user's request. Red arrows represent all replica creation within cluster. Blue arrow represents additional sending of user request to secondary cluster (in real-time).*
+*Green arrow represents user's request. Red arrows represent all replica creation within cluster. Blue arrow represents replicated PUT.*
+
+This is how it goes:
+1. We make a negotation process between two clusters so they are aware to each other.
+2. User send requests to Primary Cluster (first DC).
+3. Primary cluster once received the message send it immediately to Secondary cluster which happens asynchronously next to saving all replicas by itself.
+4. Secondary cluster gets replicated message and save all replicas itself.
+
+Requirements:
+Its obvious that to enable replication between clusters it requires additional configuration (we need to set up address of secondary cluster node to particular node from primary one). It is important to note that both clusters must have certain attributes in common (have the same ring size).
 
 ## Provisioned clusters
 
