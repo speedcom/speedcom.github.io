@@ -13,7 +13,7 @@ In this post I'm going to cover what exactly I've prepared and achieved. It also
 I've written:
 
 `My plan minimum is simple - Initializing Multiple Data Center Clusters on JustinDB.`
-`I will use e24cloud + AWS/Scaleway public cloud providers.`
+`I will use e24cloud + AWS/Scaleway as public cloud providers pair.`
 
 Being now more strcit - I've enabled data replication in real-time between two physical [JustinDB][justindb] clusters provisioned onto two separated geo-regions/data centers. I've achieved that by using 2 different cloud providers - [**e24cloud**][e24cloud] (Poland/Poznań) + [**Scaleway**][scaleway] (France/Paris).
 
@@ -26,7 +26,7 @@ Being now more strcit - I've enabled data replication in real-time between two p
 *Arrow shows the direct of sending replicas in real-time (from e24cloud cluster to Scaleway)*
 
 ## A bit about JustinDB
-[JustinDB][justindb] is a distributed NoSQL eventaully-consistent key-value database. It's written entirely in **Scala** (both object oriented and functional programming language with strong static type system) but what actually allows db to breathe is **Akka** (implementation of **Actor Model** on top of JVM). If you would like to know more about making the decision about tooling read this post: [JustinDB - why Scala and Akka?][why-scala-akka].
+[JustinDB][justindb] is a distributed NoSQL eventaully-consistent key-value database. It's written entirely in **Scala** (both object oriented and functional programming language with strong static type system) but what actually allows database to breathe is **Akka** (implementation of **Actor Model** on top of JVM). If you would like to know more about making the decision about tooling read this post: [JustinDB - why Scala and Akka?][why-scala-akka].
 
 Every single data is identifiable by using **immutable keys**. Based on them and modified version of **Consistent Hashing** algorithm all requests (write/read) are partitioned (read as redistributed) between cluster nodes. Such cluster is a typical P2P system (nodes communicate each other constantly to know the current state of the cluster). All nodes are equal (they do the same job/has same role) - we have masterless environment to cooperate with.
 
@@ -48,7 +48,7 @@ If you are more interested about the whole topic I encourage you to read the fol
 [JustinDB][justindb] was developed with horizontal scaling in mind from its infancy. Many web applications, healthcare or gaming systems require this to provide disaster recovery, data geo-locality and ability to handle peak loads. [JustinDB][justindb] has come with new possibility to make this all even more available - Mutli-cluster Replication.
 
 Claiming that faults across distributed systems never occur is silly (some legacy databases pretend that). Its typical that in system which consists on many running "things" some of them are not working correctly in particular point of time. The same applies even to Datacenter (yup, thats true!). That is why I've decided to implement one way of Mutli-Datacenter Replication mode - **Real-Time**. In real-time mode, continual, incremental synchronization occurs and replication is triggered by new updates.
-That way during lack of availability of one Datacenter we transparently send requests to the another one - that way our app can process users commands further.
+During lack of availability of one Datacenter we transparently send requests to the another one - that way our app can process users commands further.
 
 #### Benefits
 * **Increase availability** - even in the event of a serious failure businesses must ensure continuity
@@ -61,11 +61,11 @@ In Multi-Datacenter Replication, a cluster can act as either the:
 * **Primary** cluster (sometimes called **Source**) - the one that sends replica to other one,
 * **Secondary** cluster (sometimes called **Sink**) - the one data is replicated to; it usually is deployed in different geo-region or Datacenter
 
-We can establish bidirectional replication as well when cluster plays both role to other clusters. In our final scenario however (for the sake of the simplicity) we will keep to simpler version (one direction of sending replicas) where **e24cloud will act as a primary and Scaleway as a secondary one** (e24cloud ---> Scaleway).
+We can establish bidirectional replication as well when cluster plays both role to other clusters. In our final scenario however (for the sake of the simplicity) we will keep to simpler version (one direction of sending replicas) where **e24cloud will act as a Primary and Scaleway as a Secondary one** (e24cloud ---> Scaleway).
 
 ![][multi-cluster-replication]
 
-*Green arrow represents user's request. Red arrows represent all replica creation within cluster. Blue arrow represents replicated PUT.*
+*Green arrow represents user's request. Red arrows represent all replica creation within cluster. Blue arrow represents multi cluster replication.*
 
 This is how it goes:
 1. We make a negotation process between two clusters so they are aware to each other.
@@ -74,9 +74,14 @@ This is how it goes:
 4. Secondary cluster gets replicated message and save all replicas itself.
 
 Requirements:
-Its obvious that to enable replication between clusters it requires additional configuration (we need to set up address of secondary cluster node to particular node from primary one). It is important to note that both clusters must have certain attributes in common (have the same ring size).
+Its obvious that to enable replication between clusters it requires additional configuration (we need to set up address of secondary cluster node to particular node from primary one). It is important to note that both clusters must have certain attributes in common (have the same [ring][justindb-ring] size).
 
 ## Provisioned clusters
+
+![][e24cloud-justindb-cluster]
+![][scaleway-justindb-cluster]
+
+*Deployed JustinDB clusters with the same configuration/size (3 nodes + etcd service discovery). On the left - e24cloud, on the right - Scaleway.*
 
 [justindb-next-competition]: http://speedcom.github.io/dsp2017/2017/05/20/justindb-next-competition.html
 [contest-with-cloud]: https://chmurowisko.pl/konkurs-z-chmura
@@ -95,3 +100,5 @@ Its obvious that to enable replication between clusters it requires additional c
 [partitioning]: ../../../../../img/competition-with-cloud/partitioning.png "Partitioning"
 [replication]: ../../../../../img/competition-with-cloud/replication.png "Replication"
 [multi-cluster-replication]: ../../../../../img/competition-with-cloud/multi-cluster-replication.png "Multi-Cluster Replication"
+[e24cloud-justindb-cluster]: ../../../../../img/competition-with-cloud/e24cloud-dc.png "e24cloud JustinDB cluster"
+[scaleway-justindb-cluster]: ../../../../../img/competition-with-cloud/scaleway-dc.png "Scaleway JustinDB cluster"
