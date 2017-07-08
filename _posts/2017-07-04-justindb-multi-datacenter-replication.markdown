@@ -99,7 +99,7 @@ docker run \
   -p 9000:9000 -p 2551:2551 -d \
   justindb/justindb:0.1 \
   -Djustin.node-id=$NODE_ID \
-  -Djustin.system=justin-dc0 \
+  -Djustin.system=justin-dc0 \ // or justin-dc1
   -Djustin.ring.members-count=3 \
   -Dakka.remote.netty.tcp.hostname=$HOST_IP \
   -Dakka.remote.netty.tcp.bind-port=2551 \
