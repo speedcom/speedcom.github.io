@@ -65,7 +65,7 @@ We can establish bidirectional replication as well when cluster plays both role 
 
 ![][multi-cluster-replication]
 
-*Green arrow represents user's request. Red arrows represent all replica creation within cluster. Blue arrow represents multi cluster replication.*
+*Green arrow represents user's request. Red arrows represent all replica creation within cluster. Blue arrow represents multi-cluster replication.*
 
 This is how it goes:
 1. We make a negotation process between two clusters so they are aware to each other.
@@ -83,13 +83,45 @@ Its obvious that to enable replication between clusters it requires additional c
 
 *Deployed [JustinDB][justindb] clusters with the same configuration/size (3 nodes + etcd service discovery). On the left - e24cloud, on the right - Scaleway.*
 
-justin-dc-* nodes are the ones that form the real [JustinDB][justindb] cluster. However cluster requires establishing a set of *seed nodes* (for cluster bootstarping purpose) where etcd tool is used to elect the initial ones and publishing a list of them afterward (we have zero-configuration deployment).
+`justin-dc-{1,2,3}` nodes are the ones that form the real [JustinDB][justindb] cluster. However cluster requires establishing a set of *seed nodes* (for cluster bootstarping purpose) where etcd tool is used to elect the initial ones and publishing a list of them afterward (we have zero-configuration deployment therefore).
 
-### Deployment
+#### Deployment
 
-[JustinDB][justindb] has got *dockerized* a bit time ago and since then it's a native process of installing this database on any environment (VM/Clouds).
+[JustinDB][justindb] has got *dockerized* a bit time ago and since then it's a native process of installing it on any environment (VM/Clouds).
 
 ![][dockerized-justindb]
+
+Every JustinDB Docker image was installed as follow (more or less):
+
+```
+docker run \
+  --name justindb \
+  -p 9000:9000 -p 2551:2551 -d \
+  justindb/justindb:0.1 \
+  -Djustin.node-id=$NODE_ID \
+  -Djustin.system=justin-dc0 \
+  -Djustin.ring.members-count=3 \
+  -Dakka.remote.netty.tcp.hostname=$HOST_IP \
+  -Dakka.remote.netty.tcp.bind-port=2551 \
+  -Dakka.remote.netty.tcp.bind-hostname=172.17.0.2 \
+  -Dconstructr.coordination.host=$ETCD_IP
+```
+
+etcd:
+
+```
+docker run \
+  --detach \
+  --name etcd \
+  --publish 2379:2379 \
+  quay.io/coreos/etcd:v2.3.7 \
+  --listen-client-urls http://0.0.0.0:2379 \
+  --advertise-client-urls http://$ETCD_IP:2379
+```
+
+## Final test scenario
+
+
 
 <!-- LINKS -->
 [justindb-next-competition]: http://speedcom.github.io/dsp2017/2017/05/20/justindb-next-competition.html
