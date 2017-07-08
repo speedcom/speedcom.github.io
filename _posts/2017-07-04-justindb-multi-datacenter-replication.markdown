@@ -81,8 +81,17 @@ Its obvious that to enable replication between clusters it requires additional c
 ![][e24cloud-justindb-cluster]
 ![][scaleway-justindb-cluster]
 
-*Deployed JustinDB clusters with the same configuration/size (3 nodes + etcd service discovery). On the left - e24cloud, on the right - Scaleway.*
+*Deployed [JustinDB][justindb] clusters with the same configuration/size (3 nodes + etcd service discovery). On the left - e24cloud, on the right - Scaleway.*
 
+justin-dc-* nodes are the ones that form the real [JustinDB][justindb] cluster. However cluster requires establishing a set of *seed nodes* (for cluster bootstarping purpose) where etcd tool is used to elect the initial ones and publishing a list of them afterward (we have zero-configuration deployment).
+
+### Deployment
+
+[JustinDB][justindb] has got *dockerized* a bit time ago and since then it's a native process of installing this database on any environment (VM/Clouds).
+
+![][dockerized-justindb]
+
+<!-- LINKS -->
 [justindb-next-competition]: http://speedcom.github.io/dsp2017/2017/05/20/justindb-next-competition.html
 [contest-with-cloud]: https://chmurowisko.pl/konkurs-z-chmura
 [justindb]: https://github.com/speedcom/JustinDB
@@ -102,3 +111,4 @@ Its obvious that to enable replication between clusters it requires additional c
 [multi-cluster-replication]: ../../../../../img/competition-with-cloud/multi-cluster-replication.png "Multi-Cluster Replication"
 [e24cloud-justindb-cluster]: ../../../../../img/competition-with-cloud/e24cloud-dc.png "e24cloud JustinDB cluster"
 [scaleway-justindb-cluster]: ../../../../../img/competition-with-cloud/scaleway-dc.png "Scaleway JustinDB cluster"
+[dockerized-justindb]: ../../../../../img/competition-with-cloud/justindb-docker-cli.gif "Dockerized JustinDB"
