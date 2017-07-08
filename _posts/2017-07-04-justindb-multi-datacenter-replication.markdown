@@ -26,7 +26,7 @@ Being now more strcit - I've enabled data replication in real-time between two p
 *Arrow shows the direct of sending replicas in real-time (from e24cloud cluster to Scaleway)*
 
 ## A bit about JustinDB
-[JustinDB][justindb] is a distributed NoSQL eventaully-consistent key-value database. It's written entirely in **Scala** (both object oriented and functional programming language with strong static type system) but what actually allows database to breathe is **Akka** (implementation of **Actor Model** on top of JVM). If you would like to know more about making the decision about tooling read this post: [JustinDB - why Scala and Akka?][why-scala-akka].
+[JustinDB][justindb] is a distributed NoSQL eventually-consistent key-value database. It's written entirely in **Scala** (both object oriented and functional programming language with strong static type system) but what actually allows database to breathe is **Akka** (implementation of **Actor Model** on top of JVM). If you would like to know more about making the decision about tooling read this post: [JustinDB - why Scala and Akka?][why-scala-akka].
 
 Every single data is identifiable by using **immutable keys**. Based on them and modified version of **Consistent Hashing** algorithm all requests (write/read) are partitioned (read as redistributed) between cluster nodes. Such cluster is a typical P2P system (nodes communicate each other constantly to know the current state of the cluster). All nodes are equal (they do the same job/has same role) - we have masterless environment to cooperate with.
 
@@ -121,7 +121,9 @@ docker run \
 
 ## Final test scenario
 
+[![JustinDB - Multi-Datacenter Replication](http://imgur.com/6Vlf0na.png)](https://youtu.be/GjH2kv0mDkA "JustinDB - Multi-Datacenter Replication")
 
+*Clink on the video*
 
 <!-- LINKS -->
 [justindb-next-competition]: http://speedcom.github.io/dsp2017/2017/05/20/justindb-next-competition.html
