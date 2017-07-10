@@ -15,20 +15,20 @@ I've written:
 `My plan minimum is simple - Initializing Multiple Data Center Clusters on JustinDB.`
 `I will use e24cloud + AWS/Scaleway as public cloud providers pair.`
 
-Being now more strcit - I've enabled data replication in real-time between two physical [JustinDB][justindb] clusters provisioned onto two separated geo-regions/datacenters. I've achieved that by using 2 different cloud providers - [**e24cloud**][e24cloud] (Poland/Poznań) + [**Scaleway**][scaleway] (France/Paris).
+![][multi-data-center-clusters]
+*Arrow shows the direct of sending replicas in real-time (from e24cloud cluster to Scaleway)*
+
+Being now more strict - I've designed and enabled replication of data in real-time between two physical [JustinDB][justindb] clusters provisioned onto two separated geo-regions/datacenters. I've achieved that by using 2 different cloud providers - [**e24cloud**][e24cloud] (Poland/Poznań) + [**Scaleway**][scaleway] (France/Paris).
 
 *Note about cloud providers:*
 
 * **e24cloud** - *efficient polish cloud computing platform powered by [Beyond.pl][beyond]*
 * **Scaleway** - *dedicated ARM-Based cloud platform (IaaS) created by [Online.net][online.net]*
 
-![][multi-data-center-clusters]
-*Arrow shows the direct of sending replicas in real-time (from e24cloud cluster to Scaleway)*
-
 ## A bit about JustinDB
 [JustinDB][justindb] is a distributed NoSQL eventually-consistent key-value database. It's written entirely in **Scala** (both object oriented and functional programming language with strong static type system) but what actually allows database to breathe is **Akka** (implementation of **Actor Model** on top of JVM). If you would like to know more about making the decision about tooling read this post: [JustinDB - why Scala and Akka?][why-scala-akka].
 
-Every single data is identifiable by using **immutable keys**. Based on them and modified version of **Consistent Hashing** algorithm all requests (write/read) are partitioned (read as redistributed) between cluster nodes. Such cluster is a typical P2P system (nodes communicate each other constantly to know the current state of the cluster). All nodes are equal (they do the same job/has same role) - we have masterless environment to cooperate with.
+Every single data is identifiable by using **immutable keys**. Based on them and modified version of **Consistent Hashing** algorithm all requests (write/read) are partitioned (read as redistributed) between cluster nodes. Such cluster is a typical P2P system (nodes communicate to each other constantly to know the current state of the cluster). All nodes are equal (they do the same job/has same role) - we have masterless environment to cooperate with.
 
 ![][partitioning]
 *Partitioning. All requests are redistributed between nodes based on data identificator*.
@@ -129,8 +129,8 @@ I've decided to record a short summary video showing that all this thing actuall
 
 #### Scenario steps description:
 1. We are making a negotation process between two clusters by sending one of the Scaleway JustinDB actor address to e24cloud JustinDB.
-2. After the successful negotation process we push simple value to e24cloud. We expect that saving all 3 replicas will succeed (W=3). During saving replicas e24cloud JustinDB replicates data to Scaleway cluster in the background.
-3. After a short time we are able to read data from Scaleway cluster (from every node because of enabled replication per cluster). We expect that all replicas are saved per cluster (we achieve strong data consistency that way; this is called tunable consistency).
+2. After the successful negotation process we push simple value to e24cloud. We expect that saving all 3 replicas will succeed (W=3). During saving replicas in e24cloud environment JustinDB replicates asynchronously data to Scaleway cluster in the background.
+3. After a short time we are able to read data from Scaleway cluster (from every node because of enabled replication per cluster). We expect that all replicas are saved per cluster (R=3; we achieve strong data consistency that way; this is called tunable consistency).
 
 In this quick summary video I've showed that replication between two different JustinDB clusters deployed to two different geo-regions/datacenters is duable and works in real-time manner.
 
