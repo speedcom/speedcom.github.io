@@ -28,7 +28,7 @@ I will also try to see how **network** failures affect on database stability (cl
 
 #### **STEP 2**. Show it to the world
 
-Easly undestandable. Just write about your whole "journey" on blog or record the video.
+Easly understandable. Just write about your whole "journey" on blog or record the video.
 
 #### **STEP 3**. Win
 Yeah! 👊
@@ -36,4 +36,4 @@ Yeah! 👊
 [get-noticed]: http://devstyle.pl/daj-sie-poznac/
 [justindb-get-noticed]: http://speedcom.github.io/dsp2017/2017/03/12/get-noticed.html
 [justindb]: https://github.com/speedcom/JustinDB
-[contest-with-cloud]: https://chmurowisko.pl/konkurs-z-chmura/#disqus_thread
+[contest-with-cloud]: https://chmurowisko.pl/konkurs-z-chmura
