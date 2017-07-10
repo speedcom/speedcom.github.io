@@ -127,7 +127,14 @@ I've decided to record a short summary video showing that all this thing actuall
 
 *Clink on the video (hosted on youtube)*
 
-Important repositories to follow:
+#### Scenario steps description:
+1. We are making a negotation process between two clusters by sending one of the Scaleway JustinDB actor address to e24cloud JustinDB.
+2. After the successful negotation process we push simple value to e24cloud. We expect that saving all 3 replicas will succeed (W=3). During saving replicas e24cloud JustinDB sends this value also to Scaleway cluster in the background.
+3. After a short time we are able to read data from Scaleway cluster (also from every node because of enabled replication per cluster). We expect that all replicas are saved per cluster (we expect strong data consistency; this is called tunable consistency).
+
+In this quick summary video I've showed that replication between two different JustinDB clusters in two different geo-regions/datacenters is duable in real-time manner.
+
+## Important repositories to follow:
 * [JustinDB][justindb] - highly available key-value distributed data store
 * [JustinDB-chaos][justindb-chaos] - tests that impact on JustinDB cluster subjected to e.g. network partitioning
 * [JustinDB-perf][justindb-perf] - performance tests against JustinDB
