@@ -91,7 +91,7 @@ Its obvious that to enable replication between clusters it requires additional c
 
 ![][dockerized-justindb]
 
-Every JustinDB Docker image was installed as follow (more or less):
+Every `JustinDB Docker image` was installed as follow (more or less):
 
 ```
 docker run \
@@ -107,7 +107,7 @@ docker run \
   -Dconstructr.coordination.host=$ETCD_IP
 ```
 
-etcd:
+also `etcd`:
 
 ```
 docker run \
@@ -121,9 +121,17 @@ docker run \
 
 ## Final test scenario
 
+I've decided to record a short summary video showing that all this thing actually works. We can see that data pushed to e24cloud cluster is also replicated to external Scaleway cluster (its available to be read from there).
+
 [![JustinDB - Multi-Datacenter Replication](http://imgur.com/6Vlf0na.png)](https://youtu.be/GjH2kv0mDkA "JustinDB - Multi-Datacenter Replication")
 
-*Clink on the video*
+*Clink on the video (hosted on youtube)*
+
+Important repositories to follow:
+* [JustinDB][justindb] - highly available key-value distributed data store
+* [JustinDB-chaos][justindb-chaos] - tests that impact on JustinDB cluster subjected to e.g. network partitioning
+* [JustinDB-perf][justindb-perf] - performance tests against JustinDB
+* [JustinDB-cli][justindb-cli] - manage JustinDB from Command Line
 
 <!-- LINKS -->
 [justindb-next-competition]: http://speedcom.github.io/dsp2017/2017/05/20/justindb-next-competition.html
@@ -137,6 +145,9 @@ docker run \
 [justindb-replication-partitioning]: http://speedcom.github.io/dsp2017/2017/04/13/justindb-replication-and-partitioning.html
 [justindb-ring]: http://speedcom.github.io/dsp2017/2017/05/06/justindb-ring.html
 [justindb-preference-list]: http://speedcom.github.io/dsp2017/2017/05/07/justindb-preference-list.html
+[justindb-chaos]: https://github.com/justin-db/JustinDB-chaos
+[justindb-perf]: https://github.com/justin-db/JustinDB-perf
+[justindb-cli]: https://github.com/justin-db/JustinDB-cli
 
 <!-- IMG -->
 [multi-data-center-clusters]: ../../../../../img/competition-with-cloud/multi-data-center-clusters.png "Multiple Data Center Clusters"
