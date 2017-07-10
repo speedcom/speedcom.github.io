@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "JustinDB - Multi-Datacenter Replication"
-date:   2017-07-04 08:10:00 +0100
+date:   2017-07-09 08:10:00 +0100
 ---
 
 ## Preface
