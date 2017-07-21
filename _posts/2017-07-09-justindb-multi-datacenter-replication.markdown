@@ -47,7 +47,7 @@ If you are more interested about the whole topic I encourage you to read the fol
 #### Motivation
 [JustinDB][justindb] was developed with horizontal scaling in mind from its infancy. Many web applications, healthcare or gaming systems require this to provide disaster recovery, data geo-locality and ability to handle peak loads. [JustinDB][justindb] has come with new possibility to make this all even more available - Mutli-cluster Replication.
 
-Claiming that faults across distributed systems never occur is silly (some legacy databases pretend that). Its typical that in system which consists on many running "things" some of them are not working correctly in particular point of time. The same applies even to Datacenter (yup, thats true!). That is why I've decided to implement one way of Mutli-Datacenter Replication mode - **Real-Time**. In real-time mode, continual, incremental synchronization occurs and replication is triggered by new updates.
+Claiming that faults across distributed systems never occur is silly (some legacy databases pretend that 🙄). Its typical that in system which consists on many running "things" some of them are not working correctly in particular point of time. The same applies even to Datacenter (yup, thats true!). That is why I've decided to implement one way of Mutli-Datacenter Replication mode - **Real-Time**. In real-time mode, continual, incremental synchronization occurs and replication is triggered by new updates.
 During lack of availability of one Datacenter we transparently send requests to the another one - that way our app can process users commands further.
 
 #### Benefits
@@ -209,7 +209,7 @@ In this quick summary video I've showed that replication between two different J
 
 ## Important repositories 🙌
 
-I encourage you with love ❤️ to track the following list of repositories that make [JustinDB][justindb] simply great:
+I encourage you with love to track the following list of repositories that make [JustinDB][justindb] simply great: ❤️
 * [JustinDB][justindb] - highly available key-value distributed data store
 * [JustinDB-chaos][justindb-chaos] - tests that impact on JustinDB cluster subjected to e.g. network partitioning
 * [JustinDB-perf][justindb-perf] - performance tests against JustinDB
