@@ -87,12 +87,13 @@ Its obvious that to enable replication between clusters it requires additional c
 
 #### Deployment
 
-[JustinDB][justindb] has got *dockerized* a bit time ago and since then it's a native process of installing it on any environment (VM/Clouds).
+[JustinDB][justindb] has got *dockerized* a bit time ago and since then it's a native process of installing it on any environment (VM/Clouds). You can find an official JustinDB Docker image [here][justindb-hub]. Just pull it and start to play with it. 😉
 
-![][dockerized-justindb]
+![][justindb-hub-docker]
+*Official JustinDB Docker site*
 
-Every `JustinDB Docker image` was installed as follow (more or less):
-
+Docker recipies:
+* **JustinDB**:
 ```
 docker run \
   --name justindb \
@@ -107,8 +108,7 @@ docker run \
   -Dconstructr.coordination.host=$ETCD_IP
 ```
 
-also `etcd`:
-
+* **etcd**:
 ```
 docker run \
   --detach \
@@ -117,6 +117,79 @@ docker run \
   quay.io/coreos/etcd:v2.3.7 \
   --listen-client-urls http://0.0.0.0:2379 \
   --advertise-client-urls http://$ETCD_IP:2379
+```
+
+Having already worked [JustinDB][justindb] we can get into its container and see some useful stuff.
+```
+➜  JustinDB git:(master) ✗ docker exec -it justindb /bin/bash
+   ___              _    _        ______ ______
+  |_  |            | |  (_)       |  _  \| ___ \
+    | | _   _  ___ | |_  _  _ __  | | | || |_/ /
+    | || | | |/ __|| __|| || '_ \ | | | || ___ \
+/\__/ /| |_| |\__ \| |_ | || | | || |/ / | |_/ /
+\____/  \__,_||___/ \__||_||_| |_||___/  \____/
+
+Cli:
+    cli help
+More documentation available at:
+    https://github.com/speedcom/JustinDB
+    http://speedcom.github.io/
+```
+
+#### Cli
+
+We can discover some operation of [JustinDB][justindb] by using its command-line interface. Simply typing the `cli` command will give a usage list. Most of these commands are self explanatory, once you know what they mean.
+
+```
+➜  JustinDB git:(master) ✗ docker exec -it justindb cli
+NAME:
+   JustinDB-Cli - Manage JustinDB from Command Line
+
+USAGE:
+   cli [global options] command [command options] [arguments...]
+
+VERSION:
+   0.0.1
+
+COMMANDS:
+     buildinfo, bi    Print information about cluster build
+     clusterinfo, ci  Shows status of the cluster
+     nodehealth, nh   Display health of the node
+     help, h          Shows a list of commands or help for one command
+
+GLOBAL OPTIONS:
+   --help, -h     show help
+   --version, -v  print the version
+```
+We'll concern ourselves with single command - `clusterinfo (ci)`. It print to us a very valuable information about current status of the cluster (how many nodes cluster is consist of, what are member addresses and so on).
+
+```
+➜  JustinDB git:(master) ✗ docker exec -it justindb cli clusterinfo
+
+{
+  "selfNode": "akka.tcp://justin-dc0@192.168.99.101:2551",
+  "leader": "akka.tcp://justin-dc0@192.168.99.100:2551",
+  "oldest": "akka.tcp://justin-dc0@192.168.99.100:2551",
+  "unreachable": [],
+  "members": [
+    {
+      "node": "akka.tcp://justin-dc0@192.168.99.100:2551",
+      "nodeUid": "987830004",
+      "status": "Up",
+      "roles": [
+        "storagenode"
+      ]
+    },
+    {
+      "node": "akka.tcp://justin-dc0@192.168.99.101:2551",
+      "nodeUid": "237278367",
+      "status": "Up",
+      "roles": [
+        "storagenode"
+      ]
+    }
+  ]
+}
 ```
 
 ## Final test scenario
@@ -132,9 +205,11 @@ I've decided to record a short summary video showing that all this thing actuall
 2. After the successful negotation process we push simple value to e24cloud. We expect that saving all 3 replicas will succeed (W=3). During saving replicas in e24cloud environment JustinDB replicates asynchronously data to Scaleway cluster in the background.
 3. After a short time we are able to read data from Scaleway cluster (from every node because of enabled replication per cluster). We expect that all replicas are saved per cluster (R=3; we achieve strong data consistency that way; this is called tunable consistency).
 
-In this quick summary video I've showed that replication between two different JustinDB clusters deployed to two different geo-regions/datacenters is duable and works in real-time manner.
+In this quick summary video I've showed that replication between two different JustinDB clusters deployed onto two different geo-regions/datacenters is duable and works in real-time manner.
 
-## Important repositories to follow:
+## Important repositories 🙌
+
+I encourage you with love ❤️ to track the following list of repositories that make [JustinDB][justindb] simply great:
 * [JustinDB][justindb] - highly available key-value distributed data store
 * [JustinDB-chaos][justindb-chaos] - tests that impact on JustinDB cluster subjected to e.g. network partitioning
 * [JustinDB-perf][justindb-perf] - performance tests against JustinDB
@@ -155,6 +230,7 @@ In this quick summary video I've showed that replication between two different J
 [justindb-chaos]: https://github.com/justin-db/JustinDB-chaos
 [justindb-perf]: https://github.com/justin-db/JustinDB-perf
 [justindb-cli]: https://github.com/justin-db/JustinDB-cli
+[justindb-hub]: https://hub.docker.com/r/justindb/justindb/
 
 <!-- IMG -->
 [multi-data-center-clusters]: ../../../../../img/competition-with-cloud/multi-data-center-clusters.png "Multiple Data Center Clusters"
@@ -164,3 +240,4 @@ In this quick summary video I've showed that replication between two different J
 [e24cloud-justindb-cluster]: ../../../../../img/competition-with-cloud/e24cloud-dc.png "e24cloud JustinDB cluster"
 [scaleway-justindb-cluster]: ../../../../../img/competition-with-cloud/scaleway-dc.png "Scaleway JustinDB cluster"
 [dockerized-justindb]: ../../../../../img/competition-with-cloud/justindb-docker-cli.gif "Dockerized JustinDB"
+[justindb-hub-docker]: ../../../../../img/competition-with-cloud/justindb-hub-docker.png "JustinDB Docker Hub"
