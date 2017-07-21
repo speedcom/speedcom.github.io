@@ -9,7 +9,7 @@ In the [previous][justindb-next-competition] blogpost I've declared there that I
 
 In this post I'm going to cover what exactly I've prepared and achieved. It also has a secondary purpose - it's going to serve as a final presentation for jury.
 
-## Goal
+## Goal 🏆
 I've written:
 
 `My plan minimum is simple - Initializing Multiple Data Center Clusters on JustinDB.`
@@ -25,7 +25,7 @@ Being now more strict - I've designed and enabled replication of data in real-ti
 * **e24cloud** - *efficient polish cloud computing platform powered by [Beyond.pl][beyond]*
 * **Scaleway** - *dedicated ARM-Based cloud platform (IaaS) created by [Online.net][online.net]*
 
-## A bit about JustinDB
+## A bit about JustinDB 📖
 [JustinDB][justindb] is a distributed NoSQL eventually-consistent key-value database. It's written entirely in **Scala** (both object oriented and functional programming language with strong static type system) but what actually allows database to breathe is **Akka** (implementation of **Actor Model** on top of JVM). If you would like to know more about making the decision about tooling read this post: [JustinDB - why Scala and Akka?][why-scala-akka].
 
 Every single data is identifiable by using **immutable keys**. Based on them and modified version of **Consistent Hashing** algorithm all requests (write/read) are partitioned (read as redistributed) between cluster nodes. Such cluster is a typical P2P system (nodes communicate to each other constantly to know the current state of the cluster). All nodes are equal (they do the same job/has same role) - we have masterless environment to cooperate with.
@@ -42,7 +42,7 @@ If you are more interested about the whole topic I encourage you to read the fol
 * [JustinDB - The Ring][justindb-ring]
 * [JustinDB - Preference list][justindb-preference-list]
 
-## JustinDB: Multi-Datacenter Replication
+## JustinDB: Multi-Datacenter Replication ⚛️
 
 #### Motivation
 [JustinDB][justindb] was developed with horizontal scaling in mind from its infancy. Many web applications, healthcare or gaming systems require this to provide disaster recovery, data geo-locality and ability to handle peak loads. [JustinDB][justindb] has come with new possibility to make this all even more available - Mutli-cluster Replication.
@@ -76,7 +76,7 @@ This is how it goes:
 Requirements:
 Its obvious that to enable replication between clusters it requires additional configuration (we need to set up address of secondary cluster node to particular node from primary one). It is important to note that both clusters must have certain attributes in common (have the same [ring][justindb-ring] size).
 
-## Provisioned clusters
+## Provisioned clusters ☁️
 
 ![][e24cloud-justindb-cluster]
 ![][scaleway-justindb-cluster]
@@ -192,7 +192,7 @@ We'll concern ourselves with single command - `clusterinfo (ci)`. It print to us
 }
 ```
 
-## Final test scenario
+## Final test scenario 🔥
 
 I've decided to record a short summary video showing that all this thing actually works. We can see that data pushed to e24cloud cluster is also replicated to external Scaleway cluster (its available to be read from there).
 
